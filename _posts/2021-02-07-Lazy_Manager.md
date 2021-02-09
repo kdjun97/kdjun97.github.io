@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "c# Key Logger"
+title:  "c# Lazy Manager"
 date:   2021-02-07 14:40:30 +0800
 categories: [Tech]
-excerpt: Key Logger
+excerpt: Only Key Logger
 tags:
   - Project
   - c#
@@ -11,7 +11,7 @@ tags:
 
 ## Program info  
 
-Program Name: Key Logger
+Program Name: Lazy Manager
 Version: 0.1  
 Development Environment: c#  
 Function: 
