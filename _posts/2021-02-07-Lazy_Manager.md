@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "c# Lazy Manager"
+title:  "Lazy Manager"
 date:   2021-02-07 14:40:30 +0800
 categories: [Tech]
 excerpt: Only Key Logger
