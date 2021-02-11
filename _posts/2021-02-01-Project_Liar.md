@@ -45,7 +45,7 @@ Description: Flutter를 이용하여 Liar 게임 만들기
 - 컴퓨터를 사용할 때 남아있는 IP중 돌아가면서 부여  
 
 ![통신 이해](/assets/images/Project_Liar/Communication.png)  
-위 그림을 보자. [출처](https://velog.io/@hidaehyunlee/%EA%B3%B5%EC%9D%B8Public-%EC%82%AC%EC%84%A4Private-IP%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90)  
+위 그림을 보자. [출처 여기](https://velog.io/@hidaehyunlee/%EA%B3%B5%EC%9D%B8Public-%EC%82%AC%EC%84%A4Private-IP%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90)  
 사설망1에 있는 핸드폰은 사설망2에 있는 핸드폰과 통신을 할 수 없다.  
 또, 인터넷에서는 공인 IP 178.145.57.144에 접속할 수 있지만, 사설IP인 192.168.x.x에는 접속을 할 수 없다.  
 이렇게 사설 IP가 할당된 장비는 공유기를 통해 인터넷에 접속을 할 수 있게 된다.  
