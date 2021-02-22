@@ -11,7 +11,6 @@ tags:
   - GBC
 ---
 
-Test중입니다.
 Project Title: 승화는_거짓말쟁이 (Liar Game)  
 Description: Flutter를 이용하여 Liar 게임 만들기  
 2/1부터 시작.  
