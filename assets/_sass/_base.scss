@@ -187,8 +187,7 @@ p   {
 }
 .post-content {
 	p {
-        //text-indent: 2em;
-        text-indent: 0em;
+        text-indent: 0em; // 문단 들여쓰기 하는 부분
     }
     blockquote p {
         text-indent: 0;

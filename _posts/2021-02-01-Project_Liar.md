@@ -11,7 +11,6 @@ tags:
   - GBC
 ---
 
-미안하다 내가 잘못햇다. 괜찮으시겠어요? 아뇨 ㅋ 안괜찮음.  
 Project Title: 승화는_거짓말쟁이 (Liar Game)  
 Description: Flutter를 이용하여 Liar 게임 만들기  
 2/1부터 시작.  
