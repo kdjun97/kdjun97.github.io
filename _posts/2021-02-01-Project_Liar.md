@@ -77,13 +77,12 @@ Description: Flutter를 이용하여 Liar 게임 만들기
 6. 서버가 연결된 클라이언트들에게 broadcast해줌.  
 
 이 방식을 적용했을 때의 문제점  
-: 만약 3명이 게임을 하고싶다면, 4명이 필요함(1명은 서버를 열어주고 데이터를 처리해야하기 때문)   
+: 만약 3명이 게임을 하고싶다면, 4명이 필요함(1명은 서버를 열어주고 데이터를 처리해야 함. 이 때, 서버는 데이터를 뿌려주기만 하기에 아무 역할을 하지 않음.)  
 
 ## flutter(dart)의 socket 통신
 
 flutter에서는 c언어에서의 socket programming과 다르게, 서버가 애초에 iterative하게 작동하는 것 같다.  
-실제로, ServerSocket은 수신 소켓에 연결된 각 소켓에 하나씩 소켓 객체의 스트림을 제공한다고 한다.  
-> 출처: (https://api.dart.dev/stable/2.10.5/dart-io/ServerSocket-class.html)  
+실제로, ServerSocket은 수신 소켓에 연결된 각 소켓에 하나씩 소켓 객체의 스트림을 제공한다고 한다. [출처](https://api.dart.dev/stable/2.10.5/dart-io/ServerSocket-class.html)  
 
 1. fllutter는 ip와 port정보로 ServerSocket을 바로 bind한다.  
 2. ServerSocket.listen(Function)만으로 listen과 accept과정을 다 수행해주는 것 같다.  
@@ -97,7 +96,22 @@ client가 connection요청을 할 때, ServerSocket.listen(Function)의 파라�
 
 그렇다면, 연결된 client의 정보들만 가지고 있다면, data값을 서버에서 보내는 것이 가능할 것이고,  
 위에서 언급한 문제점은 서버가 broadcast를 해주면서 data를 동시에 처리하게끔만 만들면 될 것이다.  
+-> List로 클라이언트 정보를 저장해줌.  
 
 이제 해야할 일은 방만들기 기능, 자동으로 IP셋팅, 한글 지원정도이다.  
 ++ 클라이언트 하나가 disconnect 하면 전체가 통신이 안되는 에러가 있음.
 -> 해결함.  
+
+아이피를 자동으로 뽑는건 두 개의 패키지를 사용해봄.  
+- import 'package:get_ip/get_ip.dart';  
+- import 'package:seeip_client/seeip_client.dart';  
+
+근데 어떤 기기에는 IP를 잘 뽑는데, 어떤 기기는 아니었다.  
+(실험환경: Android Galaxy Note9, S10+, S6, A6)  Note9랑 10+가 안뽑힘.  
+현재는 수동으로 IP를 설정해주고 있고, 현재 통신은 잘 된다.  
+
+데이터를 넘길 때 String을 조작을 해서, IP주소와 닉네임, 메세지를 함께 넘겨주고, 받을때는 다시 파싱을 하는 방법으로 세 가지 정보를 받을 수 있게 해준다.  
+
+그리고 Route간에 data를 이동 가능하게 하여, 메인 화면에서 필요한 정보들을 다 받고, 실제 화면에서는 채팅창만 보이도록 설정할 것이다.  
+
+마지막으로, 게임 알고리즘을 적용하여 라이어게임을 완성시키면 얼추 프로젝트가 끝날 것 같다.  
