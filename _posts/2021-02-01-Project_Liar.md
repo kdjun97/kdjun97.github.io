@@ -81,7 +81,7 @@ Description: Flutter를 이용하여 Liar 게임 만들기
 
 ## flutter(dart)의 socket 통신
 
-flutter에서는 c언어에서의 socket programming과 다르게, 서버가 애초에 iterative하게 작동하는 것 같다.  
+flutter에서는 c언어에서의 socket programming과 다르게, 서버가 애초에 iterative하게 작동하는 것 같다.(while문으로 accept를 계속 받을 필요가 없음)  
 실제로, ServerSocket은 수신 소켓에 연결된 각 소켓에 하나씩 소켓 객체의 스트림을 제공한다고 한다. [출처](https://api.dart.dev/stable/2.10.5/dart-io/ServerSocket-class.html)  
 
 1. fllutter는 ip와 port정보로 ServerSocket을 바로 bind한다.  
@@ -115,3 +115,12 @@ client가 connection요청을 할 때, ServerSocket.listen(Function)의 파라�
 그리고 Route간에 data를 이동 가능하게 하여, 메인 화면에서 필요한 정보들을 다 받고, 실제 화면에서는 채팅창만 보이도록 설정할 것이다.  
 
 마지막으로, 게임 알고리즘을 적용하여 라이어게임을 완성시키면 얼추 프로젝트가 끝날 것 같다.  
+
+
+## 기능 구현에 대한 간단한 설명.  
+
+<데이터전달>  
+일단 Route간에 데이터값을 전달하기 위해, `Navigator.pushNamed`를 사용했다.  
+Route의 이름을 설정하여, Route간에 이동이 가능하게 하였고, argument를 넘겨주며 route간에 데이터를 넘겨주었다.  
+-> 이는 초기화면에서 데이터를 받아 게임화면으로 전달하기 위함으로 사용하였다.  
+
