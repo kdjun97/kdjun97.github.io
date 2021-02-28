@@ -84,6 +84,8 @@ Version: 0.1
 
 이 방식을 적용했을 때의 문제점  
 : 만약 3명이 게임을 하고싶다면, 4명이 필요함(1명은 서버를 열어주고 데이터를 처리해야 함. 이 때, 서버는 데이터를 뿌려주기만 하기에 아무 역할을 하지 않음.)  
+![C_Language_TCP](/assets/images/Project_Liar/TCP_C.gif)  
+
 물론 서버가 행동을 하게끔 만들어주면 된다.  
 
 ## flutter(dart)의 socket 통신
