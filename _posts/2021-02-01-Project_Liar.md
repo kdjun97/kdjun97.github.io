@@ -70,7 +70,7 @@ Developed: [2021.02.01 ~ 2021.02.28]
 
 지금 언급하는건 1:1 통신이 아닌, 서버를 1개로 두고 다수의 클라이언트가 통신하는 상황이다.  
 그림으로 더 쉽게 설명을 하자면,  
-![communication](/assets/images/Project_Liar/Communication.png)  
+![communication](/assets/images/Project_Liar/communication.jpg)  
 각 서버와 클라이언트의 connection은 그림2와 같이 이루어진다.  
 
 글로 간단히 적어보자면,  
@@ -137,7 +137,7 @@ Route의 이름을 설정하여, Route간에 이동이 가능하게 하였고, a
 <통신 로직>  
 ![main](/assets/images/Project_Liar/play.jpg)  
 위 그림처럼 다수의 클라이언트와 서버가 통신을 해야하는 상황이다.  
-![communication](/assets/images/Project_Liar/Communication.png)  
+![communication](/assets/images/Project_Liar/communication.jpg)  
 
 먼저 서버를 열어주고, 클라이언트가 들어올때마다 client에 대한 정보를 담아준다.(그림2 참고)  
 그리고 data송수신은 아래 TextField에 쓴 내용과 함께 자신의 아이피+닉네임 정보를 함께 encoding 및 decoding하면서 서로 넘기고 받는다.  
