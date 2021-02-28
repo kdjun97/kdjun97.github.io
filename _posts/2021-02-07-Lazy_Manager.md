@@ -68,6 +68,9 @@ GHOST gbc 보안주차에서도 다뤘던 내용이기에, 키로거를 만들�
 3. OpenCV를 이용하여 Image를 처리하는 방식으로 ImageSearch에 대해 구현하려고 한다.  
 4. 마지막으로, 아래와 같이 키보드와 마우스 정보가 들어있는 파일을 읽어 사용자 정의 프로그램을 만들고자 한다.  
 ![keybd_info](/assets/images/KeyLogger/keybd_info.PNG)  
+parsing 하는 부분은 만들어진 상태임.  
+![parsing](/assets/images/KeyLogger/parsing.png)  
+
 ~~일단 DLL Injection은 빼고 구현을 할 것이다.~~  
 
 ---  
