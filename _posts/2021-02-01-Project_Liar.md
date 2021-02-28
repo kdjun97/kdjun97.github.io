@@ -129,7 +129,6 @@ client가 connection요청을 할 때, ServerSocket.listen(Function)의 파라�
 내가 구현했을 때 어려웠거나 의미있는 부분만 담아보겠다.  
 
 데이터전달  
-
 아래 그림과 같이 Route간에 데이터값을 전달하기 위해, `Navigator.pushNamed`를 사용했다.  
 Route의 이름을 설정하여, Route간에 이동이 가능하게 하였고, argument를 넘겨주며 route간에 데이터를 넘겨주었다.  
 -> 이는 초기화면에서 데이터를 받아 게임화면으로 전달하기 위함으로 사용하였다.  
@@ -148,7 +147,7 @@ Route의 이름을 설정하여, Route간에 이동이 가능하게 하였고, a
 또한, 가지고 있는 client정보로 서버가 모든 client들에게 broadcast하면서 다수의 클라이언트와 통신을 가능하게 하였다.(그림1 참고)  
 서버는 받은 정보를 가지고 action을 하게 만들어서 위에서 언급한, 서버가 아무일도 안하는 상태는 되지 않는다.  
 
-<정답 처리 및 라이어 투표>  
+정답 처리 및 라이어 투표  
 ![main_liar](/assets/images/Project_Liar/liar.jpg)  
 게임 특성상, 라이어 한명을 정하고, 나머지는 제시어를 알려줘야한다.  
 이러한 경우, 모든 클라이언트 정보를 가지고 있는 server가 broadcast를 해주었고, 투표나 어떤 특정한 기능들을 수행할 때마다 server가 관련 정보를 msg로 만들어서 broadcast해주게끔 로직을 짰다.(위 그림1 참고)  
