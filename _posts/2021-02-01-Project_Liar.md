@@ -133,6 +133,7 @@ client가 connection요청을 할 때, ServerSocket.listen(Function)의 파라�
 
 마지막으로, 게임 알고리즘을 적용하여 라이어게임을 완성시키면 얼추 프로젝트가 끝날 것 같다.  
 
+---  
 
 ## 기능 구현에 대한 간단한 설명.  
 
