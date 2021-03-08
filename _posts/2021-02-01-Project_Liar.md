@@ -102,7 +102,7 @@ flutter에서는 c언어에서의 socket programming과 다르게, 서버가 ite
 1. fllutter는 ip와 port정보로 ServerSocket을 바로 bind한다.  
 2. ServerSocket.listen(Function)만으로 listen과 accept과정을 다 수행해주는 것 같다.  
 이하는 소스를 참조하자(1 = Server, 2 = Client)   
-![source](/assets/images/Project_Liar/src.PNG)  
+![source](/assets/images/Project_Liar/src.png)  
 
 실제로 이 짧은 코드로 다중 클라이언트들의 connection을 받고 통신이 가능하였다.(client가 connection을 요청하면 listen에 물린 함수가 실행됨)  
 
