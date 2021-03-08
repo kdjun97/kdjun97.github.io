@@ -71,7 +71,6 @@ Version: 0.1
 
 지금 언급하는건 1:1 통신이 아닌, 서버를 1개로 두고 다수의 클라이언트가 통신하는 상황이다.  
 그림으로 더 쉽게 설명을 하자면,  
-<<<<<<< HEAD
 ![connection](/assets/images/Project_Liar/connection_relation.PNG)  
 단순히, 이것은 커넥션에 대해 이해하기 쉽게 그림으로 나타낸 것이다.  
 
@@ -81,23 +80,13 @@ C언어에서의 TCP Socket Programming 과정은 이렇다.
 여기서 서버측에서 while문으로 client의 커넥션을 계속 accept해주면 iterative서버가 된다.  
 
 글로 적어보자면,  
-=======
-![communication](/assets/images/Project_Liar/communication.jpg)  
-각 서버와 클라이언트의 connection은 그림2와 같이 이루어진다.  
-
-글로 간단히 적어보자면,  
->>>>>>> 5840c381ad0fffc900103f88cd388b21fbc8d751
 1. socket을 생성(서버용)  
 2. 각 구조체를 정의해줌(주소나 포트같은것들)  
 3. bind  
 4. listen  
 5. while으로 루프를 돌면서 client의 connection 요청을 계속 accept해주며 다수의 클라이언트와 연결을 한다.(iterative 서버)  
-<<<<<<< HEAD
 6. 서버가 연결된 클라이언트들에게 broadcast해줌.(아래 그림 참고)  
 ![srv->clnt](/assets/images/Project_Liar/srv2clnt.PNG)  
-=======
-6. 서버가 연결된 클라이언트들에게 broadcast해줌.(그림1)  
->>>>>>> 5840c381ad0fffc900103f88cd388b21fbc8d751
 
 이 방식을 적용했을 때의 문제점  
 : 만약 3명이 게임을 하고싶다면, 4명이 필요함(1명은 서버를 열어주고 데이터를 처리해야 함. 이 때, 서버는 데이터를 뿌려주기만 하기에 아무 역할을 하지 않음.)  
@@ -107,24 +96,15 @@ C언어에서의 TCP Socket Programming 과정은 이렇다.
 
 ## flutter(dart)의 socket 통신
 
-<<<<<<< HEAD
 flutter에서는 c언어에서의 socket programming과 다르게, 서버가 iterative하게 작동하려면 서버소켓의 bind함수의 파라미터에 `shared: true`를 적어주면 된다.(while문으로 accept를 계속 받을 필요가 없음)  
-=======
-flutter에서는 c언어에서의 socket programming과 다르게, 서버가 애초에 iterative하게 작동하는 것 같다.(while문으로 accept를 계속 받을 필요가 없음)  
->>>>>>> 5840c381ad0fffc900103f88cd388b21fbc8d751
 실제로, ServerSocket은 수신 소켓에 연결된 각 소켓에 하나씩 소켓 객체의 스트림을 제공한다고 한다. [출처](https://api.dart.dev/stable/2.10.5/dart-io/ServerSocket-class.html)  
 
 1. fllutter는 ip와 port정보로 ServerSocket을 바로 bind한다.  
 2. ServerSocket.listen(Function)만으로 listen과 accept과정을 다 수행해주는 것 같다.  
-<<<<<<< HEAD
 이하는 소스를 참조하자(1 = Server, 2 = Client)   
 ![source](/assets/images/Project_Liar/src.PNG)  
 
 실제로 이 짧은 코드로 다중 클라이언트들의 connection을 받고 통신이 가능하였다.(client가 connection을 요청하면 listen에 물린 함수가 실행됨)  
-=======
-
-실제로 이 두 줄로, 다중 클라이언트들의 connection을 받을 수 있었다.(client가 connection을 요청하면 listen에 물린 함수가 실행됨. 또한, while로 accpet를 할 필요가 없었다.)  
->>>>>>> 5840c381ad0fffc900103f88cd388b21fbc8d751
 
 client가 connection요청을 할 때, ServerSocket.listen(Function)의 파라미터인 Function함수가 실행이 되는데, 이 함수는 다시(Socket s)라는 파라미터를 전달하면서 실행이 된다.  
 (즉, connection이 되면, Function이 실행되고, Function은 Socket s의 정보를 가지면서 실행됨)  
@@ -159,12 +139,8 @@ client가 connection요청을 할 때, ServerSocket.listen(Function)의 파라�
 아주 간단한 부분(버튼 onPressed 이런 부분은 설명하지 않겠다.)  
 내가 구현했을 때 어려웠거나 의미있는 부분만 담아보겠다.  
 
-<<<<<<< HEAD
 ### Route to Route 데이터전달  
 
-=======
-데이터전달  
->>>>>>> 5840c381ad0fffc900103f88cd388b21fbc8d751
 아래 그림과 같이 Route간에 데이터값을 전달하기 위해, `Navigator.pushNamed`를 사용했다.  
 Route의 이름을 설정하여, Route간에 이동이 가능하게 하였고, argument를 넘겨주며 route간에 데이터를 넘겨주었다.  
 -> 이는 초기화면에서 데이터를 받아 게임화면으로 전달하기 위함으로 사용하였다.  
@@ -173,7 +149,6 @@ Route의 이름을 설정하여, Route간에 이동이 가능하게 하였고, a
 적용은 여기에다가 했다.  
 ![main_page](/assets/images/Project_Liar/main.jpg)  
 
-<<<<<<< HEAD
 ### 통신 로직  
 ![main_page](/assets/images/Project_Liar/play.jpg)  
 위 그림처럼 다수의 클라이언트와 서버가 통신을 해야하는 상황이다.  
@@ -214,26 +189,7 @@ data송수신은 채팅창에 쓴 내용과 함께 자신의 아이피+닉네임
 이러한 경우, 모든 클라이언트 정보를 가지고 있는 server가 broadcast를 해주었고, 투표나 어떤 특정한 기능들을 수행할 때마다 server가 관련 정보를 msg로 만들어서 broadcast해주게끔 로직을 짰다.(아래 그림 참고)  
 클라이언트에서 msg를 받을때는 msg에 담긴 특수문자로 parsing을 하여 msg를 처리하였다.  
 ![srv2clnt_control](/assets/images/Project_Liar/srv2clnt_cont.PNG)  
-=======
-통신 로직  
-![main_page](/assets/images/Project_Liar/play.jpg)  
-위 그림처럼 다수의 클라이언트와 서버가 통신을 해야하는 상황이다.  
-![communication](/assets/images/Project_Liar/communication.jpg)  
 
-먼저 서버를 열어주고, 클라이언트가 들어올때마다 client에 대한 정보를 담아준다.(그림2 참고)  
-그리고 data송수신은 아래 TextField에 쓴 내용과 함께 자신의 아이피+닉네임 정보를 함께 encoding 및 decoding하면서 서로 넘기고 받는다.  
-이 과정은 한글을 처리하기 위함인데, 그냥 String 정보로 data를 주고받으면 한글이 깨진다.  
-주고받는 character set이 맞지 않음이 이유였고, utf-8로 인코딩 및 디코딩을 하며 받았을 때, 문제가 없었다.(서로 인코딩 방식을 맞춰서 주고받음)  
-
-또한, 가지고 있는 client정보로 서버가 모든 client들에게 broadcast하면서 다수의 클라이언트와 통신을 가능하게 하였다.(그림1 참고)  
-서버는 받은 정보를 가지고 action을 하게 만들어서 위에서 언급한, 서버가 아무일도 안하는 상태는 되지 않는다.  
-
-정답 처리 및 라이어 투표  
-![main_liar](/assets/images/Project_Liar/liar.jpg)  
-게임 특성상, 라이어 한명을 정하고, 나머지는 제시어를 알려줘야한다.  
-이러한 경우, 모든 클라이언트 정보를 가지고 있는 server가 broadcast를 해주었고, 투표나 어떤 특정한 기능들을 수행할 때마다 server가 관련 정보를 msg로 만들어서 broadcast해주게끔 로직을 짰다.(위 그림1 참고)  
-클라이언트에서 msg를 받을때는 msg에 담긴 특수문자로 parsing을 하여 msg를 처리하였다.  
->>>>>>> 5840c381ad0fffc900103f88cd388b21fbc8d751
 
 사실 서버를 하나 두고 그 서버가 모든 클라이언트를 관리하는식으로 갔으면 best였는데, 그렇게는 하지 않았다.  
 조금 더 프로그램이 커지면 서버 하나를 두는게 낫다고 생각한다.  
