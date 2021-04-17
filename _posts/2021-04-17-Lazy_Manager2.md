@@ -37,7 +37,7 @@ tags:
 
 DLL Injection의 교과서적인 부분.  
 메모장에 내 dll을 injection시키는 것이다.  
-Injection이 잘 되면 MessageBox를 띄우게 했다.  
+Injection이 성공하면 MessageBox를 띄우게 했다.  
 현재 잘 되는 것을 확인할 수 있다.  
 ![injection](/assets/images/Lazy_Manager2/injection.gif)  
 
