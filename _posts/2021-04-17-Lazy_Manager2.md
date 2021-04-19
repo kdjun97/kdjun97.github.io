@@ -46,7 +46,7 @@ Injection이 성공하면 MessageBox를 띄우게 했다.
 ### Python으로 전역후킹 및 키보드, 마우스 제어  
 
 **개발환경 : Python3.9.4-32bit, Python3.9.2-64bit**  
-**모듈 : pyautogui, pywinauto, keyboard, mouse**  
+**모듈 : pyautogui, pywinauto, keyboard, mouse, psutil**  
 
 제1목표 : docker에 모든 환경들을 구축.  
 제2목표 : 전역후킹이 되는 keybd, mouse제어 프로그램.  
