@@ -5,8 +5,8 @@ date:   2021-05-16 21:00:00
 categories: [Tech]
 excerpt: firebase로 database를 연동시켜 flutter에 적용시키기.
 tags:
-  - flutter
-  - firebase
+  - Flutter
+  - Firebase
 ---
 
 ### flutter with firebase

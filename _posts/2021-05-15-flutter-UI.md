@@ -5,7 +5,7 @@ date:   2021-05-15 21:00:00
 categories: [Tech]
 excerpt: Flutter로 UI 구현하기.  
 tags:
-  - flutter
+  - Flutter
 
 ---
 
