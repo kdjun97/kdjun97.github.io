@@ -14,7 +14,7 @@ tags:
 Project Title: 승화는_거짓말쟁이 (Liar Game)  
 Description: Flutter를 이용하여 Liar 게임 만들기  
 Developed: [2021.02.01 ~ 2021.02.28]  
-Development Environment:  Flutter 1.22.6  
+Development Environment:  Flutter 1.22.6, Android Studio 4.1.0  
 Version: 0.1  
 ![img](/assets/images/Project_Liar/title.jpg)  
 

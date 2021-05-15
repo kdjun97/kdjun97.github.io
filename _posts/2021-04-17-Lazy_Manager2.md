@@ -6,6 +6,7 @@ categories: [Tech]
 excerpt: Lazy Manager2
 tags:
   - c++
+  - c#  
   - python
   - Project
 ---
