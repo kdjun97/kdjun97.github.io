@@ -20,4 +20,6 @@ tags:
 이 곳에서 연습을 통해 더 자세하게 배울 수 있다.  
 참고 : [Firebase Codelab](https://firebase.google.com/codelabs/firebase-get-to-know-flutter#0)  
 
-AppState가 바뀔 때 마다 
+이번엔 이 전과 비해 코드가 더 간결해진 것 같다.  
+
+실행영상은 기말고사 채점이 끝난 후 올릴 예정임.  
