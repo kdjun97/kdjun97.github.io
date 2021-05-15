@@ -12,8 +12,8 @@ tags:
 ### Flutter UI 
 
 **Development Environment:**  
-    **- Flutter 1.22.6**
-    **- Android Studio 4.1.0**
+    **- Flutter 1.22.6**  
+    **- Android Studio 4.1.0**  
 
 이번 글은 데이터 연결없이 UI(껍데기만)만 만든 앱의 output을 다룬다.  
 이는 **모바일 앱 개발**이라는 수업에서 중간고사로 다뤘던 내용이다.  

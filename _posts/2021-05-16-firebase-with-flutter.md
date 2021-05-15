@@ -11,8 +11,13 @@ tags:
 
 ### flutter with firebase
 
-예전 프로젝트에서 Route 간에 데이터를 주고받을 때 database를 쓰지 않았다. [Lazy Manager](https://kdjun97.github.io/blog/Project_Liar/)  
+예전 프로젝트에서 Route 간에 데이터를 주고받을 때 database를 쓰지 않았다.  
+참고 : [Lazy Manager](https://kdjun97.github.io/blog/Project_Liar/)  
 
 하지만, database 수업도 들었고, firebase라는 것도 수업에서 익히게 되었기 때문에, 이 기술을 적용하여 훨씬 유동적인 앱을 만들어보기로 하였다.~~물론 이 task는 기말고사였음~~  
 
-이 역시 전 포스트와 마찬가지로 기말고사였기 때문에, 소스는 공유할 수 없고, output만 첨부하겠다.  
+우선 이 앱을 만들 때 provider와 consumer에 대한 개념을 적용했는데, 아주 유용한 기능이다.  
+이 곳에서 연습을 통해 더 자세하게 배울 수 있다.  
+참고 : [Firebase Codelab](https://firebase.google.com/codelabs/firebase-get-to-know-flutter#0)  
+
+AppState가 바뀔 때 마다 
