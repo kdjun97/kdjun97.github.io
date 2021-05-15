@@ -23,6 +23,15 @@ tags:
 
 로그인이나 다른 부분들을 database로 연결하는 부분은 다음 포스팅에서 다룰 예정임.  
 
+### 앱 소개  
+
+처음 login을 하고난 뒤 앱이 시작된다.  
+호텔의 정보가 담겨져 있는 앱이고, GirdView나 ListView로 호텔에 대한 정보를 볼 수 있다.  
+예약이나 search 기능이 있다.  
+Favorite hotel에 대한 정보를 볼 수 있고 본인의 profile을 확인할 수 있는 mypage가 있다.  
+모든 부분들은 database와 연동이 되지 않은 상태이고, 연동만 하면 충분히 호텔 정보를 파악할 수 있는 앱이 될 수 있겠다.  
+나머지 부분들은 작동하는 영상으로 확인하자.  
+
 ### Output  
 
 ![output](/assets/images/flutter_UI/flutter_UI.gif)   
