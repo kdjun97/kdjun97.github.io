@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Local 폴더에서 Github Repository로 push하기"
-date:   2021-05-14 21:00:00
+date:   2021-05-16 22:00:00
 categories: [Tech]
 excerpt: Local 폴더에서 Github Repository로 push하는 법 
 tags:
