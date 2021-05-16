@@ -76,7 +76,8 @@ guest login과 google login에 대해 다른 정보를 넣어주었다.
 ![img2](/assets/images/flutter_firebase_final/auth.PNG)  
 
 
-#### img(item 정보) 부분 : collection('img').doc(item info).collection('whoLike').doc(좋아요를 누른 유저 정보)  
+#### img(item 정보) 부분 :  
+#### collection('img').doc(item info).collection('whoLike').doc(좋아요를 누른 유저 정보)  
 
 img collection 안에 각 item에 대한 doc이 등록된다.  
 doc의 id는 register날짜로 했고, field는 item에 대한 name, price, description 등을 가진다.  
