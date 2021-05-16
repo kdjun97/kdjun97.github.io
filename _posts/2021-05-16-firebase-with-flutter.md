@@ -46,7 +46,6 @@ Detail Page의 Like는 한 아이템당 1번만 누를 수 있게 설정했다.
 
 ImagePicker로 Image를 선택해 Upload한다.  
 Firebase Storage에 이미지를 올리고, Firebase Firestore Database에서 이미지에 관한 정보를 넣어준다.  
-추후에 쿼리를 돌릴 때 사용하기 위함.  
 
 ![output4](/assets/images/flutter_firebase_final/Add.gif)   
 
