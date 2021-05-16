@@ -27,7 +27,7 @@ tags:
 
 처음 login을 하고난 뒤 앱이 시작된다.  
 호텔의 정보가 담겨져 있는 앱이고, GirdView나 ListView로 호텔에 대한 정보를 볼 수 있다.  
-예약이나 search 기능이 있다.  
+예약이나 search 기능이 있고, detail page에서 호텔 이미지를 더블클릭하면 favorite list에 저장된다.    
 Favorite hotel에 대한 정보를 볼 수 있고 본인의 profile을 확인할 수 있는 mypage가 있다.  
 모든 부분들은 database와는 연동이 되지 않은 상태이고, 대신 route간에 정보의 교환이 이루어진다.  
 database를 배우지 않았을 때(혹은 사용하지 않았을 때)도 충분히 이런 기능들을 구현 가능하다.  
@@ -35,4 +35,4 @@ database를 배우지 않았을 때(혹은 사용하지 않았을 때)도 충분
 
 ### Output  
 
-![output](/assets/images/flutter_UI/flutter_UI.gif)   
+![output](/assets/images/flutter_UI_mid/flutter_UI.gif)   
