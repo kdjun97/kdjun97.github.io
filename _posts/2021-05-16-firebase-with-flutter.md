@@ -68,7 +68,8 @@ firebase는 NoSQL이다.
 firestore는 collection...document...collection...document...로 데이터가 저장된다.    
 ![img](/assets/images/flutter_firebase_final/NoSQL.PNG)  
 
-#### auth(user 정보) 부분 : collection('auth').doc(user info)  
+#### auth(user 정보) 부분 : 
+`collection('auth').doc(user info)`  
 
 guest login과 google login에 대해 다른 정보를 넣어주었다.  
 ~~google login정보는 일부러 보여주지 않음~~  
@@ -77,7 +78,8 @@ guest login과 google login에 대해 다른 정보를 넣어주었다.
 
 
 #### img(item 정보) 부분 :  
-#### collection('img').doc(item info).collection('whoLike').doc(좋아요를 누른 유저 정보)  
+
+`collection('img').doc(item info).collection('whoLike').doc(좋아요를 누른 유저 정보)`  
 
 img collection 안에 각 item에 대한 doc이 등록된다.  
 doc의 id는 register날짜로 했고, field는 item에 대한 name, price, description 등을 가진다.  
