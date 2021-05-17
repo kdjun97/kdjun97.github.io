@@ -38,7 +38,7 @@ password 입력부분이나 나머지 셋팅 부분은 잘랐다.
 아이템 가격순으로 정렬이 가능하다.  
 실시간으로 클라우드에서 받아오는 것이기 때문에, local에 이미지 정보가 저장될 필요가 없다.  
 more 버튼을 클릭하면 Detail Page로 이동한다.  
-Detail Page의 Like는 한 아이템당 1번만 누를 수 있게 설정했다.  
+Detail Page의 Like는 한 사용자가 아이템당 1번만 누를 수 있게 설정했다.  
 
 ![output3](/assets/images/flutter_firebase_final/Main_Detail.gif)   
 
