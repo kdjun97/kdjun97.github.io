@@ -41,7 +41,8 @@ tags:
   Doc1 "Title" + 'body', + ... + author  
   Doc2 "Title" + 'body', + ... + author  
   Doc3 "Title" + 'body', + ... + author  
-  .....
+  .....  
+
 1. 핵심은 형태소 분석.
   Doc1 나는 <u>학교</u>에서 <u>친구</u>와 <u>밥</u>을 <u>먹</u>었다.  
   Doc2 <u>북한</u>의 <u>군사</u> <u>수석</u>이 <u>남한</u>의 <u>통일부</u> <u>장관</u>에게 <u>친서</u>를 <u>보내</u>어...  
