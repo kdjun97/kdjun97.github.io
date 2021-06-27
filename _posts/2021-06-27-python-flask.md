@@ -37,7 +37,7 @@ tags:
 
 이제 위의 기술들로 검색엔진을 개발할 것인데, flow는 대략 이렇다.  
 
-1.Data Prep 문서 하나를 한줄의 글 형식으로 쭉 나열.  
+1. Data Prep 문서 하나를 한줄의 글 형식으로 쭉 나열.  
   Doc1 "Title" + 'body', + ... + author  
   Doc2 "Title" + 'body', + ... + author  
   Doc3 "Title" + 'body', + ... + author  
