@@ -71,6 +71,8 @@ GHOST gbc 보안주차에서도 다뤘던 내용이기에, 키로거를 만들�
 parsing 하는 부분은 만들어진 상태임.  
 ![parsing](/assets/images/KeyLogger/parsing.png)  
 
+소스코드 : [여기](https://github.com/kdjun97/cs_FileIO)  
+
 ~~일단 DLL Injection은 빼고 구현을 할 것이다.~~  
 
 ---  
