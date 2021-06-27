@@ -38,9 +38,9 @@ tags:
 이제 위의 기술들로 검색엔진을 개발할 것인데, flow는 대략 이렇다.  
 
 1. Data Prep 문서 하나를 한줄의 글 형식으로 쭉 나열.  
-  Doc1 "Title" + 'body', + ... + author  
-  Doc2 "Title" + 'body', + ... + author  
-  Doc3 "Title" + 'body', + ... + author  
+    Doc1 "Title" + 'body', + ... + author  
+    Doc2 "Title" + 'body', + ... + author  
+    Doc3 "Title" + 'body', + ... + author  
   .....
 1. 핵심은 형태소 분석.
   Doc1 나는 <u>학교</u>에서 <u>친구</u>와 <u>밥</u>을 <u>먹</u>었다.  
