@@ -37,7 +37,7 @@ tags:
 
 이제 위의 기술들로 검색엔진을 개발할 것인데, flow는 대략 이렇다.  
 
-1. Data Prep 문서 하나를 한줄의 글 형식으로 쭉 나열.
+1. Data Prep 문서 하나를 한줄의 글 형식으로 쭉 나열.  
   Doc1 "Title" + 'body', + ... + author  
   Doc2 "Title" + 'body', + ... + author  
   Doc3 "Title" + 'body', + ... + author  
@@ -45,12 +45,13 @@ tags:
 1. 핵심은 형태소 분석.
   Doc1 나는 <u>학교</u>에서 <u>친구</u>와 <u>밥</u>을 <u>먹</u>었다.  
   Doc2 <u>북한</u>의 <u>군사</u> <u>수석</u>이 <u>남한</u>의 <u>통일부</u> <u>장관</u>에게 <u>친서</u>를 <u>보내</u>어...  
-  Doc3 <u>북한</u>이 <u>최근</u> <u>평양</u> <u>시내</u> <u>학교</u>에 <u>친구</u> <u>없</u>는 <u>학생</u>들을.....
-  파이썬에는 형태소 분석하는 라이브러리가 많이 존재한다.
-  이까지 하면 inverted index를 할 준비가 완료되었다.  
-1. inverted index(Full Text Search)
+  Doc3 <u>북한</u>이 <u>최근</u> <u>평양</u> <u>시내</u> <u>학교</u>에 <u>친구</u> <u>없</u>는 <u>학생</u>들을.....  
+  파이썬에는 형태소 분석하는 라이브러리가 많이 존재한다.  
+  이까지 하면 inverted index를 할 준비가 완료되었다.    
+1. inverted index(Full Text Search)  
   단어 사전을 만드는 느낌.  
-  ex) 학교 1, 3  
+  ex)  
+  학교 1, 3  
   친구 1, 3  
   밥 1  
   먹 1  
@@ -71,7 +72,6 @@ tags:
   ex)  
   학교 1 3 7 9 10 15 20  
   친구 1 3 9 11 31 55 99  
-
   대표적인 Ranking Algorithm에는 TF-IDF와 BM25가 있다.  
   만약 **<u>학교</u>**라는 term(단어)가 주여졌을 때, 이렇게 비교한다.  
   전체 문서에서 **<u>학교</u>**의 빈도 vs  
