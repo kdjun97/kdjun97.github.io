@@ -62,6 +62,7 @@ Python 3.9.4 32-bit로 환경을 바꾸었다.
 3.9.4 32-bit에서의 hooking. 이번에도 KeyLogger를 만들어보았다.  잘 작동된다.  
 ![python_global_hooking](/assets/images/Lazy_Manager2/python_global_hooking.gif)  
 
+소스코드 : [여기](https://github.com/kdjun97/Python_KeyBoard_Global_Hook)
 
 ++시행착오 추가  
 Python 3.9.4 32-bit로 global hooking을 짰는데 잘 돌아갔지만, 64-bit에서 pyautogui나 다른 모듈들을 사용할 수 있는 것 같았다.  
