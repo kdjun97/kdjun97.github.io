@@ -89,4 +89,7 @@ tags:
 
 #### 실행 영상
 
+부트스트랩으로 디자인한 웹이다.  
+실행영상은 아래 주소로  
+
 [Youtube](https://www.youtube.com/watch?v=HonQW_yceh4)  
