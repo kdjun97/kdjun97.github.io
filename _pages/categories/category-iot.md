@@ -1,9 +1,9 @@
 ---
-title: "Templates"
+title: "IoT"
 layout: category
-permalink: /categories/templates/
+permalink: /categories/iot/
 author_profile: true
-taxonomy: Templates
+taxonomy: IoT
 sidebar:
   nav: "categories"
 ---

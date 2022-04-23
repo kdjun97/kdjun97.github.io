@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "Home"
-    url: https://ParkParkE.github.io/
+    url: https://kdjun97.github.io/
 
   - title: "About"
     url: /about/
 
   - title: "GitHub"
-    url: https://github.com/ParkParkE
+    url: https://github.com/kdjun97
 
   - title: "Projects"
     url: /projects/
@@ -21,19 +21,25 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
-  - title: "C/C++"
-    url: /categories/c-cpp/
-  - title: "Python"
-    url: /categories/python/
   - title: "Algorithm"
     url: /categories/algorithm/
-  - title: "Web"
-    url: /categories/web/
-  - title: "Git"
-    url: /categories/git/
-  - title: "GitHub Blog"
-    url: /categories/github-blog/
-  - title: "Machine Learning"
-    url: /categories/machine-learning/
+  - title: "Android App"
+    url: /categories/android-app/
+  - title: "Automation Solution"
+    url: /categories/automation-solution/
+  - title: "Computer Vision"
+    url: /categories/computer-vision/
+  - title: "Docker"
+    url: /categories/docker/
+  - title: "Git/Github"
+    url: /categories/git-github/
+  - title: "IoT"
+    url: /categories/iot/
+  - title: "Linux"
+    url: /categories/linux/
+  - title: "Python"
+    url: /categories/python/
   - title: "Test"
     url: /categories/test/
+  - title: "Web"
+    url: /categories/web/

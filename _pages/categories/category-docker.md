@@ -1,9 +1,9 @@
 ---
-title: "Git"
+title: "Docker"
 layout: category
-permalink: /categories/git/
+permalink: /categories/docker/
 author_profile: true
-taxonomy: Git
+taxonomy: Docker
 sidebar:
   nav: "categories"
 ---
