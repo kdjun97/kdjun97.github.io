@@ -1,0 +1,39 @@
+# main links
+main:
+  - title: "Home"
+    url: https://ParkParkE.github.io/
+
+  - title: "About"
+    url: /about/
+
+  - title: "GitHub"
+    url: https://github.com/ParkParkE
+
+  - title: "Projects"
+    url: /projects/
+
+  - title: "hi"
+    url: /hi/
+
+  # - title: "Categories"
+  #   url: /categories/
+
+# sidebar navigation (categories)
+# 2022.02.15 sidebar update : simple ver.
+categories:
+  - title: "C/C++"
+    url: /categories/c-cpp/
+  - title: "Python"
+    url: /categories/python/
+  - title: "Algorithm"
+    url: /categories/algorithm/
+  - title: "Web"
+    url: /categories/web/
+  - title: "Git"
+    url: /categories/git/
+  - title: "GitHub Blog"
+    url: /categories/github-blog/
+  - title: "Machine Learning"
+    url: /categories/machine-learning/
+  - title: "Test"
+    url: /categories/test/
