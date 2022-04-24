@@ -16,11 +16,11 @@ minimal_mistakes_skin: "plum" #"plum", "default" "air", "aqua", "contrast", "dar
 
 # Site Settings
 locale: "ko-KR" #"en-US"
-title: "Junny Blog"
+title: "Jumy Blog"
 title_separator: "&#124;"
 subtitle: # site tagline that appears below site title in masthead
-name: "Junny"
-description: "Junny Blog Description"
+name: "Jumy"
+description: "Jumy Blog Description"
 url: "https://kdjun97.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
 repository: "kdjun97/kdjun97.github.io"
@@ -95,7 +95,7 @@ analytics:
 
 # Site Author
 author:
-  name: "Junny"
+  name: "Jumy"
   avatar: "/assets/images/meee.svg"
   #   bio              : "Hamppiness!"
   # location         : "Seoul, Korea"
