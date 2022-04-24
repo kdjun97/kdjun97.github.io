@@ -1,33 +1,47 @@
-### 🦥 `Junny Blog`
+> choiiis' github blog theme 사용 허락해주신 choiiis님께 감사드립니다.  
+
+### 🦥 `Jumy Blog`
 
 📎 **블로그 바로 가기**
 
-[`https://choiiis.github.io/`](https://choiiis.github.io/)
+[`https://kdjun97.github.io/`](https://kdjun97.github.io/)
 
+### Blog History
 
-[VER1.0]
-![choiiis github blog main](/assets/images/posts_img/readme/blog-main-ver1.png)
+[Ver 1.0 - 🐻‍❄️ Ice Bear Blog!]  
 
-[VER2.0]
-![choiiis github blog main](/assets/images/posts_img/readme/blog-main-ver2.png)
-- logo 변경
-- 카테고리 디자인 변경
-- font family, size 변경
-- 메인 컬러 변경
+<details>
+<summary>Open/Close</summary><br>
 
-[VER2.1]
-![choiiis github blog main](/assets/images/posts_img/readme/ver2_1_main.png)
-- 카테고리 정리  
-- favicon 변경  
+<a href="https://kdjun97.github.io/assets/images/post_img/readme/old1.JPG">
+  <img src="/assets/images/post_img/readme/old1.JPG" alt="ice-bear1">
+</a>
+<br>
+<a href="https://kdjun97.github.io/assets/images/post_img/readme/old2.JPG">
+  <img src="/assets/images/post_img/readme/old2.JPG" alt="ice-bear2">
+</a>
+<br>
+<a href="https://kdjun97.github.io/assets/images/post_img/readme/old3.JPG">
+  <img src="/assets/images/post_img/readme/old3.JPG" alt="ice-bear3">
+</a>
+<br>
+
+</details>  
+
+[Ver 2.0 - choiiis' blog theme!]
 
 <br>
 
 > 🌴 **목차**
 
 ┌ `Algorithm`  
-├ `C++`  
+├ `Android App`  
+├ `Automation Solution`  
+├ `Computer Vision`  
+├ `Docker`  
+├ `Git/Github`  
+├ `IoT`  
+├ `Linux`  
 ├ `Python`  
-├ `Git`  
-├ `GitHub Blog`  
-├ `Maching Learning`  
+├ `Test`  
 └ `Web`  
