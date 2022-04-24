@@ -9,8 +9,8 @@ main:
   - title: "GitHub"
     url: https://github.com/kdjun97
 
-  - title: "Projects"
-    url: /projects/
+  # - title: "Projects"
+  #   url: /projects/
 
   - title: "hi"
     url: /hi/
