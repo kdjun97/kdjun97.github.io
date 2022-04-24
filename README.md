@@ -13,18 +13,9 @@
 <details>
 <summary>Open/Close</summary><br>
 
-<a href="https://kdjun97.github.io/assets/images/post_img/readme/old1.JPG">
-  <img src="/assets/images/post_img/readme/old1.JPG" alt="ice-bear1">
-</a>
-<br>
-<a href="https://kdjun97.github.io/assets/images/post_img/readme/old2.JPG">
-  <img src="/assets/images/post_img/readme/old2.JPG" alt="ice-bear2">
-</a>
-<br>
-<a href="https://kdjun97.github.io/assets/images/post_img/readme/old3.JPG">
-  <img src="/assets/images/post_img/readme/old3.JPG" alt="ice-bear3">
-</a>
-<br>
+<img src="/assets/images/post_img/readme/old2.JPG" alt="ice-bear2"><br>
+<img src="/assets/images/post_img/readme/old1.JPG" alt="ice-bear1"><br>
+<img src="/assets/images/post_img/readme/old3.JPG" alt="ice-bear3"><br>
 
 </details>  
 
