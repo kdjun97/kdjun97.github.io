@@ -32,7 +32,9 @@ published: true
 - Jupyter Notebook 시작  
   - ```$ jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root```  
   - bash창에 copy and paste one of these URLs 중 카피해서 주소창으로 접속하면 됨.(아래 그림 127로 시작하는 주소)  
-![command-jupyter](/assets/images/post_img/docker-jupyter-anaconda3/command-jupyter.JPG)  
+<a href="https://kdjun97.github.io/assets/images/post_img/docker-jupyter-anaconda3/command-jupyter.JPG">
+  <img src="/assets/images/post_img/docker-jupyter-anaconda3/command-jupyter.JPG" alt="command-jupyter">
+</a>
 - Jupyter 실행 사진
 ![running-jupyter](/assets/images/post_img/docker-jupyter-anaconda3/running-jupyter.JPG)  
 - Jupyter Notebook에서 tensorflow 등 사용하기  
