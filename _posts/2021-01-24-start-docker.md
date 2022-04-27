@@ -48,7 +48,7 @@ ex) 이 도커를 통해 Windows에서 Ubuntu Linux를 사용할 수 있다.
 > 이 기술로 Window에서도 Ubuntu Linux를 사용할 수 있다!  
 > 혹은 Local에서 작업하기 꺼려지는 부분들을 도커에서 사용할 수도 있다!  
 
-[Dockerfile이 무엇인가요??](https://kdjun97.github.io/docker/dockerfile/  
+[Dockerfile이 무엇인가요??](https://kdjun97.github.io/docker/dockerfile/)  
 
 ---  
   
@@ -64,10 +64,10 @@ ex) 이 도커를 통해 Windows에서 Ubuntu Linux를 사용할 수 있다.
 1. 본인의 컴퓨터에 윈도우 버전 확인.  
 - 방법 : 내 컴퓨터(우클릭) - 속성 - Windows 버전 확인.  
 
-2. Windows 10 Home Edition이라면 업그레이드.    
-- Home Edition을 사용중이라면, 에러가 뜰 수 있습니다.  
-- Education으로 본인의 PC를 업그레이드 하셔야 Docker 사용에 문제가 없습니다.  
-- Pro도 가능합니다.  
+2. Windows 10 Home Edition이라면 업그레이드    
+- Home Edition을 사용중이라면, 에러가 뜰 수 있음  
+- Education으로 본인의 PC를 업그레이드 하셔야 Docker 사용에 문제가 없음  
+- Pro도 가능  
 
 3. 설치  
 - [Docker_Windows Install](https://hub.docker.com/editions/community/docker-ce-desktop-windows)에서 다운로드 받기  
