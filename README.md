@@ -19,7 +19,7 @@
 
 </details>  
 
-[Ver 2.0 - choiiis' blog theme!]
+[Ver 2.0 - choiiis' blog theme!]  
 
 <br>
 
