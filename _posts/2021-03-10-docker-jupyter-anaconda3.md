@@ -17,8 +17,6 @@ last_modified_at: 2021-03-10
 published: true
 ---
 
-#### docker로 anaconda3 환경 + python jupyter notebook 사용
-
 #### Windows에서 anaconda3(+jupyter notebook) 사용하기  
 
 - 수업 때, 파이썬 환경과 아나콘다를 설치해야 했는데, local에 설치하기 싫어서 도커에 설치해보았다.  
