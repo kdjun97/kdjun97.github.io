@@ -23,18 +23,20 @@ main:
 categories:
   - title: "Algorithm"
     url: /categories/algorithm/
-  - title: "Android App"
-    url: /categories/android-app/
   - title: "Automation Solution"
     url: /categories/automation-solution/
   - title: "Computer Vision"
     url: /categories/computer-vision/
   - title: "Docker"
     url: /categories/docker/
+  - title: "Flutter"
+    url: /categories/flutter/
   - title: "Git/Github"
     url: /categories/git-github/
   - title: "IoT"
     url: /categories/iot/
+  - title: "Kotlin"
+    url: /categories/kotlin/
   - title: "Linux"
     url: /categories/linux/
   - title: "Python"
