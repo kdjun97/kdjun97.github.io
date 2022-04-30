@@ -42,11 +42,27 @@ Key Logger를 선택한 이유는 다른 프로그램들 보다 훨씬 흥미롭
 
 ### 참고 : Hooking(후킹)의 원리
 
-Hooking(후킹)은 이벤트가 OS Message Queue 에서 Application Message Queue 로 넘어갈 때, 메시지를 중간에서 가로채는 것을 뜻한다 [출처](https://ccurity.tistory.com/390)  
+`Hooking(후킹)`은 이벤트가 OS Message Queue 에서 Application Message Queue 로 넘어갈 때, `메시지를 중간에서 가로채는 것`을 뜻한다.  
 
-Application Message Queue에 가기 전에 메시지를 가로챘기 때문에 그 메시지를 가지고 후속 액션을 취해주면 상당히 재밌는 것을 많이 구현할 수 있다  
-예를 들면 `응용프로그램이 메시지를 받지 않게 할 수도 있고, 원하는 메시지 값을 바꿀 수도 있다!`  
+### 일반적인 Windows 메시지 처리
+
+1. `사용자의 입력이 있을 때` 사용자의 input은 `OS Message Queue`에 쌓이게 된다.  
+2. `OS Message Queue`에서는 해당 `Application Message Queue`에 입력된 값의 정보를 주게 된다.  
+3. `Application Message Queue`에서는 2에서 정보를 받으면 `event handler를 호출`한다.  
+
+여기서 2번의 과정을 가로채는 것이 `후킹`이라고 하며 `Message Hooking`이라고도 불린다.  
+`OS Message Queue`와 `Application Message Queue` 사이에 갈고리(hook)을 걸었다고 하여 `hooking`이라 불린다.  
+
+아래는 이해를 돕기 위한 그림이다.  
+![hooking](/assets/images/post_img/lazy-manager/hooking.JPG)  
+
+Application Message Queue에 가기 전에 메시지를 가로챘기 때문에 그 메시지를 방치, 변경, 삭제가 가능하고 이는 다양하게 활용 가능하다.    
+예를 들면 `응용프로그램이 메시지를 받지 않게 할 수도 있고(block), 원하는 메시지 값을 바꿀 수도 있다!(a 입력시 b입력되게 만듦)`  
 ~~벌써부터 재밌지 않은가?~~  
+
+> [참고](https://ccurity.tistory.com/390)  
+> [참고2](https://ffoorreeuunn.tistory.com/29)  
+> [MSDN 공식 문서](https://docs.microsoft.com/en-us/windows/win32/winmsg/hooks)  
 
 ---
 
