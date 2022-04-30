@@ -69,7 +69,7 @@ ex)
 sem_cal('총',sem_total)  
 ```
 
-> [파이썬 코드](https://github.com/kdjun97/credit_calculator)  
+> [Github 파이썬 코드](https://github.com/kdjun97/credit_calculator)  
 
 결과는 아래와 같다(내 학점이 이렇다는게 아니고 예시를 든 것임.)  
 ![output](/assets/images/post_img/credit-calculator/result.PNG)  
