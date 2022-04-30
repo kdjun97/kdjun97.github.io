@@ -1,6 +1,6 @@
 ---
-title: "[C#] Global Hooking을 이용한 Key Logger"
-excerpt: "Lazy Manager에 쓰이는 global hook을 응용하여 만든 key logger 소개"
+title: "[Lazy Manager] Global Hooking을 이용한 Key Logger 기능"
+excerpt: "C#으로 개발한 key logger 소개"
 
 categories:
   - Automation Solution
@@ -118,3 +118,6 @@ parsing 하는 부분은 만들어진 상태임.
 하지만 A회사에서 A프로그램을, B회사에서 B프로그램을 만드는 것 처럼, A회사 프로그램을 다른 회사에서는 사용할 수 없다.  
 이 프로그램은 사용자 정의 맵핑기능이 있어 더욱 많은 사용자들(기업들)이 입맛대로 바꾸어 사용할 수 있다는 장점이 있을 것이다.  
 또한, 활성창에서 이벤트 처리가 이루어지는 것이 아닌, 비활성창에서도 이벤트 처리를 할 수 있게 함으로써 사용자의 편의를 더욱 생각했다.(동시에 많은 일을 할 수 있음)  
+
+💡 [Lazy Manager2 포스트](https://kdjun97.github.io/automation-solution/lazy-manager2/)에서 이어진다  
+{: .notice--info}  
