@@ -15,14 +15,14 @@ toc_label: "Contents"
 toc_icon: "lightbulb" # https://fontawesome.com/
  
 date: 2021-04-17 21:00:00
-last_modified_at: 2021-04-17 21:00:00
+last_modified_at: 2022-04-30 21:30:00
 published: true
 ---
 
 # Lazy Manager2
 
 기존 Lazy Manager는 c#으로 제작했었다. (아래 링크 참고)  
-> [Lazy Manager](https://kdjun97.github.io/automation-solution/lazy-manager/)  
+> [Lazy Manager 포스트로 이동](https://kdjun97.github.io/automation-solution/lazy-manager/)  
 
 이번에 중간고사 기간에 공부도 하기 싫고해서 갑자기 Lazy Manager를 완성시키고자 프로젝트를 이어가게 되었다.  
 다양한 언어들로 다양한 기능들을 구현해보며 어떤 환경에서 **가장 최적화된 프로그램**을 만들 수 있는지 실험을 해보는게 목적이다.  
