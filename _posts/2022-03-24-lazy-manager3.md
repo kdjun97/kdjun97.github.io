@@ -35,7 +35,7 @@ published: true
 
 기대효과는 [Lazy Manager](https://kdjun97.github.io/automation-solution/lazy-manager/)에서 이미 언급하였다.  
 나는 한 프로그램이 아닌, 어느 프로그램, 어느 환경에서도 쓰일 수 있는 프로그램을 제작하고 싶었다.  
-[Lazy Manager](https://kdjun97.github.io/automation-solution/lazy-manager/), [Lazy Manager2](https://kdjun97.github.io/automation-solution/lazy-manager2/)는 둘 다 개발자가 짠대로 코드가 돌아가는 단점이 존재하였다.  
+하지만 [Lazy Manager](https://kdjun97.github.io/automation-solution/lazy-manager/), [Lazy Manager2](https://kdjun97.github.io/automation-solution/lazy-manager2/)는 둘 다 개발자가 짠대로 코드가 돌아가는 단점이 존재하였다.  
 물론 기능은 구현이 되었지만, 이는 내가 원하는 바가 아니므로 프로젝트를 **다시** 파기로 결정했다.  
 이전까지 만들었던 것을 바탕으로 사용자가 `직접` (최대한 간편하게) 스크립트를 짤 수 있는 형태로 프로그램을 만들 것이다.  
 눈치챘겠지만, Lazy Manager뒤에 달리는 번호가 Ver0.x의 번호이다.  
