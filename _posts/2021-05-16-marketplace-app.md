@@ -1,5 +1,5 @@
 ---
-title: "[Flutter] Firebase와 함께하는 marketplace 앱 만들기"
+title: "[Flutter] Firebase를 연동한 marketplace 앱 만들기"
 excerpt: "Firebase를 연동하여 marketplace 앱을 만들어보자"
 
 categories:
