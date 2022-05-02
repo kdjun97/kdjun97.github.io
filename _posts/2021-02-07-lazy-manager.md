@@ -48,7 +48,7 @@ Key Logger를 선택한 이유는 다른 프로그램들 보다 훨씬 흥미롭
 
 1. `사용자의 입력이 있을 때` 사용자의 input은 `OS Message Queue`에 쌓이게 된다.  
 2. `OS Message Queue`에서는 해당 `Application Message Queue`에 입력된 값의 정보를 주게 된다.  
-3. `Application Message Queue`에서는 2에서 정보를 받으면 `event handler를 호출`한다.  
+3. `Application Message Queue`에서는 2에서 정보를 받으면 `event handler`를 호출한다.  
 
 여기서 2번의 과정을 가로채는 것이 `후킹`이라고 하며 `Message Hooking`이라고도 불린다.  
 `OS Message Queue`와 `Application Message Queue` 사이에 갈고리(hook)을 걸었다고 하여 `hooking`이라 불린다.  
