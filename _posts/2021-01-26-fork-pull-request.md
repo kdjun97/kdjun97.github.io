@@ -1,5 +1,5 @@
 ---
-title: "(Git/Github) fork와 pull request"
+title: "[Git/Github] fork와 pull request"
 excerpt: "Fork와 pull request에 대해 알아보자"
 
 categories:
