@@ -1,6 +1,6 @@
 ---
-title: "[Git/Github] Commit Log를 이용하여 깃허브에 누락된 잔디를 심어보자"
-excerpt: "누락된 잔디를 되살려보자!"
+title: "[Git/Github] 깃허브 잔디 누락 현상"
+excerpt: "Commit Log를 이용하여 깃허브에 누락된 잔디를 되살려보자"
 
 categories:
   - Git/Github
