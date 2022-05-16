@@ -35,6 +35,5 @@
 ├ `Kotlin`  
 ├ `Linux`  
 ├ `Python`  
-├ `Test`  
 ├ `Web`  
 └ `Etc`  
