@@ -22,6 +22,8 @@ published: true
 🔥 총 3편으로 구성된 예제이다.  
 {: .notice--warning}
 
+> [2편](https://kdjun97.github.io/iot/arduino-ble-testing/)
+
 # Arduino IDE Setting
 
 `준비물`  
