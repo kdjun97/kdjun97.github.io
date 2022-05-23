@@ -72,6 +72,9 @@ void setup() {
 
 ![Untitled](/assets/images/post_img/arduino-ble-nrf-toolbox/Untitled5.png)  
 
+위와 같이 nRF ToolBox 앱을 통해서 보드에 데이터가 전송되고,  
+보드로부터 데이터가 실시간으로 찍히는 것을 볼 수 있다.  
+
 ---
 
 #### Test 끝!  
@@ -94,3 +97,6 @@ BLE 통신과 ESP 보드가 어떻게 통신을 하는지에 대해 알아볼 �
 앱과 아두이노에서 맵핑이 위와 같이 이루어졌기 때문에 수월하게 connection이 가능하다.  
 
 지금 단계에서는 우리가 짠 ble_uart 소스 코드와 nRF ToolBox 앱의 셋팅이 같다라고만 이해하자!
+
+> [Github OpenSource](https://github.com/NordicSemiconductor/Android-nRF-Toolbox/blob/c73f0099ab85e1c5e01afb9c83fbcb98dd335024/profile_uart/src/main/java/no/nordicsemi/android/uart/data/UARTManager.kt)  
+> 궁금하다면 이 소스코드를 보면 도움이 될 것이다!
