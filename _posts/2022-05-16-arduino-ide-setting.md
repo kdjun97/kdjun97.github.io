@@ -22,8 +22,6 @@ published: true
 🔥 총 3편으로 구성된 예제이다.  
 {: .notice--warning}
 
-> [2편](https://kdjun97.github.io/iot/arduino-ble-testing/)
-
 # Arduino IDE Setting
 
 `준비물`  
@@ -73,4 +71,5 @@ Arduino IDE : 1.8.19 Version
 (위 그림은 ESP32 연결한 상태에서의 포트)  
 
 ⚠️ 2편에서 이어집니다.  
+[2편](https://kdjun97.github.io/iot/arduino-ble-testing/)  
 {: .notice--info}  
