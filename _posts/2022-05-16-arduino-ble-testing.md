@@ -22,9 +22,6 @@ published: true
 🔥 총 3편으로 구성된 예제이다.  
 {: .notice--warning}
 
-> [1편](https://kdjun97.github.io/iot/arduino-ide-setting/)  
-> [3편](https://kdjun97.github.io/iot/arduino-ble-nrf-toolbox/)
-
 ### BLE Testing
 
 **1.** `파일 → 예제 → ESP32 BLE Arduino → BLE_uart`  
@@ -176,5 +173,5 @@ void loop() {
 
 ![Untitled](/assets/images/post_img/arduino-ble-testing/Untitled4.png)  
 
-⚠️ 3편에서 이어집니다.  
+⚠️ [3편에서 이어집니다](https://kdjun97.github.io/iot/arduino-ble-nrf-toolbox/)  
 {: .notice--info} 

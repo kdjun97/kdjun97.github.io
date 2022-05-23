@@ -70,6 +70,5 @@ Arduino IDE : 1.8.19 Version
 
 (위 그림은 ESP32 연결한 상태에서의 포트)  
 
-⚠️ 2편에서 이어집니다.  
-[2편](https://kdjun97.github.io/iot/arduino-ble-testing/)  
+⚠️ [2편에서 이어집니다](https://kdjun97.github.io/iot/arduino-ble-testing/)  
 {: .notice--info}  
