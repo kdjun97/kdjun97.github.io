@@ -1,5 +1,5 @@
 ---
-title: "[Arduino] ESP32와 앱 연동 기초 예제(1)"
+title: "[Arduino] ESP32 BLE + 앱 연동 기초 예제(1)"
 excerpt: "ESP32와 앱을 연결하고 데이터 주고 받기 예제"
 
 categories:
