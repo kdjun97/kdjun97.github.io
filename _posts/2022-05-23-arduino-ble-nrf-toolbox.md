@@ -22,7 +22,7 @@ published: true
 🔥 총 3편으로 구성된 예제이다.  
 {: .notice--warning}  
 
-> [1편](https://kdjun97.github.io/iot/arduino-ide-setting/)
+> [1편](https://kdjun97.github.io/iot/arduino-ide-setting/)  
 > [2편](https://kdjun97.github.io/iot/arduino-ble-testing/)  
 
 # 테스팅 전 준비물
