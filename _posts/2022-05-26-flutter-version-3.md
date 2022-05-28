@@ -19,7 +19,7 @@ last_modified_at: 2022-05-26 20:00:00
 published: true
 ---
 
-# Flutter 3.0 Version Release
+`Flutter 3.0 Version Release`  
 
 2022년 5월 11일, Google I/O에서 Flutter 3.0.0 버전을 발표했다.  
 
@@ -39,7 +39,7 @@ Flutter로 앱을 개발한지 1년이 넘었고, 처음 1.12 버전을 사용�
 
 ---
 
-### 내가 생각한 문제점(3.0.0 Version이 나오기 전)  
+### 🦥 내가 생각한 문제점(3.0.0 Version이 나오기 전)  
 
 💡 아래는 내가 처음부터 썼던 1.12 Version부터 현재 업데이트 전까지의 느낀점을 바탕으로 쓴 문제점이다.  
 {: .notice--info}  
@@ -81,9 +81,9 @@ Version Upgrade 후, 생각이 달라졌을지 아래에서 다뤄보자.
 
 ---  
 
-### 3.0.0 버전 이후 달라진 점  
+### 🦊 3.0.0 버전 이후 달라진 점  
 
-#### `공식 문서 링크`  
+#### 🐭 `공식 문서 링크`  
 
 아래는 `공식 문서 링크` 이다.  
 세부적인 설명들은 공식 문서를 참고하면 좋을 것 같다.  
@@ -102,7 +102,7 @@ Version Upgrade 후, 생각이 달라졌을지 아래에서 다뤄보자.
 
 ---  
 
-#### `Cross-Platform Support`  
+#### 🐮 `Cross-Platform Support`  
 
 **cross-platform**이라 함은 하나의 base 코드로 2개 이상의 플랫폼 빌드가 가능한 소프트웨어를 뜻한다.  
 이번 3.0.0 Version부터 `Android`, `iOS`, `Web`, `Windows`, `MacOS`, `Linux` 총 6개의 platform build가 가능해졌다.  
@@ -112,7 +112,7 @@ Version Upgrade 후, 생각이 달라졌을지 아래에서 다뤄보자.
 
 ---  
 
-#### `macOS의 System Menu Bar 지원`  
+#### 🐯 `macOS의 System Menu Bar 지원`  
 
 `PlatformMenuBar` 위젯을 이용, macOS Menu 항목을 컨트롤 가능.  
 내가 mac을 안써봐서 대단한 기능인지 모르겠지만, 이러한 기능이 추가되었다고 한다.  
@@ -122,11 +122,11 @@ Version Upgrade 후, 생각이 달라졌을지 아래에서 다뤄보자.
 
 ---  
 
-#### `Universal binaries by default on macOS`  
+#### 🐰 `Universal binaries by default on macOS`  
 
 Flutter 3.0.0 Version 부터, Flutter macOS Desktop App은 `Intel-based Macs`과 `Apple Silicon devices` 를 모두 지원해주도록 만들어졌다.  
 
-#### `Apple Silicon의 완벽한 지원`    
+#### 🐲 `Apple Silicon의 완벽한 지원`    
 
 <u>Apple Silicon</u> 이란?  
 Apple의 최신 하드웨어를 지원하는 새로운 프로세서 아키텍처.  
@@ -144,18 +144,18 @@ Apple의 최신 하드웨어를 지원하는 새로운 프로세서 아키텍처
 
 ---  
 
-#### `Linux application 지원`  
+#### 🐍 `Linux application 지원`  
 
 각 플랫폼마다 Design Style이 약간씩 다르다.  
 예를 들어, Android는 Material Design을 사용, iOS는 Cupertino를 사용하는데, 이번 버전부터 Linux에 대한 Design이 추가되었다.  
 Linux는 yaru를 이용하여 linux만의 design style을 표현한다.      
 Pub.dev에서 `yaru`를 패키지로 제공하고 있고, 그 밖에도 linux에 필요한 플러그인들(dbus, gsettings, bluetooth, desktop_notifications 등)을 지원해준다.   
 
-> [yaru](https://pub.dev/packages/yaru)  
+> [yaru (pub.dev)](https://pub.dev/packages/yaru)   
 
 ---  
 
-#### `Foldable device support`  
+#### 🐴 `Foldable device support`  
 
 이제는 폴더블 device도 지원해준다.  
 `MediaQuery`의 속성이 추가되었다.(접힌 여부, 잘린 여부 등의 상태 추가됨)  
@@ -166,7 +166,7 @@ Pub.dev에서 `yaru`를 패키지로 제공하고 있고, 그 밖에도 linux에
 
 ---  
 
-#### `Web 기능 향상`  
+#### 🐑 `Web 기능 향상`  
 
 **1.** Flutter framework, engine, contents 로딩을 제어할 수 있는 new API 추가  
 
@@ -183,7 +183,7 @@ Pub.dev에서 `yaru`를 패키지로 제공하고 있고, 그 밖에도 linux에
 
 ---  
 
-#### `Firebase 공식 지원`  
+#### 🐵 `Firebase 공식 지원`  
 
 3.0.0 Version이후,  
 Firebase Console에서 flutter가 공식 지원되는 것을 볼 수 있다!  
@@ -193,7 +193,7 @@ Flutter와 firebase 연동(셋팅)이 훨씬 간편해졌다고 한다.
 
 ---
 
-#### `Support Material Design 3`  
+#### 🐔 `Support Material Design 3`  
 
 Flutter 3.0.0 Version에선 Material Design 3을 지원한다.  
 자세한 건 공식 문서를 참고하자.  
@@ -206,7 +206,7 @@ Flutter 3.0.0 Version에선 Material Design 3을 지원한다.
 
 ---  
 
-#### `Dart 2.17`  
+#### 🐶 `Dart 2.17`  
 
 Flutter Language인 Dart가 2.17로 업데이트 되었다.  
 크게 바뀐 부분은 아래와 같다.  
@@ -218,7 +218,7 @@ Flutter Language인 Dart가 2.17로 업데이트 되었다.
 
 ---  
 
-#### `Casual Games Toolkit`  
+#### 🐷 `Casual Games Toolkit`  
 
 Flutter 공식 게임 툴킷이 추가되었다.  
 당장은 완벽한 기능을 기대하긴 어렵지만, 게임 툴킷과 관련 문서들이 추가되었으니 관심있으면 찾아보길 바란다.  
@@ -233,7 +233,7 @@ Flutter 공식 게임 툴킷이 추가되었다.
 
 ---  
 
-### 끝으로..
+### 🦅 끝으로..
 
 이 밖에 다양한 기능이 추가되고 개선되었다.  
 이 포스팅에 담기지 않은 많은 내용들은 공식 문서에서 찾아볼 수 있다!  
