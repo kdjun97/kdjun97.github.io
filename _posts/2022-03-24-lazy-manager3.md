@@ -19,7 +19,7 @@ last_modified_at: 2022-04-30 21:30:00
 published: true
 ---
 
-## Info
+## 🔍 Info
 
 `Program Version` : 0.3.0  
 `Used Language` : C#  
@@ -31,7 +31,7 @@ published: true
 
 ---  
  
-### Lazy Manager3
+### 🦥 Lazy Manager3
 
 기대효과는 [Lazy Manager](https://kdjun97.github.io/automation-solution/lazy-manager/)에서 이미 언급하였다.  
 나는 한 프로그램이 아닌, 어느 프로그램, 어느 환경에서도 쓰일 수 있는 프로그램을 제작하고 싶었다.  
@@ -45,7 +45,7 @@ published: true
 
 ---
 
-#### TODO
+#### ✔️ TODO
 
 **1.** 스크립트형 프로그램(사용자 정의 가능)  
   - base는 스크립트를 위한 메모장 클론 코딩
@@ -58,7 +58,7 @@ published: true
 
 ---
 
-#### load, save, new file 등의 메모장 기능들을 구현  
+#### 📝 load, save, new file 등의 메모장 기능들을 구현  
 
 **1.** 메모장 클론 코딩  
 
@@ -109,7 +109,7 @@ q: quit(break 개념)
 
 ---
 
-#### keybd_event
+#### 🎮 keybd_event
 
 WIN32 API 함수 중 `keybd_event`, `mouse_event`라는 함수가 있다.  
 아주 간단히 소개하자면, `활성창에 키보드 혹은 마우스 이벤트를 날리는 함수`이다.  
@@ -137,7 +137,7 @@ U: Key Up
 💪 이러한 기능으로 사용자가 원하는 것들을 구현할 수 있다!  
 {: .notice--success}  
 
-#### Virtual-Key Code
+#### 🔍 Virtual-Key Code
 
 어떤 느낌인지는 알겠으나, `key code`에 대해 모를 수 있다.  
 스크립트 작성에 도움을 주기 위해 Virtual-Key Code UI를 만들었다!  
@@ -153,7 +153,7 @@ k:K48,K45,K4C,K4C,K4F
 k:K(h),K(e),K(l),K(l),K(o) 이런식으로 더 쉽게?.. 생각중
 ```
 
-#### mouse_event
+#### 🐀 mouse_event
 
 위에서 `mouse_event`에 대한 간단한 설명은 하였기에 바로 본론으로 들어가겠다.  
 
@@ -178,7 +178,7 @@ ex) MV(100,100),LC -> 100,100 좌표에서 Left Click을 수행.
 
 ---  
 
-### 시행착오
+### 😑 시행착오
 
 `첫번째`  
 

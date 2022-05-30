@@ -19,7 +19,7 @@ last_modified_at: 2022-04-30 21:30:00
 published: true
 ---
 
-# Lazy Manager2
+# 🦥 Lazy Manager2
 
 기존 Lazy Manager는 c#으로 제작했었다. (아래 링크 참고)  
 > [Lazy Manager 포스트로 이동](https://kdjun97.github.io/automation-solution/lazy-manager/)  
@@ -32,7 +32,7 @@ published: true
 
 ---  
 
-### 현재 프로세스의 창을 실시간으로 비활성 캡처하는 부분  
+### 🍉 현재 프로세스의 창을 실시간으로 비활성 캡처하는 부분  
 
 **개발환경 : C#**  
 **결과 : 만족스러운 속도와 구현 가능을 검증**  
@@ -45,7 +45,7 @@ published: true
 
 ---  
 
-### DLL Injection  
+### 🍒 DLL Injection  
 
 **개발환경 : C++**  
 **결과 : 기능 검증 완료**  
@@ -60,7 +60,7 @@ Injection이 성공하면 MessageBox를 띄우게 했다.
 
 ---  
 
-### Python으로 전역후킹 및 키보드, 마우스 제어  
+### 🍇 Python으로 전역후킹 및 키보드, 마우스 제어  
 
 **개발환경 : Python3.9.4-32bit, Python3.9.2-64bit**  
 **모듈 : pyautogui, pywinauto, keyboard, mouse, psutil**  
@@ -86,7 +86,7 @@ Python 3.9.4 32-bit로 global hooking을 짰는데 잘 돌아갔지만, 64-bit�
 
 ---  
 
-**++추가++ Python이 좋다면서 LazyManager3에서 c#을 선택한 이유**  
+#### 🍐 ++추가++ Python이 좋다면서 LazyManager3에서 c#을 선택한 이유
 
 c#에선 템플릿 매칭을 통한 이미지 처리, python에서는 imagesearch를 해보았다.  
 c#에선 굉장히 빠른 속도로 이미지를 처리하는 반면, python에서는 c#과 비교해 느린 퍼포먼스를 보여주었다.  
