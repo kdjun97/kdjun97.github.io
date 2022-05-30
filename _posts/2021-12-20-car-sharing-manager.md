@@ -19,7 +19,7 @@ last_modified_at: 2021-12-20 23:10:00
 published: true
 ---
 
-# 프로젝트 생성에 앞서
+# 🔗 프로젝트 생성에 앞서
 
 스프링 framework는 웹을 개발할 때, 많이 사용되는 framework이다.  
 그 이유로는, 잘 설계된 웹 MVC framework가 있고, 모듈화가 잘 되어있다는 점 또한 꼽을 수 있다.  
@@ -28,7 +28,7 @@ published: true
 
 ---
 
-# 스프링 프레임 워크 개발(Web)  
+# 🌻 스프링 프레임 워크 개발(Web)  
 
 학기 중, 간단한 웹 서비스를 만드는 프로젝트가 있었다.  
 기간은 사실상 거의 2주?도 안줬던 것 같다.  
@@ -109,7 +109,7 @@ Local에서 돌려볼 땐, Tomcat으로 돌렸다.
 
 ---  
 
-#### 프로젝트 결과
+#### 🍒 프로젝트 결과
 
 DAO(Data Access Object), VO(Value Object), Controller, Service class로 유지보수를 쉽게 가져가기 위해 각 기능을 담당하는 분리되는 클래스를 만듦.  
 DB관련 query문은 mapper package에 다 넣음.  
