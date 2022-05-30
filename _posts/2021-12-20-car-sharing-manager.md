@@ -115,7 +115,7 @@ DAO(Data Access Object), VO(Value Object), Controller, Service class로 유지�
 DB관련 query문은 mapper package에 다 넣음.  
 각 페이지들은 views 폴더 안에 .jsp 형태로 존재.  
 deploy는 heroku를 이용하여 하였음.  
-
+ 
 이번 프로젝트는 유지&보수를 위해 디렉토리 구조에 대해 신경을 많이 썼고, query문은 mapper에 넣는 등 실제로 서비스 구현 및 유지 보수에 대해 최대한 관리가 쉽게끔 코드를 짰다.  
 MVC라는 패턴에 대해 알게되었고, 아키텍처에 대해 경험할 수 있었던 시간이었다.  
 

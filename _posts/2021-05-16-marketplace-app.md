@@ -19,7 +19,7 @@ last_modified_at: 2022-05-01 17:54:00
 published: true
 ---
 
-### Flutter with firebase
+### 🔥 Flutter with firebase
 
 예전 프로젝트에서 Route 간에 데이터를 주고받을 때 database를 쓰지 않았다.  
 > 참고 : [Hotel 예약 앱 만들기](https://kdjun97.github.io/flutter/hotel-reservation-app/)  
@@ -35,7 +35,7 @@ published: true
 
 ---
 
-### 간단한 영상 첨부와 동작 설명
+### 📹 간단한 영상 첨부와 동작 설명
 
 `Guest Sign In and Sign Out`  
 
@@ -79,7 +79,7 @@ Firebase Storage에 이미지를 올리고, Firebase Firestore Database에서 �
 
 ---  
 
-#### 데이터 모델링
+#### 💿 데이터 모델링
 
 firebase는 NoSQL이다.  
 firestore는 collection...document...collection...document...로 데이터가 저장된다.    
@@ -113,7 +113,7 @@ whoLike의 doc의 field는 uid와 좋아요를 눌렀는지에 대한 bool type�
 
 ---
 
-#### 정리
+#### 🧹 정리
 
 flutter로 앱을 만들고, 관련된 정보들을 firebase에 연동시켜보았다.  
 SignIn 관련 class에서 **ChangeNotifier**를 extends하여, 해당 class 안에서 값이 변할때마다 **notifyListeners()**로 알려준다.   

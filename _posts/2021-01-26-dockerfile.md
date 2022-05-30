@@ -28,7 +28,7 @@ Dockerfile을 작성했다면, docker build 명령어로 docker image를 생성 
 > 나의 Ubuntu Unminimize Dockerfile을 참고하려면, [Dockerfile](https://github.com/kdjun97/ubuntu-unminimize/blob/master/Dockerfile) 참고!  
 
 ---  
-
+ 
 #### 🔗 Docker hub에 image 공유  
 1. 먼저, ``` $docker login```명령어로 docker에 login한다.  
 2. 이미지 태그  

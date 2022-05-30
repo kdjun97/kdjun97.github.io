@@ -18,7 +18,7 @@ last_modified_at: 2021-01-24 17:00:00
 published: true
 ---
 
-### vim 명령어 정리
+### ✏️ vim 명령어 정리
 
 **실행모드에서**  
 

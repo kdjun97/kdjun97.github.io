@@ -19,7 +19,7 @@ last_modified_at: 2021-07-29 22:30:00
 published: true
 ---
 
-### Flutter로 Web 개발 환경을 구축해보자
+### 🍒 Flutter로 Web 개발 환경을 구축해보자
 
 > [Flutter 공식 사이트 참고](https://flutter-ko.dev/docs/get-started/web)  
 
@@ -49,7 +49,9 @@ $ flutter build web
 4. 결과  
 ![firebase4](/assets/images/post_img/flutter-web/firebase4.PNG)  
 
-#### 이슈
+---  
+
+#### ❓ 이슈
 
 Web에서 Image.network를 사용했을 때, path가 맞더라도 image를 read못하는 현상을 발견했다.  
 이는 Terminal에서 $flutter run -d chrome --web-renderer html 명령어로 실행하니 해결됐다.  

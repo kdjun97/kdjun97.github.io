@@ -45,7 +45,7 @@ Key Logger를 선택한 이유는 다른 프로그램들 보다 훨씬 흥미롭
 `Hooking(후킹)`은 이벤트가 OS Message Queue 에서 Application Message Queue 로 넘어갈 때, `메시지를 중간에서 가로채는 것`을 뜻한다.  
 
 ### 💬 일반적인 Windows 메시지 처리
-
+ 
 1. `사용자의 입력이 있을 때` 사용자의 input은 `OS Message Queue`에 쌓이게 된다.  
 2. `OS Message Queue`에서는 해당 `Application Message Queue`에 입력된 값의 정보를 주게 된다.  
 3. `Application Message Queue`에서는 2에서 정보를 받으면 `event handler`를 호출한다.  

@@ -22,7 +22,7 @@ published: true
 🔥 총 3편으로 구성된 예제이다.  
 {: .notice--warning}
 
-# Arduino IDE Setting
+# 🎒 Arduino IDE Setting
 
 `준비물`  
 

@@ -85,7 +85,7 @@ hook이 걸린 후, 설정된 핫키를 누르면 아래와 같이 detect가 가
 ![Set Hotkey](/assets/images/post_img/lazy-manager3/set_hotkey.jpg)  
 
 **4.** 각 Hotkey에 command list 설정  
-
+ 
 하나의 모델은 h 시작부터 q가 나오기 까지를 하나의 모델로 가진다.  
 핫키를 누르고난 후, q까지 명령어가 실행이 된다.  
 이렇게 명령어를 실행하기 위해, 명령어 리스트를 가져야 한다.    

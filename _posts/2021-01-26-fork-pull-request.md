@@ -19,7 +19,7 @@ last_modified_at: 2021-01-26 10:00:00
 published: true
 ---
 
-## fork
+## 🍴 fork
 
 **`fork 설명`**  
 
@@ -39,7 +39,7 @@ fork한 저장소는 원작자와 연결되어 있다.
 
 ---  
 
-## pull request
+## 🌿 pull request
 
 **`pull request 설명`**  
 

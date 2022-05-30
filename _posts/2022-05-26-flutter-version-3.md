@@ -163,7 +163,7 @@ Pub.dev에서 `yaru`를 패키지로 제공하고 있고, 그 밖에도 linux에
 하지만 이런식으로 foldable phone에 대해서도 기능을 만들어준다면 개발자야 땡큐다.  
 
 ![foldable](/assets/images/post_img/flutter-version-3/foldable.png)  
-
+ 
 ---  
 
 #### 🐑 `Web 기능 향상`  

@@ -51,7 +51,7 @@ a옵션은 종료된 컨테이너까지 보여줌.
 참고: [Ghost 한찬솔님의 블로그](https://ccss17.github.io/ProgrammerBase/docker/#_1)  
 
 ---  
-
+ 
 #### ✏️ docker 명령어 정리  
 
 1. Local에 있는 파일을 컨테이너로 copy  

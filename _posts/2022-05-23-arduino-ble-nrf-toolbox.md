@@ -22,7 +22,7 @@ published: true
 🔥 총 3편으로 구성된 예제이다.  
 {: .notice--warning}  
 
-# 테스팅 전 준비물
+## ✏️ 테스팅 전 준비물
 
 `준비물`  
 
@@ -33,7 +33,7 @@ published: true
 
 ---  
 
-### nRF ToolBox Testing  
+### 🛠️ nRF ToolBox Testing  
 
 **1.** 플레이스토어에서 `nRF Toolbox for Bluetooth LE` 검색 및 설치  
 
@@ -80,7 +80,7 @@ void setup() {
 
 ---
 
-#### Test 끝!  
+#### 🍒 Test 끝!  
 
 💡 어떻게 ESP Board와 앱이 연결될 수 있나요??  
 {: .notice--info}   

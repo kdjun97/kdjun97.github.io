@@ -22,7 +22,7 @@ published: true
 🔥 총 3편으로 구성된 예제이다.  
 {: .notice--warning}
 
-### BLE Testing
+### 🛹 BLE Testing
 
 **1.** `파일 → 예제 → ESP32 BLE Arduino → BLE_uart`  
 

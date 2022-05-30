@@ -19,7 +19,7 @@ last_modified_at: 2022-05-16 22:00:00
 published: true
 ---
 
-## Setup Arduino IDE
+## 🛠️ Setup Arduino IDE
 
 **1.** `Move Arduino Homepage`  
 

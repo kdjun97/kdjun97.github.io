@@ -19,7 +19,7 @@ last_modified_at: 2021-01-25 18:00:00
 published: true
 ---
 
-## git 명령어
+## ✏️ git 명령어
 
 여기서는 상세한 설명보다는 어떤 명령어가 있는지와 간단한 설명만 하겠다.  
 {: .notice--warning}  
