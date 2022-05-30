@@ -19,7 +19,7 @@ last_modified_at: 2022-04-17 22:00:00
 published: true
 ---
 
-# Virtual Key Code
+# 🍒 Virtual Key Code
 
 WIN32 programming을 위한 `virtual key code`  
 표의 값들은 16진수 값이다.  
