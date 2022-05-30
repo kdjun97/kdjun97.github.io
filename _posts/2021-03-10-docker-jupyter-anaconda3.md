@@ -17,7 +17,7 @@ last_modified_at: 2021-03-10
 published: true
 ---
 
-#### Windows에서 anaconda3(+jupyter notebook) 사용하기  
+#### 🐍 Windows에서 anaconda3(+jupyter notebook) 사용하기  
 
 - 수업 때, 파이썬 환경과 아나콘다를 설치해야 했는데, local에 설치하기 싫어서 도커에 설치해보았다.  
 - image는 ```$ docker search anaconda3```로 가장 star가 많은 continuumio/anaconda3 image를 사용하였다.  

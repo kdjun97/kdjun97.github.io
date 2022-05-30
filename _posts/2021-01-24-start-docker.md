@@ -24,7 +24,7 @@ published: true
 
 ---  
 
-# 도커(Docker)에 대한 설명 
+# 🐬 도커(Docker)에 대한 설명 
 
 도커(Docker)가 무엇인가?  
 - 도커(Docker)는 컨테이너 기반의 오픈소스 가상화 플랫폼이다.  
@@ -52,13 +52,13 @@ ex) 이 도커를 통해 Windows에서 Ubuntu Linux를 사용할 수 있다.
 
 ---  
   
-# 도커(Docker) 설치  
+# 🛠️ 도커(Docker) 설치  
 
-#### MacOS 환경에서 설치하기  
+#### 💻 MacOS 환경에서 설치하기  
 
 [Docker_Mac Install](https://hub.docker.com/editions/community/docker-ce-desktop-mac)  
 
-#### Windows 환경에서 설치하기
+#### 💻 Windows 환경에서 설치하기
 아쉽게도, MAC과 달리, Windows OS는 설치가 조금 까다롭다.  
 
 1. 본인의 컴퓨터에 윈도우 버전 확인.  

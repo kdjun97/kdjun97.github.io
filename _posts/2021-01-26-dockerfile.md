@@ -17,7 +17,7 @@ last_modified_at: 2021-01-26
 published: true
 ---
 
-#### Dockerfile build    
+#### 📝 Dockerfile build    
 
 전 포스팅에서 Dockerfile을 build해서, docker image를 만든다고 하였다. [도커(Docker) 입문 참고](https://kdjun97.github.io/docker/start-docker/)  
 docker image를 만든 소스코드가 Dockerfile이다.
@@ -29,7 +29,7 @@ Dockerfile을 작성했다면, docker build 명령어로 docker image를 생성 
 
 ---  
 
-#### Docker hub에 image 공유  
+#### 🔗 Docker hub에 image 공유  
 1. 먼저, ``` $docker login```명령어로 docker에 login한다.  
 2. 이미지 태그  
 ``` $ docker tag kdjun97/ubuntu kdjun97/ubuntu```  
