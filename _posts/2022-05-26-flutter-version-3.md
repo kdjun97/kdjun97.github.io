@@ -132,12 +132,12 @@ Flutter 3.0.0 Version 부터, Flutter macOS Desktop App은 `Intel-based Macs`과
 Apple의 최신 하드웨어를 지원하는 새로운 프로세서 아키텍처.  
 -> Apple이 설계한 칩 system과 processor  
 
-기존 Apple Silicon을 완벽하게 directly 지원해주는 것이 아닌, Rosetta 등을 통해 지원해주고 있었다.  
+기존에는 Apple Silicon을 완벽하게 directly 지원해주는 것이 아닌, Rosetta 등을 통해 지원해주고 있었다.  
 하지만 완벽한 지원으로 바뀌게 되며, build시 ARM 칩을 지원하는 빌드를 따로 해주고 Apple Silicon에서 기본적으로 실행이 된다. 따라서, 전반적으로 속도가 향상된다.  
 
 ![Apple Silicon](/assets/images/post_img/flutter-version-3/aplle_silicon.gif)  
 
-기본 Intel 칩과 비교하여 Silicon 칩에서 3배정도 속도가 향상된 것을 볼 수 있다.  
+위 실험을 보았을 때, 기본 Intel 칩과 비교하여 Silicon 칩에서 3배정도 속도가 향상된 것을 볼 수 있다.  
 
 > <i>Two developer journeys matter to Apple silicon: how to use those machines as your development environment and how to compile binaries in the ARM 64-bit architecture. Hence, they run natively on Apple silicon.</i>  
 > <i>You’ll no longer need to rely primarily on Rosetta translation when analyzing or compiling code for the Flutter app.</i>  
@@ -147,7 +147,7 @@ Apple의 최신 하드웨어를 지원하는 새로운 프로세서 아키텍처
 #### 🐍 `Linux application 지원`  
 
 각 플랫폼마다 Design Style이 약간씩 다르다.  
-예를 들어, Android는 Material Design을 사용, iOS는 Cupertino를 사용하는데, 이번 버전부터 Linux에 대한 Design이 추가되었다.  
+예를 들어, Android는 `Material Design`을 사용, iOS는 `Cupertino`를 사용하는데, 이번 버전부터 Linux에 대한 Design이 추가되었다.  
 Linux는 yaru를 이용하여 linux만의 design style을 표현한다.      
 Pub.dev에서 `yaru`를 패키지로 제공하고 있고, 그 밖에도 linux에 필요한 플러그인들(dbus, gsettings, bluetooth, desktop_notifications 등)을 지원해준다.   
 
