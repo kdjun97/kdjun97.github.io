@@ -81,9 +81,9 @@ dependencies:
 ```
 
 ```dart
-    // FlutterBlue flutterBlue = FlutterBlue.instance;
-    // 기존 flutter_blue의 인스턴스 선언에서 아래와 같이 변경
-    FlutterBluePlus flutterBlue = FlutterBluePlus.instance;
+// FlutterBlue flutterBlue = FlutterBlue.instance;
+// 기존 flutter_blue의 인스턴스 선언에서 아래와 같이 변경
+FlutterBluePlus flutterBlue = FlutterBluePlus.instance;
 ```
 
 굉장히 짧은 코드 변경으로 issue를 해결할 수 있었다.  
