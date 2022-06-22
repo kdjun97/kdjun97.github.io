@@ -65,7 +65,7 @@ Flutter에서 Bluetooth 연결을 도와주는 plugin인 [flutter_blue (pub.dev)
 
 기존에 사용한 plugin : `flutter_blue: ^0.8.0`  
 신규 찾은 plugin : `flutter_blue_plus: ^1.1.3` (자세한 정보는 아래 링크 참조)  
->> [flutter_blue_plus (pub.dev)](https://pub.dev/packages/flutter_blue_plus)  
+> [flutter_blue_plus (pub.dev)](https://pub.dev/packages/flutter_blue_plus)  
 
 새로 찾은 plugin을 채택한 이유는 `기존 flutter_blue의 upgrade버전`이면서 직면한 이슈에 대한 `Changelog`가 존재했기 때문.(Android Permission)   
 따라서, 기존에 사용하던 함수의 틀에서 벗어나지 않지만, Android Version Issue 문제를 해결해주었다 라고 보았고, test를 해본 결과 안드로이드 11, 12 버전에서 flutter 앱과 Bluetooth 기기가 잘 통신하는 것을 볼 수 있었다.  
