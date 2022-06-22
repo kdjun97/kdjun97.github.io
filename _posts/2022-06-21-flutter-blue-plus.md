@@ -72,6 +72,8 @@ Flutter에서 Bluetooth 연결을 도와주는 plugin인 [flutter_blue](https://
 
 아래는 `flutter_blue` 에서 `flutter_blue_plus` plugin으로 교체한 소스 코드이다.  
 
+**pubspec.yaml**  
+
 ```yaml
 # 의존성 수정
 dependencies:
@@ -80,6 +82,7 @@ dependencies:
   flutter_blue_plus: ^1.1.3
 ```
 
+**.dart**  
 ```dart
 // FlutterBlue flutterBlue = FlutterBlue.instance;
 // 기존 flutter_blue의 인스턴스 선언에서 아래와 같이 변경
