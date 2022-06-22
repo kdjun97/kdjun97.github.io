@@ -25,7 +25,7 @@ published: true
 IoT 앱을 개발하는 프로젝트였고, ESP Board와 connection을 맺고 서로 데이터를 송수신하는 기능이 필요하였다.  
 처음에는 Android 11 Version을 사용하는 태블릿 기기에서 테스팅을 진행하였다.  
 
-Flutter에서 Bluetooth 연결을 도와주는 plugin인 [flutter_blue (pub.dev)](https://pub.dev/packages/flutter_blue)를 사용하여 개발을 진행하였고, 무리 없이 connection이나 data가 잘 오가는 것을 확인했었다.  
+Flutter에서 Bluetooth 연결을 도와주는 plugin인 [flutter_blue](https://pub.dev/packages/flutter_blue)를 사용하여 개발을 진행하였고, 무리 없이 connection이나 data가 잘 오가는 것을 확인했었다.  
 하지만 2개월 뒤 태블릿 기기를 추가 구매하여 테스트를 하였을 때, 에러가 떴었다.  
 분명 잘 되던 기능들이 왜 안될까 살펴보았고, 주된 내용은 `Android Permission`에 관한 내용이였다.~~scanning 자체가 되지 않음~~  
 
@@ -65,7 +65,7 @@ Flutter에서 Bluetooth 연결을 도와주는 plugin인 [flutter_blue (pub.dev)
 
 기존에 사용한 plugin : `flutter_blue: ^0.8.0`  
 신규 찾은 plugin : `flutter_blue_plus: ^1.1.3` (자세한 정보는 아래 링크 참조)  
-> [flutter_blue_plus (pub.dev)](https://pub.dev/packages/flutter_blue_plus)  
+> [flutter_blue_plus](https://pub.dev/packages/flutter_blue_plus)  
 
 새로 찾은 plugin을 채택한 이유는 `기존 flutter_blue의 upgrade버전`이면서 직면한 이슈에 대한 `Changelog`가 존재했기 때문.(Android Permission)   
 따라서, 기존에 사용하던 함수의 틀에서 벗어나지 않지만, Android Version Issue 문제를 해결해주었다 라고 보았고, test를 해본 결과 안드로이드 11, 12 버전에서 flutter 앱과 Bluetooth 기기가 잘 통신하는 것을 볼 수 있었다.  
