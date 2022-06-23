@@ -28,8 +28,9 @@ IoT 앱을 개발하는 프로젝트였고, ESP Board와 connection을 맺고 �
 Flutter에서 Bluetooth 연결을 도와주는 plugin인 [flutter_blue](https://pub.dev/packages/flutter_blue)를 사용하여 개발을 진행하였고, 무리 없이 connection이나 data가 잘 오가는 것을 확인했었다.  
 하지만 2개월 뒤 태블릿 기기를 추가 구매하여 테스트를 하였을 때, 에러가 떴었다.  
 분명 잘 되던 기능들이 왜 안될까 살펴보았고, 주된 내용은 `Android Permission`에 관한 내용이였다.~~scanning 자체가 되지 않음~~  
-
 `이유는 Android 12 Version부터 Permission 정책이 바뀌었다는 점이었다.`  
+그렇다. 새로 산 태블릿 기기들의 버전이 12여서 에러가 뜬 것이다.  
+
 즉, Android 12 Version 미만의 기기는 문제없지만 12 버전 위의 기기를 사용하려면 이 에러를 잡아야 한다는 말씀.  
 
 ---
@@ -40,6 +41,7 @@ Flutter에서 Bluetooth 연결을 도와주는 plugin인 [flutter_blue](https://
 어떻게 해결을 할 것인가?  
 
 1. 안드로이드 11 버전 이하 기기만 사용할까?  
+1. 강제로 12 버전을 11로 다운그레이드 할까?  
 1. `AndroidManifest.xml`에 권한을 직접 주면 되는가?  
 1. `Permission` 관련 plugin을 사용하여 앱 내에서 권한을 수동으로 체크해줄 것인가?  
 1. `main.dart` 실행 시, permission을 바로 줘버려?  
