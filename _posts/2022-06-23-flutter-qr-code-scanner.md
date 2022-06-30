@@ -36,6 +36,10 @@ published: true
 
 `Unhandled Exception: PlatformException blah~blah~`  
 
+<a href="https://kdjun97.github.io/assets/images/post_img/flutter-qr-code-scanner/error.png">
+  <img src="/assets/images/post_img/flutter-qr-code-scanner/error.png" alt="error">
+</a>
+
 내용을 좀 더 보았을 땐, qr_code_scanner의 qr_view 부분이 문제가 있다는 message였다.  
 왜 안될까 하고 열심히 구글링을 하던 도중, 셋팅법이 따로 있었던가? 하는 의문점에 다시 [pub.dev](https://pub.dev/)으로 향했다.  
 
