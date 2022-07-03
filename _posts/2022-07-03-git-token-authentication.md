@@ -42,9 +42,9 @@ published: true
 1. Generate new token 클릭
 - ![generate new token](/assets/images/post_img/git-token-authentication/generate_new_token.png)     
 1. 아래와 같이 기입 후 녹색 Generate token 버튼 클릭
-  1. Note : 토큰 이름(알아보기 쉬운 것 추천)
-  1. Expiration : 토큰 만료 기한 (적절한 기간 선택)
-  1. Select Scopes : repo 전체 체크 + admin:repo_hook 전체 체크 (보통의 경우)
+  - Note : 토큰 이름(알아보기 쉬운 것 추천)
+  - Expiration : 토큰 만료 기한 (적절한 기간 선택)
+  - Select Scopes : repo 전체 체크 + admin:repo_hook 전체 체크 (보통의 경우)
 1. 토큰 기억(이 페이지를 나가면 다시는 못 보기 때문에 반드시 메모)
 - ![token](/assets/images/post_img/git-token-authentication/token.png)     
 1. Windows 검색 -> 자격 증명 관리자(제어판) 이동
