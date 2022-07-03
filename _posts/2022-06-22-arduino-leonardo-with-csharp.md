@@ -95,7 +95,7 @@ published: true
 
 ---
 
-### c# WinForm 구성 및 Serial 통신
+### 🙄 c# WinForm 구성 및 Serial 통신
 
 `Form 요소들 구상`  
 
@@ -226,7 +226,7 @@ serialPort1.Write("a");
 
 ---
 
-### Arduino IDE
+### 📎 Arduino IDE
 
 **Leonardo Board**를 사용하면 `keybaord H/W 신호 처리`가 가능하다고 하였다.  
 바로 직전의 Flow대로라면 Form에서 S/W신호를 보드에 날리는데, 이것에 대한 처리를 해주는 부분을 만들어 보자.  
