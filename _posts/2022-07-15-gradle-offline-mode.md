@@ -43,7 +43,7 @@ Build Error: `No cached version of androidx.paging:paging-runtime:3.1.1 availabl
 
 gradle쪽에 문제가 있었던 부분은 맞았고, gradle build를 offline mode로 허용하지 않아 생긴 문제였다.  
 
-나는 실제 기기를 USB 디버깅해서 테스트하였는데, 이 때 gradle의 설정이 필요한가보다.  
+나는 실제 기기를 USB 디버깅해서 테스트하였는데, 이 때 gradle의 offline 설정이 필요한가보다.(틀리다면 알려주세요!)  
 이제 아래에서 해결 과정을 정리해보겠다.  
 
 원인 : 협업을 하며 gradle이 변경되었을 때 일어난 에러.  
