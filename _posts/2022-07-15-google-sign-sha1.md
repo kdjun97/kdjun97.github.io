@@ -31,7 +31,7 @@ Error: `com.google.android.gms.common.api.ApiException: 10`
 
 정확히는 구글 로그인이 되지 않았음.  
 
-```kt
+```kotlin
 override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == GOOGLE_SIGN_IN) {
