@@ -215,4 +215,4 @@ imageController.pickedImage = (await _picker.pickImage(source: ImageSource.galle
 이번 예제는 웹에서 검색하여 찾기가 매우 힘들어 직접 포스팅을 하였다.  
 Flutter로  MySQL 서버에 이미지를 업로드하는 예제였고, 위의 코드들을 응용하면 충분히 원하는 결과를 얻을 수 있을 것이다.  
 
-비동기식 처리를 어떻게 할 지 또한 고민해야할 부분이다.  
+위 과정에서 비동기식 처리는 잘 고민하여 적용하자.  
