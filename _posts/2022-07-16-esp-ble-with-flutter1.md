@@ -121,7 +121,7 @@ Desktop보단 laptop, laptop보단 mobile기기가 휴대 및 이동이 편하�
 
 ## 🔥 앱 개발 시작
 
-> [[Arduino] ESP32 BLE + 앱 연동 기초 예제(3)](https://kdjun97.github.io/iot/arduino-ble-nrf-connect/)  
+> [참고 : [Arduino] ESP32 BLE + 앱 연동 기초 예제(3)](https://kdjun97.github.io/iot/arduino-ble-nrf-connect/)  
 
 자 이제 앱 개발을 할 차례이다.  
 위 포스트에서 `nRF Connect`앱(타인이 만든 앱)을 사용했다면, 직접 나만의 앱을 만들어보는 예제를 진행할 것이다.  
