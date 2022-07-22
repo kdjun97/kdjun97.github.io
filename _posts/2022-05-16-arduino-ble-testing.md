@@ -173,5 +173,5 @@ void loop() {
 
 ![Untitled](/assets/images/post_img/arduino-ble-testing/Untitled4.png)  
 
-⚠️ [3편에서 이어집니다](https://kdjun97.github.io/iot/arduino-ble-nrf-toolbox/)  
+⚠️ [3편에서 이어집니다](https://kdjun97.github.io/iot/arduino-ble-nrf-connect/)  
 {: .notice--info} 
