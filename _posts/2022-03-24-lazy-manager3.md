@@ -66,7 +66,7 @@ published: true
 때문에, 메모장의 기능이 필요하다.~~(그냥 내가 그렇게 정했다)~~  
 우리가 익히 아는 `notepad.exe`와 비슷하게 winform을 구성한다.  
 Winform 구성은 `MenuStrip`, `TextBox`, `StatusStrip`, `OpenFileDialog`, `SaveFileDialog`를 사용하였다.  
-![UI](/assets/images/post_img/lazy-manager3/skeleton_ui.jpg)   
+![UI](/assets/images/post_img/automation-solution/lazy-manager3/skeleton_ui.jpg)   
 
 **2.** TextBox에 입력된 스크립트를 읽는 기능 필요  
 
@@ -75,14 +75,14 @@ TextBox에 있는 내용을 parsing을 하여 키코드, 명령어로 구분함.
 ~~Parsing 코드를 짜면서 코딩테스트 문제를 푸는 느낌이 들었다~~  
 이 부분에서 정제되지 않은 모델 리스트를 가지게 된다.  
 
-![Model_List](/assets/images/post_img/lazy-manager3/read_script_complete.JPG)  
+![Model_List](/assets/images/post_img/automation-solution/lazy-manager3/read_script_complete.JPG)  
 
 **3.** Hotkey 설정  
 
 각 모델의 리스트에서 가지는 `h:` 뒤에 값(핫키 값)에 대해 key에 hook을 걸어줌.  
 hook이 걸린 후, 설정된 핫키를 누르면 아래와 같이 detect가 가능하다.  
 
-![Set Hotkey](/assets/images/post_img/lazy-manager3/set_hotkey.jpg)  
+![Set Hotkey](/assets/images/post_img/automation-solution/lazy-manager3/set_hotkey.jpg)  
 
 **4.** 각 Hotkey에 command list 설정  
  
@@ -90,7 +90,7 @@ hook이 걸린 후, 설정된 핫키를 누르면 아래와 같이 detect가 가
 핫키를 누르고난 후, q까지 명령어가 실행이 된다.  
 이렇게 명령어를 실행하기 위해, 명령어 리스트를 가져야 한다.    
 
-![Set Command](/assets/images/post_img/lazy-manager3/set_command.JPG)   
+![Set Command](/assets/images/post_img/automation-solution/lazy-manager3/set_command.JPG)   
 
 **5.** Command 처리  
 
@@ -132,7 +132,7 @@ U: Key Up
 
 이제 이 프로그램을 사용하여 설정 키를 눌렀을 때 직접 정의한 키들을 입력해보겠다.  
 
-![keybd_event](/assets/images/post_img/lazy-manager3/keybd_event.gif)  
+![keybd_event](/assets/images/post_img/automation-solution/lazy-manager3/keybd_event.gif)  
 
 💪 이러한 기능으로 사용자가 원하는 것들을 구현할 수 있다!  
 {: .notice--success}  
@@ -142,7 +142,7 @@ U: Key Up
 어떤 느낌인지는 알겠으나, `key code`에 대해 모를 수 있다.  
 스크립트 작성에 도움을 주기 위해 Virtual-Key Code UI를 만들었다!  
 이것을 보며 작성하면 된다.  
-![virtual_key_code](/assets/images/post_img/lazy-manager3/virtual_key_code.JPG)  
+![virtual_key_code](/assets/images/post_img/automation-solution/lazy-manager3/virtual_key_code.JPG)  
 
 추후, 이 키코드를 보지 않게 아래와 같이 실제 키를 dictionary에 넣을 생각이다  
 
@@ -170,7 +170,7 @@ RC: Right Click
 ex) MV(100,100),LC -> 100,100 좌표에서 Left Click을 수행.  
 
 영상을 보는 편이 이해가 더 빠를 것이다.  
-![mouse_event](/assets/images/post_img/lazy-manager3/mouse_event.gif)  
+![mouse_event](/assets/images/post_img/automation-solution/lazy-manager3/mouse_event.gif)  
 
 이 두 기능을 잘 활용하는 것 만으로도 꽤 많은 것을 할 수 있을 것이다.  
 

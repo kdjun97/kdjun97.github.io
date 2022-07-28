@@ -54,7 +54,7 @@ Key Logger를 선택한 이유는 다른 프로그램들 보다 훨씬 흥미롭
 `OS Message Queue`와 `Application Message Queue` 사이에 갈고리(hook)을 걸었다고 하여 `hooking`이라 불린다.  
 
 아래는 이해를 돕기 위한 그림이다.  
-![hooking](/assets/images/post_img/lazy-manager/hooking.JPG)  
+![hooking](/assets/images/post_img/automation-solution/lazy-manager/hooking.JPG)  
 
 Application Message Queue에 가기 전에 메시지를 가로챘기 때문에 그 메시지를 방치, 변경, 삭제가 가능하고 이는 다양하게 활용 가능하다.    
 예를 들면 `응용프로그램이 메시지를 받지 않게 할 수도 있고(block), 원하는 메시지 값을 바꿀 수도 있다!(a 입력시 b입력되게 만듦)`  
@@ -72,7 +72,7 @@ Application Message Queue에 가기 전에 메시지를 가로챘기 때문에 �
 물론, 응용프로그램에게도 메시지를 보낸다.  
 
 이해를 돕기 위해 내가 만든 Key Logger에 대한 영상을 첨부하겠다.  
-![Key_Logger](/assets/images/post_img/lazy-manager/keylogger.gif)  
+![Key_Logger](/assets/images/post_img/automation-solution/lazy-manager/keylogger.gif)  
 
 이 영상으로 `Key Logger`가 무슨 느낌인지 충분히 감이 올 것이다.  
 단순히 말 그대로 Key Logger(키 로그를 입력하는 프로그램)이다.  
@@ -94,11 +94,11 @@ GHOST gbc 보안주차에서도 다뤘던 내용이기에, 키로거를 만들�
 2. 비활성 부분은 PID나 Process Name을 이용하여 handle을 따서 SendMessage를 통해 혹은 PostMessage를 통해 메세지를 보내는 것으로 생각하고 있다.  
 3. OpenCV를 이용하여 Image를 처리하는 방식으로 ImageSearch에 대해 구현하려고 한다.  
 4. 마지막으로, 아래와 같이 키보드와 마우스 정보가 들어있는 파일을 읽어 사용자 정의 프로그램을 만들고자 한다.  
-![keybd_info](/assets/images/post_img/lazy-manager/keybd_info.PNG)  
+![keybd_info](/assets/images/post_img/automation-solution/lazy-manager/keybd_info.PNG)  
 
 parsing 하는 부분은 만들어진 상태임.  
 
-![parsing](/assets/images/post_img/lazy-manager/parsing.png)  
+![parsing](/assets/images/post_img/automation-solution/lazy-manager/parsing.png)  
 
 소스코드 : [여기](https://github.com/kdjun97/cs-file-IO)  
 

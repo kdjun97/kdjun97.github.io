@@ -56,7 +56,7 @@ DLL Injection의 교과서적인 부분.
 메모장에 내 dll을 injection시키는 것이다.  
 Injection이 성공하면 MessageBox를 띄우게 했다.  
 현재 잘 되는 것을 확인할 수 있다.  
-![injection](/assets/images/post_img/lazy-manager2/injection.gif)  
+![injection](/assets/images/post_img/automation-solution/lazy-manager2/injection.gif)  
 
 ---  
 
@@ -75,7 +75,7 @@ docker에 모든 환경들을 구축하려고 생각중이지만, 상당히 어�
 Python 3.9.2 64-bit 환경으로 실험을 하다가, hooking쪽에서 에러가 떠서,  
 Python 3.9.4 32-bit로 환경을 바꾸었다.  
 3.9.4 32-bit에서의 hooking. 이번에도 KeyLogger를 만들어보았다. 잘 작동된다.  
-![python_global_hooking](/assets/images/post_img/lazy-manager2/python_global_hooking.gif)  
+![python_global_hooking](/assets/images/post_img/automation-solution/lazy-manager2/python_global_hooking.gif)  
 
 ++시행착오 추가  
 Python 3.9.4 32-bit로 global hooking을 짰는데 잘 돌아갔지만, 64-bit에서 pyautogui나 다른 모듈들을 사용할 수 있는 것 같았다.  
