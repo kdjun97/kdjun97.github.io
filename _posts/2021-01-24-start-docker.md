@@ -34,7 +34,7 @@ ex) 이 도커를 통해 Windows에서 Ubuntu Linux를 사용할 수 있다.
 - 도커는 운영체제 자체를 가상화 시켜 사용할 수 있게 해주었다.  
 - 특징은 VMWare나 VirutalBox와 달리, 시스템 리소스를 딱 필요한 만큼만 사용하여 훨씬 가볍다는 것.  
 
-![docker_image](/assets/images/post_img/start-docker/docker_image.PNG)  
+![docker_image](/assets/images/post_img/docker/start-docker/docker_image.PNG)  
 도커는 위 사진과 같이,  
 1. Dockerfile이라는 파일에 환경, 패키지들과 각종 셋팅(?)들을 작성해주고  
 2. build를 해주어 Docker image를 생성한다.  
