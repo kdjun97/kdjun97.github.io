@@ -69,10 +69,10 @@ published: true
 **DB Schema**
 
 db 초기 설계  
-![MVC](/assets/images/post_img/car-sharing-manager/db.jpg)  
+![MVC](/assets/images/post_img/web/car-sharing-manager/db.jpg)  
 
 후에 이렇게 바뀜. (쿼리문임을 양해 바람. black_list 테이블 제거)  
-![MVC](/assets/images/post_img/car-sharing-manager/db2.JPG)  
+![MVC](/assets/images/post_img/web/car-sharing-manager/db2.JPG)  
 
 **History**
 
@@ -80,13 +80,13 @@ db 초기 설계
 
 **Paging**  
 
-![MVC](/assets/images/post_img/car-sharing-manager/page.jpg)  
+![MVC](/assets/images/post_img/web/car-sharing-manager/page.jpg)  
 
 바빠서 그냥 손으로 그렸음. 양해 부탁.  
 
 **Directory**
 
-![MVC](/assets/images/post_img/car-sharing-manager/directory.png)  
+![MVC](/assets/images/post_img/web/car-sharing-manager/directory.png)  
 
 **서버**
 

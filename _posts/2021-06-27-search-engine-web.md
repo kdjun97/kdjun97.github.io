@@ -31,7 +31,7 @@ published: true
 
 실제 프로젝트에서는, **inverted index**테이블이 따로 있었지만, 여기서는 간단한 예제를 위해 테이블을 새로 생성했다.  
 **INSERT INTO**로 그냥 넣어줬음. 테이블은 아래 참고.  
-![table](/assets/images/post_img/search-engine-web/table.PNG)  
+![table](/assets/images/post_img/web/search-engine-web/table.PNG)  
 
 **TF-IDF**를 적용한 **ranking algorithm**또한, 본 예제에서는 뺐다.  
 
