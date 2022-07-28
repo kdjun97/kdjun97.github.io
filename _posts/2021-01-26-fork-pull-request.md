@@ -30,7 +30,7 @@ fork한 저장소는 원작자와 연결되어 있다.
 
 **`fork 하는 법`**  
 
-![fork_img](/assets/images/post_img/fork-pull-request/fork.PNG)  
+![fork_img](/assets/images/post_img/git-github/fork-pull-request/fork.PNG)  
 
 1. 본인이 fork하고 싶은 레포지토리에 간다.~~(당연히 다른사람 레포지토리겠죠?..)~~  
 2. 우측 상단에 보면 위의 fork 버튼이 있다.  
@@ -51,7 +51,7 @@ pull request는 <u>원작자에게 바뀐 내용을 받아들일지 물어보는
 
 **`pull request 하는 법`**  
 
-![pull](/assets/images/post_img/fork-pull-request/pull.png)  
+![pull](/assets/images/post_img/git-github/fork-pull-request/pull.png)  
 
 1. 원작자의 레포지토리에서 fork를 했을 때,  
 2. 오타나 오류, 내용의 수정등을 행하고 push를 한다.(내 레포지토리에만 변경됨.)  

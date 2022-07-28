@@ -30,8 +30,8 @@ Github에는 얼마나 열심히 개발을 했는지 보여주는 시스템이 �
 그러던 어느 날.. ~~날이 적당한 어느 날...~~ 나는 열심히 commit을 했음에도 불구하고 심겨진 잔디가 얼마 없는 것을 확인하였다.  
 그리고 잔디들을 클릭해보며 내가 했던 기록들이 누락되었다는 것을 알게되었다.  
 
-![적용하기 전1](/assets/images/post_img/plant-grass/before_2021.png)  
-![적용하기 전2](/assets/images/post_img/plant-grass/before_2022.png)  
+![적용하기 전1](/assets/images/post_img/git-github/plant-grass/before_2021.png)  
+![적용하기 전2](/assets/images/post_img/git-github/plant-grass/before_2022.png)  
 
 위의 사진들도 복사를 하던 도중, 찍은거라 실제로는 더 적었다.  
 
@@ -54,7 +54,7 @@ Github에는 얼마나 열심히 개발을 했는지 보여주는 시스템이 �
 우선, 위의 1번 경우를 먼저 확인한다.  
 
 **1.** Github-본인 계정 Setting-Email 에서 본인 이메일을 알아낸다.  
-![이메일 확인](/assets/images/post_img/plant-grass/email.JPG)  
+![이메일 확인](/assets/images/post_img/git-github/plant-grass/email.JPG)  
 
 **2.** 작업 중인 폴더에서 git 명령어로 이메일 확인(전역으로)  
 `$ git config --global --list`  
@@ -114,8 +114,8 @@ Github에는 얼마나 열심히 개발을 했는지 보여주는 시스템이 �
 이 작업을 거치면, 이름이 동일한 repo에 fork만 해제되고 commit log가 남아있게 된다.  
 이제 commit and push로 잔디를 확인해보자!  
 
-![수정 후 2021년 커밋](/assets/images/post_img/plant-grass/after_2021.JPG)  
-![수정 후 2022년 커밋](/assets/images/post_img/plant-grass/after_2022.JPG)  
+![수정 후 2021년 커밋](/assets/images/post_img/git-github/plant-grass/after_2021.JPG)  
+![수정 후 2022년 커밋](/assets/images/post_img/git-github/plant-grass/after_2022.JPG)  
 
 교훈. 초기 셋팅을 잘 하자 + 해결법은 있다  
 끝  

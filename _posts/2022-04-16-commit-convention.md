@@ -160,7 +160,7 @@ ex) Footer에 `Fixes: #1` 이라고 작성하고 commit을 할 경우, 자동으
 
 위 커밋 컨벤션을 참고하여 기능 추가에 대한 커밋 메시지를 남겨보자.  
 우선, `$ git commit` 명령어로 커밋 템플릿에 들어가보자. 템플릿은 아래와 같이 생겼다.  
-![commit](/assets/images/post_img/commit-convention/commit.JPG)    
+![commit](/assets/images/post_img/git-github/commit-convention/commit.JPG)    
 
 위 템플릿에 공백 3줄이 우리가 채워넣을 line이다.  
 signin, signup 기능이 추가되었다고 가정해보자.  
