@@ -107,19 +107,19 @@ OS를 깔기 위해 SD 카드 역시 구매.
 ### 🍓 라즈베리파이 실행  
 
 **1.** 위에서 구운 OS가 담긴 Micro SD카드를 라즈베리파이에 삽입.  
-![sd-card](/assets/images/post_img/iot/raspberry-pi-install/sd-card.JPG)  
+![sd-card](/assets/images/post_img/iot/raspberry-pi-install/sd-card.jpg)  
 
 **2.** 카메라 모듈 연결  
 참고로 나는 카메라 연결하기가 어려웠다.  
 아래의 공식 사이트에서 영상으로 설명이 잘 되어있으니 참고 바란다.  
 [공식 사이트](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera/2)  
 
-![camera-module](/assets/images/post_img/iot/raspberry-pi-install/camera-module.JPG)  
+![camera-module](/assets/images/post_img/iot/raspberry-pi-install/camera-module.jpg)  
 
 **3.** HDMI, 키보드, 마우스 연결  
 HDMI to Micro HDMI를 구매하였다.  
 키보드와 마우스는 무선을 사용하였음.  
-![hdmi](/assets/images/post_img/iot/raspberry-pi-install/hdmi.JPG)  
+![hdmi](/assets/images/post_img/iot/raspberry-pi-install/hdmi.jpg)  
 
 **4.** 라즈베리파이 4에서는 전원 버튼이 따로 없다. 전원 포트만 연결하면 됨.  
 바로 연결해보자.  
