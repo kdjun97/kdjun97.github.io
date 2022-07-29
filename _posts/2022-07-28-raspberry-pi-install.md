@@ -145,7 +145,9 @@ HDMI to Micro HDMI를 구매하였다.
 공식적으로 Bullseye 버전부터는 카메라를 알아서 detect 해주어 따로 설정이 필요 없다고 하더라.(아래 공식 문서 참고)  
 이것은 더이상의 `PiCamera Python 라이브러리를 지원하지 않음`을 의미한다.  
 또한, `raspicam`역시 지원하지 않게 된다.  
-따라서, libcamera와 같은 표준 Linux framework를 기반으로 하는 새로운 오픈소스 카메라 스택을 사용해야 한다.  
+
+하지만 새로운 Bullseye OS는 libcamera 앱이 사전 설치가 되어 `enable the camera`같은 작업을 할 필요 없이 바로 카메라 모듈을 연결하여 사진을 찍으면 된다고 한다!  
+
 > [공식문서](https://www.raspberrypi.com/documentation/accessories/camera.html#libcamera-and-libcamera-apps)  
 > [bullseye-camera-system](https://www.raspberrypi.com/news/bullseye-camera-system/)  
 
