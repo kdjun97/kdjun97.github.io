@@ -15,7 +15,7 @@ toc_label: "Contents"
 toc_icon: "lightbulb" # https://fontawesome.com/
  
 date: 2022-07-28 10:00:00
-last_modified_at: 2022-07-28 10:00:00
+last_modified_at: 2022-07-29 10:00:00
 published: true
 
 ---  
@@ -104,7 +104,7 @@ OS를 깔기 위해 SD 카드 역시 구매.
 
 ---  
 
-### 🍓 라즈베리파이 실행  
+## 🍓 라즈베리파이 실행  
 
 **1.** 위에서 구운 OS가 담긴 Micro SD카드를 라즈베리파이에 삽입.  
 ![sd-card](/assets/images/post_img/iot/raspberry-pi-install/sd-card.jpg)  
@@ -137,14 +137,17 @@ HDMI to Micro HDMI를 구매하였다.
 
 ---  
 
-#### 📸 카메라 연결 및 사진 찍기
+## 📸 카메라 연결 및 사진 찍기
 
 위 과정을 완료하였다면, (라즈베리파이4 기준) 터미널을 킬 수 있을 것이다.(Terminal 단축키 : Ctrl + Alt + T)  
 찾아보니, 라즈베리파이에서 카메라를 사용하려면 `Preferences/Raspberry Pi Configuration/Interface`에서 Camera를 Enable 하는 등 셋팅이 더 필요하다고 언급한다.  
 
-하지만 나의 경우, 위 Configuration/Interface 에 Camera가 아예 없었다.(Enable도 불가)  
-원인을 찾던 중, 공식적으로 Bullseye 버전부터는 카메라를 알아서 detect 해주어 따로 설정이 필요 없다고 하더라.(아래 공식 문서 참고)  
+공식적으로 Bullseye 버전부터는 카메라를 알아서 detect 해주어 따로 설정이 필요 없다고 하더라.(아래 공식 문서 참고)  
+이것은 더이상의 `PiCamera Python 라이브러리를 지원하지 않음`을 의미한다.  
+또한, `raspicam`역시 지원하지 않게 된다.  
+따라서, libcamera와 같은 표준 Linux framework를 기반으로 하는 새로운 오픈소스 카메라 스택을 사용해야 한다.  
 > [공식문서](https://www.raspberrypi.com/documentation/accessories/camera.html#libcamera-and-libcamera-apps)  
+> [bullseye-camera-system](https://www.raspberrypi.com/news/bullseye-camera-system/)  
 
 그럼 따로 할 설정도 없으니 사진을 찍어보도록 하자.  
 
@@ -152,9 +155,9 @@ HDMI to Micro HDMI를 구매하였다.
 `$ libcamera-jpeg -o cam.jpg`  
 
 이제 이 카메라 기능을 사용하여 농장의 사진을 찍고 firebase에 올리는 등의 작업이 진행될 것이다.  
-`python`을 사용하여 진행할 예정이고, `libcamera` 저 함수?를 살펴볼 필요가 있어보인다.  
+`python`을 사용하여 진행할 예정이고, `libcamera`를 살펴볼 필요가 있어보인다.  
 
-🔥 본 포스팅은 직접 해보고 20분 내로 따끈따끈하게 작성한 것임.  
+🔥 본 포스팅은 직접 해보고 따끈따끈하게 작성한 것임.  
 최소한의 과정을 담고 있기 때문에, 생략된 부분이 존재할 수 있음.  
 포스팅에 틀린 내용이 있다면 알려주시면 감사하겠습니다!  
 {: .notice--warning}   
