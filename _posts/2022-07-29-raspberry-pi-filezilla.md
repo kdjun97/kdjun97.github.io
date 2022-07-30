@@ -47,7 +47,9 @@ FileZilla를 다운받았다면, 실행.
 
 그 후, 빠른 연결 클릭! 실행 화면은 아래와 같다.  
 
-![sftp](/assets/images/post_img/iot/raspberry-pi-filezilla/sftp.JPG)  
+<a href="https://kdjun97.github.io/assets/images/post_img/iot/raspberry-pi-filezilla/sftp.JPG">
+  <img src="/assets/images/post_img/iot/raspberry-pi-filezilla/sftp.JPG" alt="sftp">
+</a>
 
 이제 라즈베리파이와 로컬 pc 끼리 파일 전송이 된다!  
 로컬과 FileZilla SFTP 서버에서 파일을 `드래그 앤 드롭` 해주면 전송이 된다.  
