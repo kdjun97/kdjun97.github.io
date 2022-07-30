@@ -38,16 +38,22 @@ Rasberry Pi OS (64-bit) (Debian Bullseye)
 
 **1.** `Firebase Console`에서 자신의 프로젝트를 선택한다.  
 나는 프로젝트가 이미 있기 때문에, 기존 프로젝트를 선택!  
+
 **2.** 프로젝트 개요 -> 프로젝트 설정 -> 서비스 계정  
+
 **3.** Admin SDK 구성 스니펫 `Python 선택`, 새 비공개 키 생성  
 ![setting1](/assets/images/post_img/iot/raspberry-pi-firebase-storage/setting1.png)  
+
 **4.** 다운된 키 파일을 라즈베리파이에 옮겨야함.  
 FileZilla를 이용하자.  
 나는 Key라는 폴더에 serviceKey.json로 이름을 바꾸어 넣었다.  
 > [참고 : 라즈베리파이 Filezilla 이용](https://kdjun97.github.io/iot/raspberry-pi-filezilla/)  
+
 **5.** Firebase Storage에 폴더 생성  
 `project_id(nuru-a3203)` 기억해놓기.  
-![project_id](/assets/images/post_img/iot/raspberry-pi-firebase-storage/project_id.png)  
+<a href="https://kdjun97.github.io/assets/images/post_img/iot/raspberry-pi-firebase-storage/project_id.png">
+  <img src="/assets/images/post_img/iot/raspberry-pi-firebase-storage/project_id.png" alt="project_id">
+</a>
 
 ---  
 
@@ -55,6 +61,7 @@ FileZilla를 이용하자.
 
 **1.** Firebase Admin SDK 설치를 위해 pip install  
 `$ sudo pip3 install firebase-admin`  
+
 **2.** uuid Module 설치 (UID를 생성하기 위함)  
 `$ sudo pip3 install uuid`  
 
@@ -114,10 +121,14 @@ print("End Of File")
 ## 📸 결과
 
 `Python 코드 실행 모습`  
-![ok](/assets/images/post_img/iot/raspberry-pi-firebase-storage/ok.JPG)  
+<a href="https://kdjun97.github.io/assets/images/post_img/iot/raspberry-pi-firebase-storage/ok.JPG">
+  <img src="/assets/images/post_img/iot/raspberry-pi-firebase-storage/ok.JPG" alt="ok">
+</a>
 
 `Storage 사진`  
-![picture](/assets/images/post_img/iot/raspberry-pi-firebase-storage/picture.JPG)  
+<a href="https://kdjun97.github.io/assets/images/post_img/iot/raspberry-pi-firebase-storage/picture.JPG">
+  <img src="/assets/images/post_img/iot/raspberry-pi-firebase-storage/picture.JPG" alt="picture">
+</a>
 
 이제 `Cloud FireStore Database`에 path를 넣어주는 작업이 남았다.  
 그 부분은 다음에 다뤄보자!  
