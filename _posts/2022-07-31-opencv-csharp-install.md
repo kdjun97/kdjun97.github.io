@@ -1,5 +1,5 @@
 ---
-title: "[C# OpenCV] C# OpenCvSharp4 설치"  
+title: "[C# OpenCV] OpenCvSharp4 설치"  
 excerpt: "C# OpenCV 설치 (feat: lena.png)"
 
 categories:
@@ -42,7 +42,9 @@ published: true
 보통, 그냥 OpenCvSharp4를 찾으면 안정적인 버전이 뜸.  
 바로 설치를 누르면 됨.  
 
-![opnecvsharp](/assets/images/post_img/computer-vision/opencv-csharp-install/opencvsharp.png)  
+<a href="https://kdjun97.github.io/assets/images/post_img/computer-vision/opencv-csharp-install/opencvsharp.png">
+  <img src="/assets/images/post_img/computer-vision/opencv-csharp-install/opencvsharp.png" alt="opencvsharp">
+</a>
 
 **4.** 확인 메시지 뜨면 확인  
 
@@ -75,13 +77,16 @@ namespace OpenCV_CSharp
 Exception: **System.TypeInitialization: "OpenCvSharp Internal NativeMethods...**  
 에러를 잘 읽어보면, `DLL OpenCvSharpExtern`을 로드할 수 없다고 나온다.  
 
-![exception](/assets/images/post_img/computer-vision/opencv-csharp-install/exception.JPG)  
+<a href="https://kdjun97.github.io/assets/images/post_img/computer-vision/opencv-csharp-install/exception.JPG">
+  <img src="/assets/images/post_img/computer-vision/opencv-csharp-install/exception.JPG" alt="exception">
+</a>
 
 ---  
 
-## 🔗 OpenCvSharpExtern.dll 에러 해결
+## 🔗 DLL Load 에러 해결
 
-바로 직전의 에러는 `OpenCvSharpExtern.dll`을 프로젝트에 넣어주고 설정해주면 해결된다.  
+바로 직전의 에러는 `Load할 Dll이 없어서 나는 에러`이다.  
+즉, `OpenCvSharpExtern.dll`을 프로젝트에 넣어주고 설정해주면 해결된다.  
 그 과정을 다뤄보자.  
 
 **1.** 아래의 링크로 가자.  
@@ -116,7 +121,9 @@ Exception: **System.TypeInitialization: "OpenCvSharp Internal NativeMethods...**
 
 **7.** 솔루션 탐색기 - 추가한 dll 파일 우클릭 - 속성 `출력 디렉터리에 복사 : 항상 복사` 설정  
 
-![always_copy](/assets/images/post_img/computer-vision/opencv-csharp-install/always_copy.png)  
+<a href="https://kdjun97.github.io/assets/images/post_img/computer-vision/opencv-csharp-install/always_copy.png">
+  <img src="/assets/images/post_img/computer-vision/opencv-csharp-install/always_copy.png" alt="always_copy">
+</a>
 
 ---  
 
