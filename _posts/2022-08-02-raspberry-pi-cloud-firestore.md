@@ -114,11 +114,13 @@ ref.update({
 print("End Of File")
 ```
 
+아래는 python 코드로 Cloud Firestore에 Uri를 올리는 영상이다.  
+
 <a href="https://kdjun97.github.io/assets/images/post_img/iot/raspberry-pi-cloud-firestore/camera.gif">
   <img src="/assets/images/post_img/iot/raspberry-pi-cloud-firestore/camera.gif" alt="camera">
 </a>  
 
-실제로, kotlin 앱에서 Glide를 통해 Uri이미지를 불러오는 부분이다.  
+kotlin 앱에서 Glide를 통해 Uri이미지를 불러오는 아래 영상을 참고하자.  
 
 <a href="https://kdjun97.github.io/assets/images/post_img/iot/raspberry-pi-cloud-firestore/result.gif">
   <img src="/assets/images/post_img/iot/raspberry-pi-cloud-firestore/result.gif" alt="result_gif">
