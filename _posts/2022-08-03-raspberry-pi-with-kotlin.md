@@ -56,10 +56,10 @@ Kotlin
 </a>  
 
 전체 코드는 이때까지의 예제와 위 flow를 보면 충분히 만들 수 있을 것이다.  
+라즈베리파이에서는 `$ nohup python camera.py&` 명령으로 background에서 파이썬 코드를 작동시키자.  
 
 이렇게 만들면, 경기도에서 포항에 있는 라즈베리파이에 카메라를 찍으라고 명령할 수 있다(원거리 통신 가능)  
 실행 영상을 끝으로 포스팅을 마무리 하겠다.  
-(background로 파이썬 실행은 다음번에...)  
 
 <a href="https://kdjun97.github.io/assets/images/post_img/iot/raspberry-pi-with-kotlin/result.gif">
   <img src="/assets/images/post_img/iot/raspberry-pi-with-kotlin/result.gif" alt="result">
