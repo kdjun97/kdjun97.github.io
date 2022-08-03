@@ -1,6 +1,6 @@
 ---
-title: "[Raspberry Pi] Kotlin 앱으로 라즈베리파이 원격 제어"  
-excerpt: "앱으로 라즈베리파이 원격 제어"
+title: "[Raspberry Pi] Kotlin 앱으로 라즈베리파이 카메라 원거리 원격 제어"  
+excerpt: "앱으로 라즈베리파이 카메라 원격 제어(원거리)"
 
 categories:
   - IoT
