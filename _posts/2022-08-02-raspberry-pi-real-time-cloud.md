@@ -82,3 +82,5 @@ kotlin 앱 - `button onClick` - Cloud DB 업데이트 (field명은 대충 `isCli
 그 값의 변화에 따라 라즈베리파이에서 사진을 찍기 - 다시 isClick 업데이트  
 라즈베리파이 환경에서 background로 python 코드 계속 실행.  
 이론상 잘 작동될 것 같다.  
+
+> [다음 글 : 라즈베리파이 원격 제어 (코틀린 사용)](https://kdjun97.github.io/iot/raspberry-pi-with-kotlin/)  
