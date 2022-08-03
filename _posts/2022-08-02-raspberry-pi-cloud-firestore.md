@@ -130,8 +130,9 @@ kotlin 앱에서 Glide를 통해 Uri이미지를 불러오는 아래 영상을 �
 또한, uid를 하드코딩으로 넣었지만, 쿼리를 통해 직접 가져오는 로직을 가져와야 할 것이다(앱에서 버튼 이벤트가 호출되었을 때)  
 이에 관한 로직을 짤 것이고, 파이썬 코드를 라즈베리파이에서 background로 돌릴 예정이다.  
 
-> [라즈베리파이 Real-Time Data Listener](https://kdjun97.github.io/iot/raspberry-pi-real-time-cloud/)  
-> [라즈베리파이 With App](https://kdjun97.github.io/iot/raspberry-pi-with-kotlin/)  
+> 다음 내용은 아래 글1, 글2 순서로 보면 된다.  
+> [다음 글1 : 라즈베리파이 Real-Time Data Listener](https://kdjun97.github.io/iot/raspberry-pi-real-time-cloud/)  
+> [다음 글2 : 라즈베리파이 With App](https://kdjun97.github.io/iot/raspberry-pi-with-kotlin/)  
 
 자 이번 포스팅은 여기서까지만 하고, 아래에서는 `Cloud Firestore`에서의 DB CRUD 기능을 알아보도록 하자.  
 
