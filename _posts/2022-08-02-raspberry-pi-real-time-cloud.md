@@ -29,6 +29,8 @@ Rasberry Pi OS (64-bit) (Debian Bullseye)
 
 ## 👂 Data Listener
 
+> [이전글 참고 : 라즈베리파이4, Cloud Firestore 사용하기](https://kdjun97.github.io/iot/raspberry-pi-cloud-firestore/)  
+
 실시간으로 바뀌는 데이터에 반응하는 방법은 많을 것이다.  
 이번 프로젝트에서 내가 채택한 방법은 `Cloud Firestore`에 `Listener`를 다는것이다.  
 
