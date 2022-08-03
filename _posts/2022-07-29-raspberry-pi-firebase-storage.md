@@ -131,7 +131,7 @@ print("End Of File")
 </a>
 
 이제 `Cloud FireStore Database`에 path를 넣어주는 작업이 남았다.  
-> [라즈베리파이4, Cloud Firestore 사용하기](https://kdjun97.github.io/iot/raspberry-pi-cloud-firestore/)  
+> [다음 글 : 라즈베리파이4, Cloud Firestore 사용하기](https://kdjun97.github.io/iot/raspberry-pi-cloud-firestore/)  
 
 💡 과자를 들고 찍은 사진이다. 심령 사진이 아님을 알린다.  
 {: .notice--info}   
