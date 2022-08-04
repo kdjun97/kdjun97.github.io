@@ -31,7 +31,7 @@ Kotlin
 
 ## 📱 앱 + 라즈베리파이 컨트롤
 
-> [이전 글 참고](https://kdjun97.github.io/iot/raspberry-pi-real-time-cloud/)  
+> [이전 글 참고 : Real Time Data Listener](https://kdjun97.github.io/iot/raspberry-pi-real-time-cloud/)  
 
 이번 프로젝트에서는 `listener`를 이용하여 라즈베리파이를 컨트롤 할 계획이라 했었다.  
 앱에서 버튼 클릭을 감지하였을 때, 라즈베리파이가 사진을 찍게 만들어보자.  
