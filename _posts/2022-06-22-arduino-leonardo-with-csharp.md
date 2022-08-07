@@ -102,6 +102,7 @@ published: true
 Form에는 <u>보드 연결</u>과 <u>해제</u>를 위한 `Button`이 필요하다.  
 또한, 현재 보드의 상태를 알 수 있는 `TextBox`가 필요하고,  
 Form이 Load되었을 때, 연결 가능한 port를 보여주는 `ComboBox`가 필요할 것이다.  
+`SerialPort`도 추가 해주어야 한다.  
 이것으로 Serial 통신에 관한 Form 구성 요소들은 끝이 났고, 나머지 `Button`이나 `Text`들은 <u>S/W 신호 처리</u>를 위한 구성 요소들이다.  
 
 `완성된 Form`  
