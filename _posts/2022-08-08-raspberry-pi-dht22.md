@@ -92,6 +92,8 @@ while True:
 
 ![result](/assets/images/post_img/iot/raspberry-pi-dht22/result.JPG)  
 
+정확한 온습도는 나중에 알아보기로 하고, 일단은 온습도가 측정이 된다는 것을 확인하였음.  
+
 ---
 
 ## 🔥 Firebase에 올리기
@@ -101,8 +103,9 @@ DB에 값을 올리는 작업을 진행해보자.
 
 나중에 이 올려놓은 값을 앱에서 읽을 것이고, UI에 보여주게 될 것이다.  
 
-firebase에 접근하여, list를 update해줄 것이다.  
+나는 firebase에 접근하여, 온습도 list를 update해줄 것이다.  
 list의 max size는 24로 잡고, time_interval 간격으로 update할 계획.  
+아래 파이썬 코드를 보자.  
 
 ```python
 import Adafruit_DHT as dht
@@ -149,6 +152,7 @@ while True:
   time.sleep(time_interval)
 ```
 라즈베리파이에서 위 코드로 온습도를 측정하며 firebase에 계속 올려준다.  
+굉장히 간단한 코드이고 잘 작동하는 것을 확인하였다.  
 
 `결과`  
 <a href="https://kdjun97.github.io/assets/images/post_img/iot/raspberry-pi-dht22/cloud.JPG">
