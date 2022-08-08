@@ -1,5 +1,5 @@
 ---
-title: "[Raspberry Pi] DHT22(AM2302) 온습도 센서 이용하기"  
+title: "[Raspberry Pi] DHT-22(AM2302) 온습도 센서 이용하기"  
 excerpt: "라즈베리파이로 온습도를 측정하고 firebase에 올려보자"
 
 categories:
