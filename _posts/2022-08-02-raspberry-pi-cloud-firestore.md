@@ -217,8 +217,8 @@ ref.update({
 ```python
 ref = db.collection(u'score').document(u'테스트')
 ref.set({
-	u'남구':20,
-  u'테스트':"성공!"
+    u'남구':20,
+    u'테스트':"성공!"
 })
 ```
 
