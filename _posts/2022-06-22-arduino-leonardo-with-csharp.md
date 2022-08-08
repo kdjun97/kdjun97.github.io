@@ -23,6 +23,7 @@ published: true
 ## 😂 시작 전... 잡담....
 
 > 결과물 영상 링크 : [Youtube Link](https://www.youtube.com/shorts/wZSNG9kOfeg)  
+> 결과물 Github 링크 : [Github Link](https://github.com/kdjun97/csharp-serial-communication)  
 
 나의 블로그를 보다보면 시작 전 잡담을 하는 부분들이 상당수 존재한다.  
 그렇다고 이렇게 얘기를 하는 부분이 영양가가 없음은 아니라는 것을 알았으면 한다.  
