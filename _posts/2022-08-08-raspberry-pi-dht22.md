@@ -58,7 +58,13 @@ DHT-22(AM2302) Sensor
 
 ## 〰️ 핀 맵
 
-핀 맵은 아래와 같이 하였다.  
+**R-Pi4 > DHT-22(AM2302)**  
+
+Pin 1 (3.3V) > Pin 1 (VCC)  
+Pin 6 (GND) > Pin 3 (GND)  
+Pin 7 (GPCLK0) > Pin 2 (SIG)  
+
+아래의 사진을 참고하자.  
 
 <a href="https://kdjun97.github.io/assets/images/post_img/iot/raspberry-pi-dht22/mapping.png">
   <img src="/assets/images/post_img/iot/raspberry-pi-dht22/mapping.png" alt="pin_map">
