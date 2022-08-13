@@ -46,7 +46,7 @@ BreadBoard (400 tie-point)
 왼쪽이 센서, 오른쪽이 센서값 변환보드.  
 센서값 변환보드 아래 4핀(왼쪽부터 VCC, GND, DO, AO)  
 
-![warning](/assets/images/post_img/iot/raspberry-pi-soil-moisture1/warning.jpg)  
+![warning](/assets/images/post_img/iot/raspberry-pi-soil-moisture1/warning.JPG)  
 제조사에 따라 핀 배열이 다른 것 같다.  
 잘 보고 맵핑하자. (출처 : 위 구매처)  
 
