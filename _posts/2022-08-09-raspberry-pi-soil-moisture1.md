@@ -177,7 +177,9 @@ except KeyboardInterrupt:
 
 이 코드를 실행했을 때의 결과는 아래와 같다.  
 
-![result](/assets/images/post_img/iot/raspberry-pi-soil-moisture1/result.JPG)  
+<a href="https://kdjun97.github.io/assets/images/post_img/iot/raspberry-pi-soil-moisture1/result.JPG">
+  <img src="/assets/images/post_img/iot/raspberry-pi-soil-moisture1/result.JPG" alt="result">
+</a>  
 
 코드 실행 1분 후의 사진이다.  
 기대했던 만큼의 퍼포먼스를 보여주지 않았다.  
@@ -268,7 +270,6 @@ range가 0~100인데 오차가 +-40?
 
 ## ✏️ 정리
 
-💡 요약  
 1. 측정값은 0~1023의 range를 가짐.  
 2. 0에 가까워질수록 수분 함량 높음.  
 3. 1023에 가까워질수록 수분 함량 낮음.  
