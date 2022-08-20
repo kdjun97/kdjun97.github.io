@@ -22,6 +22,7 @@ published: true
 ## 🔧 개발환경
 
 Python 3.9.2  
+Firebase  
 Raspberry Pi 4 8GB RAM  
 Rasberry Pi OS (64-bit) (Debian Bullseye)  
 DHT-22(AM2302) Sensor  

@@ -22,6 +22,7 @@ published: true
 ## 🔧 개발환경
 
 Python 3.9.2  
+Firebase  
 Raspberry Pi 4 8GB RAM  
 카메라 모듈 V2, 8MP (RPI 8MP CAMERA BOARD)  
 Rasberry Pi OS (64-bit) (Debian Bullseye)  
