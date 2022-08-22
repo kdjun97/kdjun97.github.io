@@ -117,6 +117,9 @@ dependencies {
 }
 ```  
 
+- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1 : Coroutine을 사용하기 위한 기본적인 라이브러리  
+- org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1 : 안드로이드 런타임을 위한(스레드를 제어하기 위한) 라이브러리  
+
 ---  
 
 ### 🔭 Coroutine Scope
