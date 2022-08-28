@@ -1,5 +1,5 @@
 ---
-title: "[Kotlin] Coroutine(코루틴)으로 Firebase Listener 동기 처리하기" 
+title: "[Kotlin] Coroutine(코루틴)으로 Firebase Listener 동기 처리 시도해보기" 
 excerpt: "코루틴을 사용하여 Firebase 비동기 작업 동기로 처리하기" 
 
 categories:
@@ -136,8 +136,8 @@ suspend fun getName() : String {
 ```  
 
 인터넷 작업 혹은 DB 처리를 하기 위해 `IO Dispatcher`를 사용하였다.  
-위와 같이 해결해주면 textView.text에 원했던 값이 들어가게된다.  
-그런데, 내 생각이 틀렸음을 알게 되었다.  
+위와 같이 해결해주면 textView.text에 원했던 값이 들어가게 될 것 같았다.  
+하지만, 내 생각이 틀렸음을 알게 되었다.  
 
 ---  
 
@@ -163,9 +163,19 @@ Firebase Listener는 만든 사람이 비동기적으로 돌리기 위해 쓰레
 
 요약하자면 Firebase 작업이 Dispatcher.IO에서 돌아가는 줄 알았으나 아니었고, 이는 변경을 해야할 필요가 있어 보인다.  
 
-위의 간단한 코드를 제대로 동작하기 위해서 나는 `LiveData를 사용`하였다.  
+위의 간단한 코드를 제대로 동작하기 위해서(동기적으로) 나는 `LiveData를 사용`하였다.  
 String을 return하지 않고, <u>LiveData를 update하여 이 값을 UI에서 observing하는 방법을 사용</u>하였다.  
-혹은 이것 말고도 다른 방법이 있을 것이다.  
+
+사실 이는 동기 처리를 완벽히 하였다고 볼 순 없다.  
+유저가 보이지 않는 짧은 시간에 빈 스트링이 한 번 들어가고, LiveData가 바뀔 때, textView가 총 2번 바뀌는 것이기 때문.  
+
 나중에 리팩토링을 하고 지금은 이 방법을 사용하는 것으로 이번 이슈는 마무리하자..(다 뜯어고치기 힘들다..)  
 
-알게된 점 : 코루틴 스케줄링은 어렵다.. 그래도 하나 더 알아서 이득봤다  
+하지만 이것 하나는 알아야 한다.  
+위와 같은 코드에서 Firebase Listener이 빠지면 생각했던 Flow로 돌아간다는 점을.  
+Firebase Listener가 쓰레드처럼 작동을 하기 때문에 발생한 이슈라는 점을 말이다.  
+
+알게된 점 :  
+
+**1.** Firebase Listener는 suspend함수로 await을 걸어도, 비동기로 처리된다.  
+**2.** 나는 LiveData를 사용하여 이슈를 해결한 것 처럼(?) 하였지만, 실제로는 다른 방법이 있는지 알아봐야 한다.  
