@@ -12,7 +12,7 @@ share: true
 ---
 
 <a href="https://kdjun97.github.io/assets/images/project_img/univ/pnk_project.png">
-  <img src="/assets/images/project_img/univ/pnk_project.png" alt="pnk_project" width="100%">
+  <img src="/assets/images/project_img/univ/pnk_project.png" alt="pnk_project" width="90%">
 </a>  
 
 <img src="/assets/images/project_img/univ/project2.png" alt="project2" width="100%">
