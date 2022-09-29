@@ -1,10 +1,10 @@
 ---
-title: "Projects during my university years ('15-'20)"
-permalink: /projects/univ-projects/
+title: "Projects during my HGU university years ('16-'22)"
+permalink: /projects/hgu-univ-projects/
 layout: gallery
 
-date: 2022-01-30
-last_modified_at: 2022-01-30
+date: 2022-09-29
+last_modified_at: 2022-09-29
 
 show_date: true
 comments: true
