@@ -11,7 +11,9 @@ comments: true
 share: true
 ---
 
-<img src="/assets/images/project_img/univ/project1.png" alt="project1" width="100%">
+<a href="https://kdjun97.github.io/assets/images/project_img/univ/pnk_project.png">
+  <img src="/assets/images/project_img/univ/pnk_project.png" alt="pnk_project" width="100%">
+</a>  
 
 <img src="/assets/images/project_img/univ/project2.png" alt="project2" width="100%">
 
