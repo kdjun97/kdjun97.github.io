@@ -12,10 +12,12 @@ share: true
 ---
 
 <a href="https://kdjun97.github.io/assets/images/project_img/univ/pnk_project.png">
-  <img src="/assets/images/project_img/univ/pnk_project.png" alt="pnk_project" width="90%">
+  <img src="/assets/images/project_img/univ/pnk_project.png" alt="pnk_project" width="100%">
 </a>  
 
-<img src="/assets/images/project_img/univ/project2.png" alt="project2" width="100%">
+<a href="https://kdjun97.github.io/assets/images/project_img/univ/lazy_project.png">
+  <img src="/assets/images/project_img/univ/lazy_project.png" alt="lazy_project" width="100%">
+</a>  
 
 <img src="/assets/images/project_img/univ/project3.png" alt="project3" width="100%">
 
