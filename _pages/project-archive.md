@@ -6,7 +6,7 @@ permalink: /projects/
 #   - excerpt: ' '
 
 feature_row:
-  - image_path: /assets/images/project_img/univ/project_univ.png
+  - image_path: /assets/images/project_img/univ/hgu.JPG
     title: "Projects during my HGU university years (‘16-‘22)"
     url: /projects/hgu-univ-projects/
 ---
