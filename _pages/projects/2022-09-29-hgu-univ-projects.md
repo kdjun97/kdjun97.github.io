@@ -23,8 +23,14 @@ share: true
   <img src="/assets/images/project_img/univ/hem_labeling_web_project.png" alt="hem_labeling_web_project" width="100%">
 </a>  
 
-<img src="/assets/images/project_img/univ/project4.png" alt="project4" width="100%">
+<a href="https://kdjun97.github.io/assets/images/project_img/univ/hem_text_recognition_project.png">
+  <img src="/assets/images/project_img/univ/hem_text_recognition_project.png" alt="hem_text_recognition_project" width="100%">
+</a>  
 
-<img src="/assets/images/project_img/univ/project5.png" alt="project5" width="100%">
+<a href="https://kdjun97.github.io/assets/images/project_img/univ/tci_me_project.png">
+  <img src="/assets/images/project_img/univ/tci_me_project.png" alt="tci_me_project" width="100%">
+</a>  
 
-<img src="/assets/images/project_img/univ/project6.png" alt="project6" width="100%">
+<a href="https://kdjun97.github.io/assets/images/project_img/univ/hem_text_recognition_project.png">
+  <img src="/assets/images/project_img/univ/hem_text_recognition_project.png" alt="hem_text_recognition_project" width="100%">
+</a>  
