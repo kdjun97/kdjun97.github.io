@@ -31,6 +31,6 @@ share: true
   <img src="/assets/images/project_img/univ/tci_me_project.png" alt="tci_me_project" width="100%">
 </a>  
 
-<a href="https://kdjun97.github.io/assets/images/project_img/univ/hem_text_recognition_project.png">
-  <img src="/assets/images/project_img/univ/hem_text_recognition_project.png" alt="hem_text_recognition_project" width="100%">
+<a href="https://kdjun97.github.io/assets/images/project_img/univ/liar_project.png">
+  <img src="/assets/images/project_img/univ/liar_project.png" alt="liar_project" width="100%">
 </a>  
