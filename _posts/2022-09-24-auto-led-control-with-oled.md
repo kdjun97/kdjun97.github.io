@@ -32,6 +32,7 @@ Connector Adapter : USB_A type Adapter(C415)
 
 [작동 영상 : Youtube](https://youtu.be/c-hRML66dDU)  
 [Github Link](https://github.com/kdjun97/iot-led-control-with-oled)  
+[회로 재설계(점퍼 선 재배열)](https://kdjun97.github.io/iot/auto-led-circuit-design/)  
 
 ---  
 
