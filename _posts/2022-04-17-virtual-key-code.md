@@ -31,6 +31,7 @@ Key  |  Value | Description
 --------------|-------------------------
 `backspace`   | 0x08 | 백스페이스
 `Tab`         | 0x09 | 탭
+`Enter`       | 0x0D | 엔터  
 `Alt`         | 0x12 | Alt키
 `Caps Lock`   | 0x14 | Caps Lock(대소문자)
 `한/영`       | 0x15 | 한/영키
