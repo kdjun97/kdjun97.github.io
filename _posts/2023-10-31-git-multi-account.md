@@ -36,7 +36,7 @@ published: true
 
 # 🔧 Setting  
 
-> ![여기 참고하였음](https://steemit.com/hive-137029/@anpigon/20220605t141226727z)  
+> [여기 참고하였음](https://steemit.com/hive-137029/@anpigon/20220605t141226727z)  
 
 우선, 원리는 `개인용 폴더`, `회사용 폴더` 두 폴더(하위폴더 포함)를 분리하여, 각각 다른 git 셋팅을 적용시켜주는 원리이다.  
 
