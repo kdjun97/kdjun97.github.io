@@ -49,3 +49,8 @@
 2. _pages/categories/ -> markdown file 추가  
 
 </details>  
+
+TODO :  
+
+1. 각 카테고리 pagination 
+2. swift category 생성  
