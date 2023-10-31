@@ -12,7 +12,7 @@
     {% for nav in navigation %}
       <li>
         {% if nav.url %}
-              <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title">{{ nav.title }}</span></a>
+              <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title">{{ nav.title }}({{ size }})</span></a>
         {% else %}
           <!-- title -->
               <span class="nav__sub-title">{{ nav.title }}</span>
