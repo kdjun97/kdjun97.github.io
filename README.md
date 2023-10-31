@@ -35,5 +35,17 @@
 ├ `Kotlin`  
 ├ `Linux`  
 ├ `Python`  
+├ `Swift`  
 ├ `Web`  
 └ `Etc`  
+
+### Helper  
+
+<details>
+<summary>Open/Close</summary><br>
+
+`카테고리 추가`  
+1. _data/navigation.yml -> categories에 추가  
+2. _pages/categories/ -> markdown file 추가  
+
+</details>  
