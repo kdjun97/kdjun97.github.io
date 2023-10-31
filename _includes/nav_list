@@ -12,11 +12,11 @@
     {% for nav in navigation %}
       <li>
         {% if nav.url %}
-              <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title">{{ nav.title }}({{% for category in site.categories %}
-                {% if category[0] == nav.title %}
-                  ({{ category | last | size }})
-                {% endif %}
-              {% endfor %}})</span></a>
+          {% for category in site.categories %}
+            {% if category[0] == nav.title %}
+              <a href="{{ nav.url | relative_url }}"><span class="nav__sub-title">{{ nav.title }}({{ category | last | size }})</span></a>
+            {% endif %}
+          {% endfor %}
 
         {% else %}
           <!-- title -->
