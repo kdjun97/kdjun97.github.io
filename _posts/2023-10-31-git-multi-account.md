@@ -172,4 +172,13 @@ Key에 아까 복사했던 ssh 키를 붙여넣고 Add SSH key 녹색 버튼을 
 
 이제 다시 terminal로 돌아와서, 위의 4번 명렁어로 clone하면 성공!  
 
+만약 여기까지 했을 때, 아래와 같은 에러가 나온다면, error 메시지를 잘 본다면 해결 가능할 것이다.  
+path만 제대로 설정해주면 된다!  
+mv 명령어를 이용하여 ssh 키 path를 옮겨주기만 하면 성공!  
+{: .notice--warning}  
+
+<a href="https://kdjun97.github.io/assets/images/post_img/git-github/git-multi-account/error.png">
+  <img src="/assets/images/post_img/git-github/git-multi-account/error.png" alt="error">
+</a>  
+
 이제 개인 폴더와 회사 폴더를 나눠서 git 작업을 하면 된다!  
