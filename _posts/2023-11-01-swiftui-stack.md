@@ -316,7 +316,7 @@ struct ContentView: View {
 
 ![zstack-zindex](/assets/images/post_img/swift/swiftui-stack/zstack-zindex.png)   
 
-원래의 ZStack이었다면, 쌓은 순서대로 보이겠지만, zIndex를 사용하여 우선순위를 정해주었고, 우선순위가 높은 View가 최상단에 배치된다.  
+원래의 ZStack이었다면, 쌓은 순서대로 보이겠지만, zIndex를 사용하여 우선순위를 정해주었고, 우선순위가 높은(숫자가 높은) View가 최상단에 배치된다.  
 
 ## 📖 정리 
 
