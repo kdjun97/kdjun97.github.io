@@ -21,6 +21,9 @@ published: true
 
 # 🪆 Stack 삼총사
 
+들어가기에 앞서, 오랜만의 포스팅이라 사진이 엄청 크게 나왔다는 걸 몰랐다.  
+{: .notice--info}  
+
 [Apple Developer](https://developer.apple.com/documentation/swiftui/building-layouts-with-stack-views)  
 
 ```swift  
@@ -241,7 +244,7 @@ struct ContentView: View {
         ZStack(alignment: .topLeading) {
             Text("DongjunDongjunDongjun").frame(width: 300).background(.purple)
             Text("Jumy.\nJumy\nJumy\nJumy").frame(height: 100).background(.green)
-            Text("short").frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/).background(.blue)
+            Text("short").frame(width: 100).background(.blue)
         }.border(.red)
     }
 }
@@ -249,10 +252,71 @@ struct ContentView: View {
 
 `alignment: .topLeading` : 왼쪽상단  
 
+![zstack-topleading](/assets/images/post_img/swift/swiftui-stack/zstack-topleading.png)   
 
+`alignment: .top` : 위쪽  
 
-TODO : ZStack alignment 정리
-TODO : zIndex  
+![zstack-top](/assets/images/post_img/swift/swiftui-stack/zstack-top.png)   
+
+`alignment: .topTrailing` : 오른쪽상단    
+
+![zstack-topTrailing](/assets/images/post_img/swift/swiftui-stack/zstack-toptrailing.png)   
+
+`alignment: .leading` : 왼쪽  
+
+![zstack-leading](/assets/images/post_img/swift/swiftui-stack/zstack-leading.png)   
+
+`alignment: .center` : 가운데  
+
+![zstack-center](/assets/images/post_img/swift/swiftui-stack/zstack-center.png)   
+
+`alignment: .trailing` : 오른쪽     
+
+![zstack-trailing](/assets/images/post_img/swift/swiftui-stack/zstack-trailing.png)   
+
+`alignment: .bottomLeading` : 왼쪽아래  
+
+![zstack-bottomleading](/assets/images/post_img/swift/swiftui-stack/zstack-bottomleading.png)   
+
+`alignment: .bottom` : 아래  
+
+![zstack-bottom](/assets/images/post_img/swift/swiftui-stack/zstack-bottom.png)   
+
+`alignment: .bottomTrailing` : 오른쪽아래  
+
+![zstack-bottomtrailing](/assets/images/post_img/swift/swiftui-stack/zstack-bottomtrailing.png)   
+
+9개가 끝이 났다.  
+ZStack 역시 안에 있는 View들 중 가장 큰 것의 width, height 크기가 적용된다.  
+alignment 중에 TextBaseline에 따라 정렬되는 옵션도 있었다.  
+
+`alignment: .trailingFirstBaseline` : trailng을 하는데, 텍스트의 첫번째줄이 베이스 라인이 됨    
+
+![zstack-trailingFirstBaseline](/assets/images/post_img/swift/swiftui-stack/zstack-trailingFirstBaseline.png)   
+
+이런 느낌이고, 때에 맞게 잘 사용할 수 있을 것 같다.  
+
+`zIndex`  
+
+ZStack과 함께 쓸 수 있는 zIndex는 각 View의 modifier로 달아줄 수 있고, zIndex(num)의 숫자가 클수록 최상단에 배치된다.  
+예제를 통해서 알아보자.  
+
+```swift  
+struct ContentView: View {
+    var body: some View {
+        ZStack {
+            Text("123123111").frame(width: 250).background(.brown).zIndex(2)
+            Text("Dongjun\nDongjun\nDongjun").frame(width: 300).background(.purple).zIndex(1)
+            Text("Jumy.\nJumy\nJumy\nJumy1111111").frame(height: 100).background(.green)
+            Text("short\n111").frame(height: 350).background(.blue)
+        }.border(.red)
+    }
+}
+```  
+
+![zstack-zindex](/assets/images/post_img/swift/swiftui-stack/zstack-zindex.png)   
+
+원래의 ZStack이었다면, 쌓은 순서대로 보이겠지만, zIndex를 사용하여 우선순위를 정해주었고, 우선순위가 높은 View가 최상단에 배치된다.  
 
 ## 📖 정리 
 
@@ -262,4 +326,4 @@ ZStack에는 spacing이 없고, HStack, VStack에는 spacing을 설정할 수 �
 ![apple-developer](/assets/images/post_img/swift/swiftui-stack/apple-developer.png)   
 
 그림과 같이 ZStack은 `위`로 쌓이고, HStack은 `수평`, VStack은 `수직`으로 쌓인다.  
-
+zIndex를 활용하여 ZStack에서 최상단에 쌓이는 순위를 매겨줄 수 있다!
