@@ -19,7 +19,7 @@ last_modified_at: 2023-11-04 10:00:00
 published: true
 ---  
 
-# ❓ ZSTack vs overlay 
+# 😀 ZSTack vs overlay 
 
 ZStack은 앞선 포스팅에서 위로 겹겹이 쌓아주는 View라고 하였다.  
 > [SwiftUI Stack 삼총사](https://kdjun97.github.io/swift/swiftui-stack/)  
