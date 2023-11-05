@@ -21,7 +21,7 @@ published: true
 
 # 😀 ZSTack vs overlay 
 
-ZStack은 앞선 포스팅에서 위로 겹겹이 쌓아주는 View라고 하였다.  
+ZStack은 앞선 포스팅에서 위로(앞으로) 겹겹이 쌓아주는 View라고 하였다.  
 > [SwiftUI Stack 삼총사](https://kdjun97.github.io/swift/swiftui-stack/)  
 
 overlay도 비슷한 역할을 하지만 사실 둘은 조금 다르다.  
@@ -108,10 +108,10 @@ var body: some View {
 # 🔙 background
 
 우리는 ZStack, zIndex, overlay까지 알아보았다.~~(이 전 포스팅까지 봤다면 말이지)~~  
-ZStack과 overlay는 위쪽으로 layer를 쌓아주는 효과가 있었지만, 반대의 역할을 하는 친구가 있다.  
+ZStack과 overlay는 위쪽으로(앞쪽으로) layer를 쌓아주는 효과가 있었지만, 반대의 역할을 하는 친구가 있다.  
 눈치챘겠지만 그것이 `.background modifier`이다.  
 
-`.background`는 아래쪽으로 layer를 쌓아준다.  
+`.background`는 아래쪽으로(뒤로) layer를 쌓아준다.  
 
 이것 역시 실험을 통해서 알아보자.  
 위 예제와 동일한 Rectangle 하나, 그리고 background를 사용한 것 하나, 마지막으로 offset을 이용하여 정말 뒤에 가려져있는지 검증하는 View 총 3개를 그려보자.  
@@ -150,10 +150,12 @@ var body: some View {
 
 ![background-test](/assets/images/post_img/swift/swift-zstack-overlay-background/background-test.png)   
 
+위 실험으로 `.background`를 사용하면 아래(뒤쪽)으로 layer가 쌓인다는것을 알게 되었다.  
+
 # 📝 Summry  
 
-`ZStack`: 자식 뷰들에 대해 `독립적`, `위`로 layer를 쌓아주는 역할  
-`overlay`: 부모 뷰에 `종속적`, 마찬가지로 `위`로 layer를 쌓아주는 역할  
-`background`: 부모 뷰에 종속적, `아래로` layer를 쌓아주는 역할   
+`ZStack`: 자식 뷰들에 대해 `독립적`, `위(앞)`로 layer를 쌓아주는 역할  
+`overlay`: 부모 뷰에 `종속적`, 마찬가지로 `위(앞)`로 layer를 쌓아주는 역할  
+`background`: 부모 뷰에 종속적, `아래로(뒤)`로 layer를 쌓아주는 역할   
 
 이 점을 잘 알고 개발을 하면 좋을 것 같아서 포스팅해봤다.~~(사실 TabView 만들다가 정리한 것임)~~  
