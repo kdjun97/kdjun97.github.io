@@ -66,7 +66,7 @@ var body: some View {
 단순하게 size를 정해준 사각형과 밑에 Bottom TabView를 간이로 구현한 View이다.  
 실행 결과는 아래와 같다.  
 
-![zstack-test](/assets/images/post_img/swift/swift-zstack-overlay-background/zstack-test.png)   
+![zstack-test](/assets/images/post_img/swift/swiftui-zstack-overlay-background/zstack-test.png)   
 
 두 결과 모두 같아보인다.  
 그렇다면 사용법만 다르고 정말 100% 똑같은 것일까?  
@@ -96,7 +96,7 @@ var body: some View {
 }
 ```
 
-![zstack-test2](/assets/images/post_img/swift/swift-zstack-overlay-background/zstack-test2.png)   
+![zstack-test2](/assets/images/post_img/swift/swiftui-zstack-overlay-background/zstack-test2.png)   
 
 일단 이 그림을 보자마자 차이점이 있다는 것은 알게 되었을 것이다.  
 
@@ -148,7 +148,7 @@ var body: some View {
 }
 ```  
 
-![background-test](/assets/images/post_img/swift/swift-zstack-overlay-background/background-test.png)   
+![background-test](/assets/images/post_img/swift/swiftui-zstack-overlay-background/background-test.png)   
 
 위 실험으로 `.background`를 사용하면 아래(뒤쪽)으로 layer가 쌓인다는것을 알게 되었다.  
 
