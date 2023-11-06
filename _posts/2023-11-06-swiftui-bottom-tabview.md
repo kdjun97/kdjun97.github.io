@@ -21,6 +21,8 @@ published: true
 
 # 🧭 Bottom TabView
 
+> [Github Link](https://github.com/kdjun97/swiftui-bottom-tabview)  
+
 다수의 앱에 TabView가 존재한다.  
 상단에 위치할 수도있고, 하단에 위치할 수도 있다.  
 Flutter에서는 이를 `NavigationBar`라고 하고, swift에서는 `TabView`로 구현이 가능하다.  
