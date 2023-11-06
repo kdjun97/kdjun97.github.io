@@ -23,7 +23,7 @@ published: true
 
 다수의 앱에 TabView가 존재한다.  
 상단에 위치할 수도있고, 하단에 위치할 수도 있다.  
-Flutter에서는 이를 `BottomNavigationBar`라고 하고, swift에서는 `TabView`로 구현이 가능하다.  
+Flutter에서는 이를 `NavigationBar`라고 하고, swift에서는 `TabView`로 구현이 가능하다.  
 
 앞서 포스팅에서 다뤘던 ZStack, HStack, VStack과 overlay를 이용하여 만든 BottomTabView이다.  
 
@@ -67,3 +67,4 @@ ZStack {
 실행 영상은 다음과 같다.  
 
 ![bottom-tabview](/assets/images/post_img/swift/swiftui-bottom-tabview/bottom-tabview.gif)   
+
