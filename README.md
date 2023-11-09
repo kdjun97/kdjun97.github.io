@@ -21,6 +21,16 @@
 
 [Ver 2.0 - choiiis' blog theme!]  
 
+[Ver 2.1 - Custom Jumy Blog] . 
+
+<details>
+<summary>Open/Close</summary><br>
+
+- 검색 기능 추가  
+- Side Menu에 Post 갯수 표시
+
+</details>
+
 <br>
 
 > 🌴 **목차**
