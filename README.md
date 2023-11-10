@@ -63,4 +63,3 @@
 TODO :  
 
 1. 각 카테고리 pagination 
-2. swift category 생성  
