@@ -29,8 +29,6 @@ categories:
     url: /categories/computer-vision/
   - title: "Docker"
     url: /categories/docker/
-  - title: "Software Architecture"
-    url: /categories/software-architecture/
   - title: "Flutter"
     url: /categories/flutter/
   - title: "Git/Github"
@@ -43,6 +41,8 @@ categories:
     url: /categories/linux/
   - title: "Python"
     url: /categories/python/
+  - title: "Software Architecture"
+    url: /categories/software-architecture/
   - title: "Swift"
     url: /categories/swift/
   - title: "Web"
