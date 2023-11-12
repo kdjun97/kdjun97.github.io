@@ -29,6 +29,8 @@ categories:
     url: /categories/computer-vision/
   - title: "Docker"
     url: /categories/docker/
+  - title: "Software Architecture"
+    url: /categories/software-architecture/
   - title: "Flutter"
     url: /categories/flutter/
   - title: "Git/Github"
