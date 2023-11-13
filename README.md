@@ -63,4 +63,5 @@
 
 TODO :  
 
-1. 각 카테고리 pagination 
+1. 각 카테고리 pagination  
+2. MVI 패턴 포스팅
