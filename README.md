@@ -23,7 +23,7 @@
 
 ice bear -> 해당 블로그로 이전  
 
-[Ver 2.1 - Custom Jumy Blog] . 
+[Ver 2.1 - Custom Jumy Blog]  
 
 <details>
 <summary>Open/Close</summary><br>
