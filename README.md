@@ -21,11 +21,14 @@
 
 [Ver 2.0 - choiiis' blog theme!]  
 
+ice bear -> 해당 블로그로 이전  
+
 [Ver 2.1 - Custom Jumy Blog] . 
 
 <details>
 <summary>Open/Close</summary><br>
 
+- 커스터마이징 진행중
 - 검색 기능 추가  
 - Side Menu에 Post 갯수 표시
 
