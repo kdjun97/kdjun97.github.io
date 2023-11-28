@@ -278,5 +278,7 @@ defaults:
       comments: true
       # share: true
       related: true
+      toc_ads: true
+      toc_sticky: true
       sidebar:
         nav: "categories"
