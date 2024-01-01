@@ -52,7 +52,7 @@ published: true
 //  ___PACKAGENAME___
 //
 //  Created by 김동준 on ___DATE___
-//  Copyright © ___YEAR___ QCells. All rights reserved.
+//  Copyright © ___YEAR___ Company. All rights reserved.
 //</string>
 </dict>
 </plist>
