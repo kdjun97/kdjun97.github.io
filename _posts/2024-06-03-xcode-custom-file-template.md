@@ -78,7 +78,7 @@ Empty Template이 잘 생성된 것을 확인하였으니, 이제 TCA Template�
 file name 수정  
 
 ```
-Empty File.xctemplate -> TCA File.xctemplate  
+Empty File.xctemplate -> TCA Template.xctemplate  
 TemplateIcon은 적절하게 교체 (여기선 그냥 사용)  
 ```  
 
