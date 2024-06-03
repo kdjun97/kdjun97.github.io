@@ -43,7 +43,7 @@ Xcode에서 New File로 .swift 파일을 생성할 때 이러한 화면을 많�
 
 이 화면에서 Swift File을 누르면 Hello World 코드가 자동으로 적힌 채로 파일이 하나 생성될 것이다.  
 이 모든 작업은 **File Template** 때문에 가능하다.  
-그렇다면 이제 TCA File Template를 만들면 위에서 불편했던 작업을 자동화시킬 수 있을 것이다!  
+아래에서 TCA File Template을 만드는 방법을 알아보고 위의 불편한 점을 해소해보도록 하자.  
 
 # 🤓 Make File Template
 
@@ -72,3 +72,143 @@ mkdir TCA\ Templates
 # 💱 Change Empty Template
 
 Empty Template이 잘 생성된 것을 확인하였으니, 이제 TCA Template으로 수정할 차례.  
+
+file name 수정  
+
+```
+Empty File.xctemplate -> TCA File.xctemplate  
+TemplateIcon은 적절하게 교체 (여기선 그냥 사용)  
+```  
+
+# 😷 Edit TemplateInfo.plist  
+
+- MainTemplateFile 필드 제거  
+- Options dictionary 추가  
+- 아래와 같이 수정  
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SupportsSwiftPackage</key>
+	<true/>
+	<key>Description</key>
+	<string>Make TCA Template</string>
+	<key>Summary</key>
+	<string>Make TCA Template</string>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>DefaultCompletionName</key>
+	<string>File</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>NotPersisted</key>
+			<string>true</string>
+			<key>Type</key>
+			<string>text</string>
+			<key>Description</key>
+			<string>Enter feature name</string>
+			<key>Name</key>
+			<string>Feature name:</string>
+			<key>Required</key>
+			<string>true</string>
+		</dict>
+	</array>
+</dict>
+</plist>
+```
+
+![info-plist-options](/assets/images/post_img/xcode/xcode-custom-file-template/info_plist_options.png)   
+
+🔥 options field  
+Identifier : 템플릿 파일에서 사용되는 변수 id
+Required : 필수값 여부
+Name : Xcode에서 출력될 label text
+Description : 상세 설명 (label text 위에 커서를 올리면 화면에 출력됨)
+Type : 사용자 입력값 타입 (ex. string, checkbox, class 등)
+NotPersisted : 이전에 입력한 값 유지할지 여부
+{: .notice--warning}  
+
+# 🤥 Add TCA View File
+
+기존 파일 삭제 : ___FILENAME___  
+새 파일 생성 : ___FILEBASENAME___View.swift  
+
+해당 ___FILEBASENAME___View.swift 파일에는 TCA View 내용을 기입.  
+
+```   
+// ___FILEHEADER___
+
+import SwiftUI
+import ComposableArchitecture
+
+public struct ___VARIABLE_productName___View: View {
+    let store: StoreOf<___VARIABLE_productName___Feature>
+    @ObservedObject var viewStore: ViewStoreOf<___VARIABLE_productName___Feature>
+
+    public init(store: StoreOf<___VARIABLE_productName___Feature>) {
+        self.store = store
+        self.viewStore = ViewStore(store, observe: { $0 })
+    }
+    
+    public var body: some View {
+        ___VARIABLE_productName___Body(viewStore: viewStore)
+        .onAppear {
+            viewStore.send(.onAppear)
+        }
+    }
+}
+
+private struct ___VARIABLE_productName___Body: View {
+    @ObservedObject private var viewStore: ViewStoreOf<___VARIABLE_productName___Feature>
+    
+    fileprivate init(viewStore: ViewStoreOf<___VARIABLE_productName___Feature>) {
+        self.viewStore = viewStore
+    }
+    
+    fileprivate var body: some View {
+        ZStack {
+            Text("___VARIABLE_productName___ View!!!")
+        }
+    }
+}
+```  
+
+# 🤥 Add TCA Feature File
+
+새 파일 생성 : ___FILEBASENAME___Feature.swift  
+
+해당 ___FILEBASENAME___Feature.swift 파일에는 TCA Feature 내용을 기입.  
+
+```   
+// ___FILEHEADER___
+
+@Reducer
+public struct ___VARIABLE_productName___Feature {
+    public init() {}
+
+    public struct State: Equatable {
+        public init() {}
+    }
+
+    public enum Action {
+        case onAppear
+    }
+
+    public var body: some ReducerOf<___VARIABLE_productName___Feature> {
+        Reduce { _, action in
+            switch action {
+            case .onAppear:
+                break
+            }
+            return .none
+        }
+    }
+}
+```  
