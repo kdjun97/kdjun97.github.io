@@ -3,11 +3,11 @@ title: "[Xcode] IDETemplateMacros.plist로 파일 헤더 주석 설정해보기"
 excerpt: "파일 생성시 자동으로 파일 헤더에 주석 적용하기"
 
 categories:
-  - Etc
+  - Xcode 
 tags:
   - [Xcode]
 
-permalink: /etc/xcode-template-macro/
+permalink: /xcode/xcode-template-macro/
 
 toc: true
 toc_sticky: true
