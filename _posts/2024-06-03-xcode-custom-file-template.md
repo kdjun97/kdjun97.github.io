@@ -139,10 +139,11 @@ NotPersisted : 이전에 입력한 값 유지할지 여부
 
 # 🤥 Add TCA View File
 
+```  
 기존 파일 삭제 : ___FILENAME___  
 새 파일 생성 : ___FILEBASENAME___View.swift  
-
-해당 ___FILEBASENAME___View.swift 파일에는 TCA View 내용을 기입.  
+생성한 ___FILEBASENAME___View.swift 파일에는 TCA View 내용을 기입.  
+```  
 
 ```   
 // ___FILEHEADER___
@@ -184,9 +185,10 @@ private struct ___VARIABLE_productName___Body: View {
 
 # 🤥 Add TCA Feature File
 
+```  
 새 파일 생성 : ___FILEBASENAME___Feature.swift  
-
-해당 ___FILEBASENAME___Feature.swift 파일에는 TCA Feature 내용을 기입.  
+생성한 ___FILEBASENAME___Feature.swift 파일에는 TCA Feature 내용을 기입.  
+```  
 
 ```   
 // ___FILEHEADER___
