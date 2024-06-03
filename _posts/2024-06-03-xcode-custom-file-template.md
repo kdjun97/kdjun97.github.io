@@ -129,12 +129,12 @@ TemplateIcon은 적절하게 교체 (여기선 그냥 사용)
 ![info-plist-options](/assets/images/post_img/xcode/xcode-custom-file-template/info_plist_options.png)   
 
 🔥 options field  
-Identifier : 템플릿 파일에서 사용되는 변수 id
-Required : 필수값 여부
-Name : Xcode에서 출력될 label text
-Description : 상세 설명 (label text 위에 커서를 올리면 화면에 출력됨)
-Type : 사용자 입력값 타입 (ex. string, checkbox, class 등)
-NotPersisted : 이전에 입력한 값 유지할지 여부
+Identifier : 템플릿 파일에서 사용되는 변수 id  
+Required : 필수값 여부  
+Name : Xcode에서 출력될 label text  
+Description : 상세 설명 (label text 위에 커서를 올리면 화면에 출력됨)  
+Type : 사용자 입력값 타입 (ex. string, checkbox, class 등)  
+NotPersisted : 이전에 입력한 값 유지할지 여부  
 {: .notice--warning}  
 
 # 🤥 Add TCA View File
