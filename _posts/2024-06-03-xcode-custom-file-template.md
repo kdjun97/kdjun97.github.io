@@ -82,6 +82,8 @@ Empty File.xctemplate -> TCA Template.xctemplate
 TemplateIcon은 적절하게 교체 (여기선 그냥 사용)  
 ```  
 
+![tca-template_file_name](/assets/images/post_img/xcode/xcode-custom-file-template/tca_template_filename.png)   
+
 # 😷 Edit TemplateInfo.plist  
 
 - MainTemplateFile 필드 제거  
