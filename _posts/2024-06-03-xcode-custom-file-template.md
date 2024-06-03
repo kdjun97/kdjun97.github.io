@@ -90,7 +90,7 @@ TemplateIcon은 적절하게 교체 (여기선 그냥 사용)
 - Options dictionary 추가  
 - 아래와 같이 수정  
 
-```
+```plist  
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -147,7 +147,7 @@ NotPersisted : 이전에 입력한 값 유지할지 여부
 생성한 ___FILEBASENAME___View.swift 파일에는 TCA View 내용을 기입.  
 ```  
 
-```   
+```swift  
 // ___FILEHEADER___
 
 import SwiftUI
@@ -192,7 +192,7 @@ private struct ___VARIABLE_productName___Body: View {
 생성한 ___FILEBASENAME___Feature.swift 파일에는 TCA Feature 내용을 기입.  
 ```  
 
-```   
+```swift
 // ___FILEHEADER___
 
 @Reducer
