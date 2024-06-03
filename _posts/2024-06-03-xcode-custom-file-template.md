@@ -19,6 +19,8 @@ last_modified_at: 2024-06-03 10:00:00
 published: true
 ---  
 
+[본 포스팅은 해당 블로그 글을 많이 참고하였음.](https://phillip5094.tistory.com/126)  
+
 # 🗿 Boilerplate code
 
 TCA를 이용해서 Proejct를 구성하다 불편한 점이 생겼다.  
