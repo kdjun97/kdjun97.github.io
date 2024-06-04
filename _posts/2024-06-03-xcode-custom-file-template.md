@@ -123,6 +123,22 @@ TemplateIcon은 적절하게 교체 (나는 마땅한게 없어 그냥 사용했
 			<key>Required</key>
 			<string>true</string>
 		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>TCAFeature</string>
+			<key>NotPersisted</key>
+			<string>true</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Description</key>
+			<string>Include TCA Feature</string>
+			<key>Name</key>
+			<string>Include TCA Feature</string>
+			<key>Required</key>
+			<string>true</string>
+			<key>Default</key>
+			<string>true</string>
+		</dict>
 	</array>
 </dict>
 </plist>
@@ -139,12 +155,23 @@ Type : 사용자 입력값 타입 (ex. string, checkbox, class 등)
 NotPersisted : 이전에 입력한 값 유지할지 여부  
 {: .notice--warning}  
 
+---  
+
+View + Feature 2개의 파일이 동시에 생기도록 설정하기 위해 Options 배열을 2개로 줬음.  
+
+그 후, 아래와 같이 Default, TCAFeature 디렉토리를 생성한다.  
+위 Info.plist에서 생성한 checkbox를 선택하지 않으면, Default에 있는 템플릿을 사용하고,  
+checkbox를 선택하면 TCAFeature에 있는 템플릿을 설정한다.  
+
+![directory](/assets/images/post_img/xcode/xcode-custom-file-template/directory.png)   
+
 # 🤥 Add TCA View File
 
 ```  
 기존 파일 삭제 : ___FILENAME___  
 새 파일 생성 : ___FILEBASENAME___View.swift  
 생성한 ___FILEBASENAME___View.swift 파일에는 TCA View 내용을 기입.  
+Default, TCAFeature 두 곳에 파일을 복사 붙여넣기.  
 ```  
 
 ```swift  
@@ -190,10 +217,13 @@ private struct ___VARIABLE_productName___Body: View {
 ```  
 새 파일 생성 : ___FILEBASENAME___Feature.swift  
 생성한 ___FILEBASENAME___Feature.swift 파일에는 TCA Feature 내용을 기입.  
+TCAFeature 폴더에 해당 파일 이동.    
 ```  
 
 ```swift
 // ___FILEHEADER___
+
+import ComposableArchitecture
 
 @Reducer
 public struct ___VARIABLE_productName___Feature {
@@ -218,3 +248,14 @@ public struct ___VARIABLE_productName___Feature {
     }
 }
 ```  
+
+# 🤪 Done
+
+이제 TCA View + Feature가 한꺼번에 만들어진다.  
+매우 편리하게 Boilerplate Code도 짜주니 잘 사용하면 될 것 같다.  
+
+![add-file](/assets/images/post_img/xcode/xcode-custom-file-template/add_file.png)   
+
+![add-file2](/assets/images/post_img/xcode/xcode-custom-file-template/add_file2.png)   
+
+![done](/assets/images/post_img/xcode/xcode-custom-file-template/done.png)   
