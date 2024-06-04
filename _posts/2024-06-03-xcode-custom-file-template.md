@@ -82,7 +82,7 @@ Empty File.xctemplate -> TCA Template.xctemplate
 TemplateIcon은 적절하게 교체 (나는 마땅한게 없어 그냥 사용했다)  
 ```  
 
-![tca-template_file_name](/assets/images/post_img/xcode/xcode-custom-file-template/tca_template_file_name.png)   
+![tca-template_file_name](/assets/images/post_img/xcode/xcode-custom-file-template/tca_template_filename.png)   
 
 # 😷 Edit TemplateInfo.plist  
 
