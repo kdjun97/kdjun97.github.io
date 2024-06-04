@@ -165,6 +165,8 @@ checkbox를 선택하면 TCAFeature에 있는 템플릿을 설정한다.
 
 ![directory](/assets/images/post_img/xcode/xcode-custom-file-template/directory.png)   
 
+마지막으로 View, Feature에 대해 템플릿 코드만 작성하면 끝이 난다!  
+
 # 🤥 Add TCA View File
 
 ```  
