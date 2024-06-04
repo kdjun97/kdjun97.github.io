@@ -43,7 +43,7 @@ Xcode에서 New File로 .swift 파일을 생성할 때 이러한 화면을 많�
 
 ![new-file](/assets/images/post_img/xcode/xcode-custom-file-template/new_file.png)   
 
-이 화면에서 Swift File을 누르면 Hello World 코드가 자동으로 적힌 채로 파일이 하나 생성될 것이다.  
+이 화면에서 SwiftUI File을 누르면 Hello World 코드가 자동으로 적힌 채로 파일이 하나 생성될 것이다.  
 이 모든 작업은 **File Template** 때문에 가능하다.  
 아래에서 TCA File Template을 만드는 방법을 알아보고 위의 불편한 점을 해소해보도록 하자.  
 
@@ -79,10 +79,10 @@ file name 수정
 
 ```
 Empty File.xctemplate -> TCA Template.xctemplate  
-TemplateIcon은 적절하게 교체 (여기선 그냥 사용)  
+TemplateIcon은 적절하게 교체 (나는 마땅한게 없어 그냥 사용했다)  
 ```  
 
-![tca-template_file_name](/assets/images/post_img/xcode/xcode-custom-file-template/tca_template_filename.png)   
+![tca-template_file_name](/assets/images/post_img/xcode/xcode-custom-file-template/tca_template_file_name.png)   
 
 # 😷 Edit TemplateInfo.plist  
 
