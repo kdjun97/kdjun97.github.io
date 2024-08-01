@@ -261,3 +261,39 @@ public struct ___VARIABLE_productName___Feature {
 ![add-file2](/assets/images/post_img/xcode/xcode-custom-file-template/add_file2.png)   
 
 ![done](/assets/images/post_img/xcode/xcode-custom-file-template/done.png)   
+
+# 😒 Problem  
+
+블로그 포스팅을 하고, 2개월이 지난 현재. 새로운 프로젝트를 진행하며 코드를 짜고 있었음.  
+근데, 만들어 둔 템플릿을 전혀 사용하지 않았던 문제 발견.  
+
+왜일까? 고민했는데, 답은 여기에 있었다.  
+
+![tca-template_file_name](/assets/images/post_img/xcode/xcode-custom-file-template/tca_template_filename.png)    
+
+XCode를 사용한 사람들은 New File을 해보면 이 창이 뜬다는 것을 알 것이다.  
+하지만, New File을 선택하였을 때, 우리가 만든 템플릿은 제일 아래에 위치해 있다.  
+즉, 눈에 띄지 않기 때문에 잊혀진 것.  
+
+따라서, 잊지 않게 제일 최상단으로 올릴 필요가 있다고 생각했다.  
+
+아까 전 스텝에서 특정 Path에 우리가 만든 템플릿을 넣어줬는데, 이 경로를 수정하면 최상단으로 올릴 수 있게 된다.  
+
+```  
+// 이전 코드. 이렇게 하면 3번째 줄에 의해 TCA Templates라는 새로운 탭이 제일 아래에 생기게 된다.  
+cd ~/Library/Developer/Xcode
+mkdir Templates
+mkdir TCA\ Templates  
+
+// 바뀐 코드
+cd ~/Library/Developer/Xcode/Templates/File\ Templates/Multiplatform
+mkdir Source // 원하는 탭의 이름. ex) User Interface
+```  
+
+해당 경로에 우리가 아까 만들었던 `TCA Template.xctemplate` 파일을 이동시키자.  
+그리고 저장 후, Xcode를 다시 실행 - New File 확인을 해보게 되면, 아래와 같이 나오게 된다.  
+
+![tca-template_file_new_path](/assets/images/post_img/xcode/xcode-custom-file-template/tca_template_file_new_path.png) 
+
+내친김에 `User Interface`에도 추가를 해보았다.  
+이제 우리는 자주 노출되는 만큼, 그리고 시간을 들여 template을 짠 만큼 커스텀 템플릿을 자주 사용하게 될 것이다.  
