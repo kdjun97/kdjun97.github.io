@@ -16,7 +16,7 @@ toc_icon: "lightbulb" # https://fontawesome.com/
  
 date: 2023-11-08 10:00:00
 last_modified_at: 2023-11-08 10:00:00
-published: false
+published: true
 ---  
 
 # 🧑‍💻 코드 리뷰란? 
