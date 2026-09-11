@@ -38,7 +38,8 @@ ice bear -> 해당 블로그로 이전
 
 > 🌴 **목차**
 
-┌ `Algorithm`  
+┌ `AI`  
+├ `Algorithm`  
 ├ `Automation Solution`  
 ├ `Computer Vision`  
 ├ `Docker`  

@@ -21,6 +21,8 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
+  - title: "AI"
+    url: /categories/ai/
   - title: "Algorithm"
     url: /categories/algorithm/
   - title: "Automation Solution"
