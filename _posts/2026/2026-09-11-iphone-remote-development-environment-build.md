@@ -130,7 +130,7 @@ MacBook에서 Raspberry Pi로 SSH 접속이 되는 것을 먼저 확인하고, �
 모두 같은 Tailnet에 로그인하고 서로 장치가 보이는지 확인했다.  
 
 <a href="https://kdjun97.github.io/assets/images/post_img/etc/iphone-remote-development-environment-build/img_tailscale.PNG" target="_blank" rel="noopener noreferrer">
-  <img src="/assets/images/post_img/etc/iphone-remote-development-environment-build/img_tailscale.PNG" alt="Tailscale 장치 목록" style="display: block; width: 500px; max-width: 80%; height: auto; margin: 0 auto;">
+  <img src="/assets/images/post_img/etc/iphone-remote-development-environment-build/img_tailscale.PNG" alt="Tailscale 장치 목록" style="display: block; width: 300px; max-width: 80%; height: auto;">
 </a>  
 
 `잘 보인다.`  
@@ -172,7 +172,7 @@ MacBook에는 RealVNC Connect를 설치하고 Inbound 연결을 활성화했다.
 Raspberry Pi와 다르게 MacBook은 IP를 직접 입력하지 않고, RealVNC의 Devices 목록에서 MacBook을 선택해서 접속한다.  
 
 <a href="https://kdjun97.github.io/assets/images/post_img/etc/iphone-remote-development-environment-build/img_realVNC.PNG" target="_blank" rel="noopener noreferrer">
-  <img src="/assets/images/post_img/etc/iphone-remote-development-environment-build/img_realVNC.PNG" alt="RealVNC 장치 목록" style="display: block; width: 500px; max-width: 80%; height: auto; margin: 0 auto;">
+  <img src="/assets/images/post_img/etc/iphone-remote-development-environment-build/img_realVNC.PNG" alt="RealVNC 장치 목록" style="display: block; width: 300px; max-width: 80%; height: auto;">
 </a>  
 
 즉, 현재 구성은 아래처럼 동작한다.  
@@ -186,7 +186,7 @@ Raspberry Pi와 다르게 MacBook은 IP를 직접 입력하지 않고, RealVNC�
 아래 그림은 Raspberry pi 에 접속한 모습.  
 
 <a href="https://kdjun97.github.io/assets/images/post_img/etc/iphone-remote-development-environment-build/img_viewer.PNG" target="_blank" rel="noopener noreferrer">
-  <img src="/assets/images/post_img/etc/iphone-remote-development-environment-build/img_viewer.PNG" alt="RealVNC Viewer 원격 접속 화면" style="display: block; width: 500px; max-width: 80%; height: auto; margin: 0 auto;">
+  <img src="/assets/images/post_img/etc/iphone-remote-development-environment-build/img_viewer.PNG" alt="RealVNC Viewer 원격 접속 화면" style="display: block; width: 300px; max-width: 80%; height: auto;">
 </a>  
 
 **4. MacBook SSH 설정**  
@@ -203,7 +203,7 @@ iPhone에서는 SSH Client로 `Termius`를 사용했고, 아래 정보를 등록
 Cellular 상태에서 접속해보니 정상적으로 Mac 터미널이 열렸다.  
 
 <a href="https://kdjun97.github.io/assets/images/post_img/etc/iphone-remote-development-environment-build/img_ssh.PNG" target="_blank" rel="noopener noreferrer">
-  <img src="/assets/images/post_img/etc/iphone-remote-development-environment-build/img_ssh.PNG" alt="Termius SSH 접속 화면" style="display: block; width: 500px; max-width: 80%; height: auto; margin: 0 auto;">
+  <img src="/assets/images/post_img/etc/iphone-remote-development-environment-build/img_ssh.PNG" alt="Termius SSH 접속 화면" style="display: block; width: 300px; max-width: 80%; height: auto;">
 </a>  
 
 > 참고: [Apple Remote Login](https://support.apple.com/guide/mac-help/allow-a-remote-computer-to-access-your-mac-mchlp1066/mac)
