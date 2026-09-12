@@ -1,5 +1,5 @@
 ---
-title: "[원격 환경 구축] iPhone으로 MacBook과 Raspberry Pi 원격 접속 환경 구축하기"  
+title: "iPhone으로 MacBook과 Raspberry Pi 원격 접속 환경 구축하기"  
 excerpt: "어디서든 MacBook과 Raspberry Pi에 접속하는 환경 만들기"
 
 categories:
@@ -21,24 +21,24 @@ published: true
 
 # 🤩 들어가기에 앞서…
 
-집에서 Raspberry Pi를 24시간 돌리며 이미 서버로 활용하고 있다.  
-예전에 진행한 [스마트 홈 프로젝트](https://kdjun97.github.io/iot/smart-home-project/)에서 MQTT Broker 서버를 맡은 일꾼이다.  
+나는 집에서 Raspberry Pi를 24시간 돌리며 이미 서버로 활용하고 있다.  
+내 라즈베리파이는 예전에 진행한 [스마트 홈 프로젝트](https://kdjun97.github.io/iot/smart-home-project/)에서 MQTT Broker 서버를 담당하고 있다.  
 
 AI가 발전하는 것을 보면서, 이제는 Raspberry Pi를 단순한 실험용 장비가 아니라 **항상 켜져 있는 개인 서버**처럼 제대로 활용해보고 싶어졌다.  
 그런데 24시간 운영하다 보니 한 번씩 Raspberry Pi에 접속해서 상태를 확인하거나 설정을 바꿔야 할 순간이 왔다.  
 그때마다 집에서 직접 접속해 작업하는 것이 너무 귀찮았다…  ~~hdmi to micro-hdmi 부터 하... 넘 귀찮음~~  
 
-처음에는 익숙한 SSH로 원격 접속 환경을 구성하면 충분할지 고민했다.  
-하지만 CLI만으로 작업하다 보면 한 번씩 실제 화면을 보면서 확인하거나 셋팅해야 할 순간도 생길 것 같았다.  
+처음에는 SSH만으로 원격 접속 환경을 구성하면 충분할지 고민했다.  
+하지만 CLI만으로 작업하다 보면 한 번씩 실제 화면을 보면서 확인하거나 셋팅해야 할 순간들을 대응 못할 것 같았다.  
 그래서 SSH에 더해 화면까지 직접 제어할 수 있는 VNC를 사용하기로 했다.  
 그러다 Port Forwarding 없이 외부에서도 Raspberry Pi에 접속할 수 있는 `Tailscale`까지 발견했다.  
 
 여기까지 알아보고 나니 Raspberry Pi뿐 아니라 MacBook도 같이 셋팅해두면 더 편할 것 같았다.  
 
-앞으로 Raspberry Pi와 MacBook에서 여러 AI 도구나 서비스, 직접 만든 프로그램도 실행해보고 싶었다.  
-특정 App에서 제공하는 원격 기능에만 의존하기보다 필요할 때 장치 자체에 접속할 수 있는 범용적인 환경이 하나 있으면 좋겠다고 생각했다.  
+앞으로 원격(내 핸드폰)으로 Raspberry Pi와 MacBook에서 여러 AI 도구나 서비스, 직접 만든 프로그램도 실행해보면 재밌겠다 싶었다.  
+특정 App에서 제공하는 원격 기능에만 의존하기보다(ex: codex desktop app의 Remote기능) 필요할 때 장치 자체에 접속할 수 있는 범용적인 환경이 하나 있으면 좋겠다고 생각했다.  
 
-따라서, 이번 프로젝트에서 하고 싶었던 것은 크게 아래와 같았다.  
+따라서, 이번 프로젝트에서 하고자 하는 목표를 아래와 같이 잡았다.  
 
 - iPhone에서 MacBook에 SSH와 VNC로 접속하기
 - iPhone에서 Raspberry Pi에 SSH와 VNC로 접속하기
@@ -58,7 +58,7 @@ AI가 발전하는 것을 보면서, 이제는 Raspberry Pi를 단순한 실험�
 | MacBook → Raspberry Pi | SSH + VNC |
 
 세 장치에 Tailscale을 설치하면 각각 Tailnet 전용 IP가 할당된다.  
-SSH는 이 IP를 통해 접속하고, Raspberry Pi의 VNC도 Tailscale 안에서 직접 연결하도록 구성했다.
+SSH는 이 IP를 통해 접속하고, Raspberry Pi의 VNC도 Tailscale 안에서 직접 연결하도록 구성했다.  
 
 iPhone에서는 아래 3개의 App을 사용했다.  
 
@@ -77,21 +77,21 @@ RealVNC에서 각 장치의 역할은 아래와 같다.
 이를 실제 연결 기준으로 정리하면 아래와 같다.  
 
 ```text
-┌────────────────────── Tailscale Tailnet ──────────────────────┐
-│                                                               │
-│  iPhone                         MacBook           Raspberry Pi │
-│  - SSH Client                   - SSH Server      - SSH Server │
-│  - RealVNC Viewer               - RealVNC Viewer  - VNC Server │
-│                                 - VNC Inbound                  │
-│                                                               │
-│  iPhone ── SSH ───────────────→ MacBook                        │
-│  iPhone ── SSH/VNC Direct ────→ Raspberry Pi                   │
-│  MacBook ─ SSH/VNC Direct ────→ Raspberry Pi                   │
-│                                                               │
-└───────────────────────────────────────────────────────────────┘
+┌────────────────────── Tailscale Tailnet ────────────────────────┐
+│                                                                 │
+│  iPhone                         MacBook           Raspberry Pi  │
+│  - SSH Client                   - SSH Server      - SSH Server  │
+│  - RealVNC Viewer               - RealVNC Viewer  - VNC Server  │
+│                                 - VNC Inbound                   │
+│                                                                 │
+│  iPhone ── SSH ───────────────→ MacBook                         │
+│  iPhone ── SSH/VNC Direct ────→ Raspberry Pi                    │
+│  MacBook ─ SSH/VNC Direct ────→ Raspberry Pi                    │
+│                                                                 │
+└─────────────────────────────────────────────────────────────────┘
 
 iPhone RealVNC Viewer ── RealVNC Cloud ──→ MacBook VNC Inbound  
-```
+```  
 
 처음에는 MacBook VNC까지 모두 Tailscale IP를 사용하는 Direct 연결로 통일하려고 했다.  
 결론부터 말하면 Raspberry Pi는 Tailscale IP를 사용하는 Direct VNC로 연결했고, MacBook은 RealVNC Cloud로 연결했다.  
@@ -101,30 +101,26 @@ Mac의 RealVNC Lite 환경에서는 Direct 연결 옵션이 보이지 않았기 
 
 대신 Mac의 SSH는 Tailscale IP로 직접 접속한다.  
 
-## Tailscale을 선택한 이유?
+**Tailscale을 선택한 이유?**   
 
 처음에 생각한 방법은 아래였다.
 > 공유기 Port Forwarding + public IP
 
 Port Forwarding은 익숙한 방법이지만 관리 포트를 외부에 직접 노출해야한다.  
-보안적으로 찜찜해서 다른 방법이 없을까 찾다가 Tailscale로 가능한 방법을 찾아서 적용해보았다.  
+보안적으로 찜찜해서 다른 방법이 없을까 찾다가 조금 더 좋은 방법을 찾았고, 이것저것 고민해보고 조사해보면서 결정했다.  
 
-Tailscale은 장치마다 앱을 설치해야 하지만, 공유기 설정 없이 장치들을 같은 사설망처럼 묶어준다.  
-MagicDNS를 사용하면 매번 IP를 외우지 않고 장치 이름으로도 접근할 수 있다.  
-
+Tailscale은 장치마다 앱을 설치해야 하지만, 공유기 설정 없이 장치들을 같은 사설망처럼 묶어준다고 한다.  
 그리고 개인 서버나 홈 네트워크의 원격 접속 구성에서 Tailscale을 사용하는 사례가 많았다.  
-처음 다뤄보는 도구인 만큼 문제가 생겼을 때 참고할 문서와 경험담을 쉽게 찾을 수 있다는 점도 선택에 영향을 줬다. 
+처음 다뤄보는 도구인 만큼 문제가 생겼을 때 참고할 문서와 경험담을 쉽게 찾을 수 있다는 점도 선택에 영향을 줬다.  
 
 결국 이번 프로젝트에서는 설정이 단순하고, 많이들 쓰고, 외부에 포트를 열지 않아도 된다는 점 때문에 Tailscale을 선택했다.  
-
-> 참고: [Tailscale MagicDNS](https://tailscale.com/docs/features/magicdns)
 
 # 🛠 환경 셋팅
 
 **1. Raspberry Pi SSH부터 확인**  
 
 VNC보다 SSH를 먼저 확인했다.  
-화면 설정을 잘못 건드려도 SSH가 살아있으면 다시 들어가서 복구할 수 있기 때문이다.  
+화면 설정을 잘못 건드려도 SSH부터 연결되어있으면 어떻게든 들어가서 복구할 수 있기 때문이다.~~안전하게 가자~~    
 MacBook에서 Raspberry Pi로 SSH 접속이 되는 것을 먼저 확인하고, 세 장치에 Tailscale을 설치했다.  
 
 - iPhone
@@ -133,7 +129,11 @@ MacBook에서 Raspberry Pi로 SSH 접속이 되는 것을 먼저 확인하고, �
 
 모두 같은 Tailnet에 로그인하고 서로 장치가 보이는지 확인했다.  
 
-![tailscale](/assets/images/post_img/etc/iphone-remote-development-environment-build/img_tailscale.PNG)  
+<a href="https://kdjun97.github.io/assets/images/post_img/etc/iphone-remote-development-environment-build/img_tailscale.PNG" target="_blank" rel="noopener noreferrer">
+  <img src="/assets/images/post_img/etc/iphone-remote-development-environment-build/img_tailscale.PNG" alt="Tailscale 장치 목록" style="display: block; width: 500px; max-width: 80%; height: auto; margin: 0 auto;">
+</a>  
+
+`잘 보인다.`  
 
 **2. Raspberry Pi VNC Server 설정**  
 
@@ -141,13 +141,13 @@ MacBook에서 Raspberry Pi로 SSH 접속이 되는 것을 먼저 확인하고, �
 VNC Server와 Viewer도 여러 종류가 있었지만, 이번에는 비교적 많이 사용되고 관련 자료를 찾기 쉬운 `RealVNC`를 선택했다.  
 
 iPhone, MacBook, Raspberry Pi에서 같은 제품군을 사용할 수 있어 장치마다 다른 VNC 도구를 익히지 않아도 된다는 점도 괜찮아 보였다.  
-
-하지만 그래픽 세션을 확인해보니 Wayland였다.  
+(만약 아이폰 앱은 RealVNC를 쓰고, Raspberry pi는 다른 걸 쓴다면, 유료 플랜을 써야하는 걸로 공식 문서에 나와있었고, 무료 플랜을 고수하기 위해선 나에게 각각을 맞춰야 하는게 강제가 되긴 했다.)  
 
 ```bash
 echo $XDG_SESSION_TYPE
-```
+```  
 
+그래픽 세션을 확인해보니 Wayland였다.  
 RealVNC Server를 사용하려면 X11이 필요해서 `/etc/gdm3/custom.conf` 파일에서 아래 설정을 활성화했다.  
 
 ```ini
@@ -171,7 +171,9 @@ RealVNC 설정은 아래와 같이 진행했다.
 MacBook에는 RealVNC Connect를 설치하고 Inbound 연결을 활성화했다.  
 Raspberry Pi와 다르게 MacBook은 IP를 직접 입력하지 않고, RealVNC의 Devices 목록에서 MacBook을 선택해서 접속한다.  
 
-![img_realVNC](/assets/images/post_img/etc/iphone-remote-development-environment-build/img_realVNC.PNG)  
+<a href="https://kdjun97.github.io/assets/images/post_img/etc/iphone-remote-development-environment-build/img_realVNC.PNG" target="_blank" rel="noopener noreferrer">
+  <img src="/assets/images/post_img/etc/iphone-remote-development-environment-build/img_realVNC.PNG" alt="RealVNC 장치 목록" style="display: block; width: 500px; max-width: 80%; height: auto; margin: 0 auto;">
+</a>  
 
 즉, 현재 구성은 아래처럼 동작한다.  
 
@@ -183,7 +185,9 @@ Raspberry Pi와 다르게 MacBook은 IP를 직접 입력하지 않고, RealVNC�
 아무튼 iPhone Wi-Fi를 끄고 Cellular로 전환한 뒤에도 Mac 화면 접속에 성공했다.   
 아래 그림은 Raspberry pi 에 접속한 모습.  
 
-![img_viewer](/assets/images/post_img/etc/iphone-remote-development-environment-build/img_viewer.PNG)  
+<a href="https://kdjun97.github.io/assets/images/post_img/etc/iphone-remote-development-environment-build/img_viewer.PNG" target="_blank" rel="noopener noreferrer">
+  <img src="/assets/images/post_img/etc/iphone-remote-development-environment-build/img_viewer.PNG" alt="RealVNC Viewer 원격 접속 화면" style="display: block; width: 500px; max-width: 80%; height: auto; margin: 0 auto;">
+</a>  
 
 **4. MacBook SSH 설정**  
 
@@ -198,7 +202,9 @@ iPhone에서는 SSH Client로 `Termius`를 사용했고, 아래 정보를 등록
 
 Cellular 상태에서 접속해보니 정상적으로 Mac 터미널이 열렸다.  
 
-![ssh](/assets/images/post_img/etc/iphone-remote-development-environment-build/img_ssh.PNG)  
+<a href="https://kdjun97.github.io/assets/images/post_img/etc/iphone-remote-development-environment-build/img_ssh.PNG" target="_blank" rel="noopener noreferrer">
+  <img src="/assets/images/post_img/etc/iphone-remote-development-environment-build/img_ssh.PNG" alt="Termius SSH 접속 화면" style="display: block; width: 500px; max-width: 80%; height: auto; margin: 0 auto;">
+</a>  
 
 > 참고: [Apple Remote Login](https://support.apple.com/guide/mac-help/allow-a-remote-computer-to-access-your-mac-mchlp1066/mac)
 
@@ -342,4 +348,4 @@ RealVNC Server is not currently listening for cloud connections.
 어쨋거나 내가 원하는 목표를 정했고, 어떤 환경에서 돌아가고 어떻게 쓸지를 구상하고  
 그걸 찾아보면서 설계하고 환경을 구축해봤다.  
 
-이제.. 이걸 가지고 쓸만한 걸 만들 차롄데 다음 포스팅의 나에게 맡기겠다.  
+이제.. 이걸 가지고 쓸만한 걸 만들 차롄데 그건 다음 포스팅의 나에게 맡기겠다.  
