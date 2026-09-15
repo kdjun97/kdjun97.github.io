@@ -44,8 +44,8 @@ Python 서비스에서는 `mosquitto_sub`로 Shelly의 MQTT Topic을 구독하�
 같은 알림의 중복 전송도 줄이고, Slack 전송에 실패하면 재시도하도록 해뒀다.  
 아래는 실제 알림을 받았을 때의 슬랙 창을 캡처해봤다.  
 
-<a href="https://kdjun97.github.io/assets/images/post_img/iot/receive-mqtt-log-with-slack/img_slack.PNG" target="_blank" rel="noopener noreferrer">
-  <img src="/assets/images/post_img/iot/receive-mqtt-log-with-slack/img_slack.PNG" alt="Slack 알림" style="display: block; width: 400px; max-width: 80%; height: auto;">
+<a href="https://kdjun97.github.io/assets/images/post_img/iot/receive-mqtt-log-with-slack/img_slack.png" target="_blank" rel="noopener noreferrer">
+  <img src="/assets/images/post_img/iot/receive-mqtt-log-with-slack/img_slack.png" alt="Slack 알림" style="display: block; width: 400px; max-width: 80%; height: auto;">
 </a>  
 
 지금은 **라즈베리파이 → Slack** 단방향 알림이다.  
