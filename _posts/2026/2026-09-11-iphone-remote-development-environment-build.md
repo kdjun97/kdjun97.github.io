@@ -84,9 +84,9 @@ RealVNC에서 각 장치의 역할은 아래와 같다.
 │  - RealVNC Viewer               - RealVNC Viewer  - VNC Server  │
 │                                 - VNC Inbound                   │
 │                                                                 │
-│  iPhone ── SSH ───────────────→ MacBook                         │
-│  iPhone ── SSH/VNC Direct ────→ Raspberry Pi                    │
-│  MacBook ─ SSH/VNC Direct ────→ Raspberry Pi                    │
+│  iPhone ── SSH ───────────────→ MacBook                        │
+│  iPhone ── SSH/VNC Direct ────→ Raspberry Pi                   │
+│  MacBook ─ SSH/VNC Direct ────→ Raspberry Pi                   │
 │                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 
