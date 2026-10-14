@@ -1,5 +1,5 @@
 ---
-title: "[회고] CMC 19기 iOS 앱 개발자로서의 회고록"
+title: "[회고] CMC 19기 회고"
 excerpt: "CMC에서 MODY를 개발한 세 달을 돌아보며"
 
 categories:
