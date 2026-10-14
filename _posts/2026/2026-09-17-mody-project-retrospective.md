@@ -29,6 +29,10 @@ published: true
 이후에는 회사 동료들과 [오목완](https://github.com/begin-a-gain/omokwan-ios)을 만들고,  
 친구와 Flutter 기반의 [달릴까말까](https://github.com/APPisode-Dev/run-or-not)를 개발하며 사이드 프로젝트를 이어갔다.  
 
+> [모디(MODY) Github](https://github.com/Central-MakeUs/mody-ios)
+> [오목완 Github](https://github.com/begin-a-gain/omokwan-ios)
+> [달릴까말까 Github](https://github.com/APPisode-Dev/run-or-not)
+
 함께하는 사람과 환경이 달라질 때마다 배우는 점도 달랐다.  
 그러다 다시 동아리라는 환경에서 프로젝트를 하며 배우고자 하는 부분이 있어 CMC 19기에 지원했다.  
 새롭게 도전해보고 싶은 기술이 있었고, 다양한 직군의 사람들과 하나의 프로덕트를 완성하며 또 다른 경험을 쌓고 싶었다.  
