@@ -1,5 +1,5 @@
 ---
-title: "[회고] CMC 19기 회고"
+title: "[회고] CMC iOS 19기 회고"
 excerpt: "CMC에서 MODY를 개발한 세 달을 돌아보며"
 
 categories:
@@ -25,13 +25,14 @@ published: true
 2026년 5월부터 8월까지 약 3개월 동안 활동하며 [모디(MODY)](https://github.com/Central-MakeUs/mody-ios)라는 앱을 출시했다.  
 [모디(MODY)](https://github.com/Central-MakeUs/mody-ios)는 친구들과 식사와 운동을 기록하고 공유하며 다이어트 습관을 만들어 가는 서비스다.  
 
-나는 2024년에 Prography라는 동아리에서 활동했다.  
+나는 2024년에 Prography라는 동아리에서 [과수원](https://github.com/prography-team8/gwasuwon-ios) 앱을 만들었다.  
 이후에는 회사 동료들과 [오목완](https://github.com/begin-a-gain/omokwan-ios)을 만들고,  
 친구와 Flutter 기반의 [달릴까말까](https://github.com/APPisode-Dev/run-or-not)를 개발하며 사이드 프로젝트를 이어갔다.  
 
 > [모디(MODY) Github](https://github.com/Central-MakeUs/mody-ios)  
 > [오목완 Github](https://github.com/begin-a-gain/omokwan-ios)  
-> [달릴까말까 Github](https://github.com/APPisode-Dev/run-or-not)  
+> [달릴까말까 Github](https://github.com/APPisode-Dev/run-or-not)   
+> [과수원 Github](https://github.com/prography-team8/gwasuwon-ios)  
 
 함께하는 사람과 환경이 달라질 때마다 배우는 점도 달랐다.  
 그러다 다시 동아리라는 환경에서 프로젝트를 하며 배우고자 하는 부분이 있어 CMC 19기에 지원했다.  
@@ -62,26 +63,41 @@ iOS 개발자는 나 혼자였고, 앱을 구현하면서 기획과 디자인을
 
 # 🧩 왜 MicroFeature Architecture를 선택했을까?
 
-여러 앱을 개발하면서, 프로토콜로 인터페이스를 정의하고 실제 구현을 분리하는 방식의 장점을 느꼈다.  
-구체적인 구현에 대한 의존을 줄이면 다른 부분에 미치는 영향을 줄이면서 코드를 수정하거나 기능을 확장하기가 수월했다.  
-협업할 때도 서로 연결할 인터페이스를 기준으로 각자의 구현을 진행할 수 있다는 점이 좋았다.  
+회사 업무와 사이드 프로젝트에서 여러 앱을 개발하면서, 기능이 늘어날수록 의존성이 서로 얽히는 것을 느꼈다.  
+한 기능을 구현하거나 테스트하려고 해도 함께 신경 써야 하는 코드와 의존성이 점점 많아졌다.  
+이렇게 개발하고 확인해야 할 범위가 커지는 문제를 어떻게 풀 수 있을까?  
 
-그래서 이번 프로젝트에서도 **기능 사이의 경계를 나누고, 서로의 내부 구현에 직접 의존하지 않도록 만드는 것**에 특히 신경을 썼다.  
-MODY를 시작하기 전 Toss의 MicroFeature Architecture 관련 글을 여러 번 읽은 것도 이런 관심에서 출발했다.  
+프로토콜로 인터페이스를 정의하고 실제 구현을 분리하는 방식은 이전에도 도움이 됐다.  
+다른 기능의 구체적인 구현에 대한 의존을 줄이면 코드를 수정하거나 확장하기가 수월했고, 협업할 때도 인터페이스를 기준으로 각자의 구현을 진행할 수 있었다.  
+여기서 더 나아가, **한 기능의 구현부터 테스트와 실행까지 그 기능 단위에서 마칠 수 있으면 좋겠다**는 생각을 했다.  
 
-당시 궁금한 것은 크게 두 가지였다.  
-- 기능마다 사용하는 기술이 달라도 서로의 내부 구현을 깊게 알지 않고 연결할 수 있을까? 
-- 개발 중인 기능만 따로 실행해 팀원에게 보여줄 수 있을까? 
+MODY를 시작하기 전 Toss의 [레고처럼 조립하는 토스 앱](https://toss.tech/article/slash23-iOS)을 여러 번 읽은 것도 이런 고민 때문이었다.  
+글에서 소개한 MicroFeature Architecture는 내가 생각하던 개발 방식을 구체적인 구조로 보여줬다.  
+하나의 기능을 다음과 같이 역할이 다른 타깃으로 나누는 방식이었다.  
 
-기능의 구현과 외부에 공개하는 인터페이스를 분리하고, 기능별 Demo 앱을 구성하는 방식은 이 고민에 잘 맞았다.  
-특히 하나의 기능을 구현하는 `Feature`, 외부에 공개할 `Interface`, 테스트를 위한 `Testing·Tests`, 독립 실행을 위한 `Demo` 타깃으로 나누는 방식이 인상적이었다.  
-기능을 독립적으로 개발하고 테스트하고 실행한다는 것이 실제 프로젝트에서는 어떤 모습일지 궁금했다.  
+- `Feature`: 실제 기능을 구현한다.
+- `Interface`: 다른 기능에서 사용할 인터페이스와 모델을 공개한다.
+- `Testing`: 테스트용 대체 구현인 Mock과 샘플 데이터 등 재사용할 코드를 제공한다.
+- `Tests`: 해당 기능의 동작을 검증하는 테스트 코드를 작성한다.
+- `Demo`: 해당 기능을 따로 실행해 확인할 수 있는 작은 앱을 구성한다. Toss 글에서는 `Example`이라고 부른다.
 
-단순히 글을 읽는데서 끝내지 않고, **내 프로젝트에 적용했을 때 의존성 관리와 협업 방식이 어떻게 달라지는지 경험해 보는 것이 선택의 중요한 이유였다.**  
+특히 `Tests`와 `Testing`을 나눈 점이 마음에 들었다.  
+테스트는 `Tests`에 작성하고, 반복해서 필요한 Mock이나 샘플 데이터는 `Testing`에 모아 여러 테스트와 Demo 앱에서 재사용할 수 있다.  
+테스트나 Demo 앱을 만들 때마다 같은 준비 코드를 작성하는 중복을 줄일 수 있겠다고 생각했다.  
+
+또한 Demo 앱에서는 확인하려는 기능의 실제 구현을 연결하고, 그 기능이 의존하는 다른 기능은 각자의 `Testing`에 있는 Mock으로 대체할 수 있다.  
+이 방식이라면 다른 기능의 실제 구현을 모두 연결하지 않고도, 지금 개발 중인 기능에 집중해 동작을 확인할 수 있겠다고 생각했다.  
+
+결국 가장 마음에 들었던 것은 **구현, 테스트, Demo 앱, 외부에 공개할 인터페이스를 한 기능 단위로 갖추고, 그런 기능들을 조립해 앱을 만드는 방식**이었다.  
+기능 사이의 연결은 인터페이스로 드러내면서, 각 기능을 개발하고 검증하는 데 필요한 환경도 함께 구성할 수 있다는 점이 평소의 고민과 맞닿아 있었다.  
+기능마다 사용하는 기술이 달라도 이 경계를 통해 연결하고, 개발 중인 기능만 따로 실행해 팀원에게 보여주는 흐름을 직접 만들어 보고 싶었다.  
 
 물론 바로 MODY에 적용한 것은 아니다. 모디는 철저히 계획된 설계 속에서 개발됐다.  
 먼저 [micro-feature-study](https://github.com/kdjun97/micro-feature-study)라는 별도 프로젝트에서 구조를 검증했다.  
 Tuist로 모듈과 의존성을 구성하고, 기능별 Demo 앱을 GitHub Actions와 Fastlane으로 배포하는 흐름까지 먼저 시도했다.  
+
+> [MicroFeature Architecture Study Project Github](https://github.com/kdjun97/micro-feature-study)  
+> [Toss MicroFeature Architecture (TMA)](https://toss.tech/article/slash23-iOS)  
 
 # 🔀 검증한 구조를 실제 서비스에 적용하며
 
@@ -124,5 +140,3 @@ MODY는 CMC에서 **대상·1위**를 받았다. 팀이 함께 만든 서비스�
 그럼에도 초기 설계를 해 둔 덕분에 기능을 추가하거나 수정할 때 빠르게 대응할 수 있었다.  
 
 이번 글에서는 프로젝트 전체의 방향을 정리했다. 구체적으로 막혔던 부분과 해결 과정은 다음 글에서 이어가려 한다.  
-
-> 참고: [Toss MicroFeature Architecture (TMA)](https://toss.tech/article/slash23-iOS)  
