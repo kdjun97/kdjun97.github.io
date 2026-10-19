@@ -5,6 +5,11 @@ layout: archive
 {{ content }}
 
 {% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
+<div id="category-posts" class="entries-{{ entries_layout }}" data-page-size="5">
   {% include posts-category.html taxonomy=page.taxonomy type=entries_layout %}
 </div>
+
+<nav id="category-pagination" class="pagination" aria-label="카테고리 페이지"
+  data-previous="{{ site.data.ui-text[site.locale].pagination_previous | default: 'Previous' | escape }}"
+  data-next="{{ site.data.ui-text[site.locale].pagination_next | default: 'Next' | escape }}" hidden></nav>
+<script src="{{ '/assets/js/category-pagination.js' | relative_url }}" defer></script>
