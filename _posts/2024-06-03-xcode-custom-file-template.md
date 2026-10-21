@@ -3,7 +3,7 @@ title: "[Xcode] Custom File Template 이용, 자동 템플릿 생성"
 excerpt: "Xcode - New File - Custom Template 사용해보기"
 
 categories:
-  - Xcode
+  - iOS
 tags:
   - [Xcode]
 
@@ -15,7 +15,7 @@ toc_label: "Contents"
 toc_icon: "lightbulb" # https://fontawesome.com/
  
 date: 2024-06-03 10:00:00
-last_modified_at: 2024-06-03 10:00:00
+last_modified_at: 2026-10-21 21:15:45
 published: true
 ---  
 

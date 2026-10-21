@@ -1,9 +1,9 @@
 ---
-title: "Swift"
+title: "iOS"
 layout: category
-permalink: /categories/swift/
+permalink: /categories/ios/
 author_profile: true
-taxonomy: Swift
+taxonomy: iOS
 sidebar:
   nav: "categories"
 ---

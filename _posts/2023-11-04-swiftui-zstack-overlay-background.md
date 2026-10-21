@@ -3,7 +3,7 @@ title: "[SwiftUI] ZStack vs overlay vs background"
 excerpt: "ZStack, overlay와 background는 뭐가 다른걸까?"
 
 categories:
-  - Swift
+  - iOS
 tags:
   - [SwiftUI]
 
@@ -15,7 +15,7 @@ toc_label: "Contents"
 toc_icon: "lightbulb" # https://fontawesome.com/
  
 date: 2023-11-04 10:00:00
-last_modified_at: 2023-11-04 10:00:00
+last_modified_at: 2026-10-21 21:15:45
 published: true
 ---  
 

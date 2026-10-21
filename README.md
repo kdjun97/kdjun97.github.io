@@ -45,14 +45,13 @@ ice bear -> 해당 블로그로 이전
 ├ `Docker`  
 ├ `Flutter`  
 ├ `Git/Github`  
+├ `iOS`  
 ├ `IoT`  
 ├ `Kotlin`  
 ├ `Linux`  
 ├ `Python`  
-├ `Swift`  
 ├ `Software Architecture`  
 ├ `Web`  
-├ `Xcode`  
 └ `Etc`  
 
 ### Helper  
