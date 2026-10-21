@@ -3,7 +3,7 @@ title: "[SwiftUI] Stack에 대해"
 excerpt: "ZStack, VStack, HStack 삼총사에 대해 알아보자"
 
 categories:
-  - Swift
+  - iOS
 tags:
   - [SwiftUI]
 
@@ -15,7 +15,7 @@ toc_label: "Contents"
 toc_icon: "lightbulb" # https://fontawesome.com/
  
 date: 2023-11-01 10:00:00
-last_modified_at: 2023-11-01 10:00:00
+last_modified_at: 2026-10-21 21:15:45
 published: true
 ---  
 

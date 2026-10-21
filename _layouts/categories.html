@@ -30,6 +30,10 @@ layout: archive
   {% for category in site.categories %}
     {% if category[1].size == i %}
       <section id="{{ category[0] | slugify | downcase }}" class="taxonomy__section">
+        {% if category[0] == 'iOS' %}
+          <!-- Preserve links to the former Swift and Xcode category sections. -->
+          <span id="swift"></span><span id="xcode"></span>
+        {% endif %}
         <h2 class="archive__subtitle">{{ category[0] }}</h2>
         <div class="entries-{{ entries_layout }}">
           {% for post in category.last %}

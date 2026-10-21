@@ -35,6 +35,8 @@ categories:
     url: /categories/flutter/
   - title: "Git/Github"
     url: /categories/git-github/
+  - title: "iOS"
+    url: /categories/ios/
   - title: "IoT"
     url: /categories/iot/
   - title: "Kotlin"
@@ -45,11 +47,7 @@ categories:
     url: /categories/python/
   - title: "Software Architecture"
     url: /categories/software-architecture/
-  - title: "Swift"
-    url: /categories/swift/
   - title: "Web"
     url: /categories/web/
-  - title: "Xcode"
-    url: /categories/xcode/
   - title: "Etc"
     url: /categories/etc/

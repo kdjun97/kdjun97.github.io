@@ -3,7 +3,7 @@ title: "[Xcode] IDETemplateMacros.plist로 파일 헤더 주석 설정해보기"
 excerpt: "파일 생성시 자동으로 파일 헤더에 주석 적용하기"
 
 categories:
-  - Xcode 
+  - iOS
 tags:
   - [Xcode]
 
@@ -15,7 +15,7 @@ toc_label: "Contents"
 toc_icon: "lightbulb" # https://fontawesome.com/
  
 date: 2023-12-31 10:00:00
-last_modified_at: 2023-12-31 10:00:00
+last_modified_at: 2026-10-21 21:15:45
 published: true
 ---  
 

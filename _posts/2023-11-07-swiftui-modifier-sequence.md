@@ -3,7 +3,7 @@ title: "[SwiftUI] modifier 순서에 대해"
 excerpt: "UI를 그리면서 생겼던 의문점에 대해"
 
 categories:
-  - Swift
+  - iOS
 tags:
   - [SwiftUI]
 
@@ -15,7 +15,7 @@ toc_label: "Contents"
 toc_icon: "lightbulb" # https://fontawesome.com/
  
 date: 2023-11-07 10:00:00
-last_modified_at: 2023-11-07 10:00:00
+last_modified_at: 2026-10-21 21:15:45
 published: true
 ---  
 
