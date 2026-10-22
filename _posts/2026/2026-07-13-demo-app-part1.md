@@ -1,5 +1,5 @@
 ---
-title: "[iOS] 기능 하나만 바로 보여줄 순 없을까? - (1)"
+title: "[iOS] Demo 앱으로 기능별 시나리오 검증하기 - (1)"
 excerpt: "MicroFeature와 함께 Demo 앱을 구성하며 기능 실행과 화면 상태 검증을 실험한 과정"
 
 categories:
@@ -15,7 +15,7 @@ toc_label: "Contents"
 toc_icon: "lightbulb"
 
 date: 2026-07-13 10:00:00
-last_modified_at: 2026-07-13 10:00:00
+last_modified_at: 2026-10-22 21:11:54
 published: true
 ---
 
