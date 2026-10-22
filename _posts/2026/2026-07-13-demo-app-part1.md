@@ -120,7 +120,7 @@ Demo 화면에서는 기기를 흔들어 상태를 바꾸는 패널을 열 수 �
 선택한 상태에 맞춰 MyPage 화면을 다시 구성하고, 로그아웃 실패 시의 안내도 확인할 수 있도록 했다.  
 
 <a href="https://kdjun97.github.io/assets/images/post_img/ios/demo-app-part1/mypage-demo-scenarios.gif" target="_blank" rel="noopener noreferrer">
-  <img src="/assets/images/post_img/ios/demo-app-part1/mypage-demo-scenarios.gif" alt="MyPage Demo 시나리오 전환" style="width: 400px; max-width: 80%; height: auto;">
+  <img src="/assets/images/post_img/ios/demo-app-part1/mypage-demo-scenarios.gif" alt="MyPage Demo 시나리오 전환" style="width: 200px; max-width: 80%; height: auto;">
 </a>  
 
 여기서 궁금했던 두 가지를 확인할 수 있었다.  
