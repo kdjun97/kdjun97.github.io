@@ -15,7 +15,7 @@ toc_label: "Contents"
 toc_icon: "lightbulb"
 
 date: 2026-09-17 10:00:00
-last_modified_at: 2026-09-17 10:00:00
+last_modified_at: 2026-10-25 22:28:39
 published: true
 ---
 
@@ -90,13 +90,16 @@ GitHub Actions와 Fastlane으로 빌드와 배포를 자동화해, 기능별 Dem
 그래서 **기능별 Demo 앱과 DesignSystem Demo 앱을 만들고 Firebase App Distribution으로 배포**했다.  
 Dev·Prod 앱은 TestFlight로 전달하고, GitHub Actions와 Fastlane으로 각 배포 과정을 자동화했다.  
 
-Demo 앱에는 왜 Firebase App Distribution을 선택했고 Dev·Prod 앱에는 왜 TestFlight를 사용했는지, 각 배포 흐름을 어떻게 구성했는지는 **Demo와 CI/CD 글에서 따로 정리하려 한다.**  
+Demo 앱을 MODY에 적용하고 팀원들과 활용한 경험은 [Demo 앱으로 기능별 시나리오 검증하기 - (2)](https://kdjun97.github.io/ios/demo-app-part2/)에 정리했다.  
+Demo 앱에는 왜 Firebase App Distribution을 선택했고 Dev·Prod 앱에는 왜 TestFlight를 사용했는지, 각 배포 흐름을 어떻게 구성했는지는 **CI/CD 글에서 따로 정리하려 한다.**  
 
 기획자와 디자이너는 Demo 앱을 설치해 개발 중인 화면을 직접 확인할 수 있었다.  
 팀원들도 진행 상황과 구현된 결과물을 확인할 수 있어 협업하기 수월했다는 의견을 주었다.  
 
 아키텍처를 선택할 때 생각했던 독립적인 실행이 실제 협업으로 이어지는 지점이었다.  
 **실무에서 필요성을 느꼈던 방식을 이번 프로젝트에서 직접 적용해 볼 수 있었다.**  
+
+> [Demo 앱으로 기능별 시나리오 검증하기 - (2)](https://kdjun97.github.io/ios/demo-app-part2/)  
 
 # 🏆 프로젝트를 마치며
 
@@ -108,9 +111,9 @@ MODY는 출시를 마쳤고, CMC에서 **대상·1위**를 받았다. PM, 디자
 실무에서 들었던 궁금증을 직접 구현하며 풀어봤고, 설계한 방향대로 앱을 완성했다.  
 이 경험을 통해 **더 큰 규모의 프로젝트에서도 기능의 경계를 설계하고, 개발과 검증에 필요한 환경을 구성해 나갈 수 있다는 자신감을 얻었다.**  
 
-구체적인 설계와 구현 과정은 다음 글들에서 나눠 정리하려 한다.  
+구체적인 설계와 구현 과정은 주제별 글로 나눠 정리하고 있다.  
 
 - **MicroFeature Architecture와 Tuist** — 기능을 독립적으로 개발하기 위해 선택한 구조와 사전 실험
 - **Testing과 Tests** — 두 타깃을 나눈 구조에 관심을 가진 이유와 여러 상태를 준비해 본 경험
-- **Demo 앱** — 개발 중인 화면과 시나리오를 팀원에게 공유한 과정
+- **[Demo 앱 — 개발 중인 화면과 시나리오를 팀원에게 공유한 과정](https://kdjun97.github.io/ios/demo-app-part2/)**
 - **GitHub Actions와 Fastlane** — Demo·Dev·Prod 앱의 빌드와 배포를 자동화한 과정
