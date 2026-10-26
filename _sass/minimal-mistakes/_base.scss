@@ -73,6 +73,16 @@ ins {
   }
 }
 
+// 광고 요소에 적용된 텍스트용 밑줄 제거
+ins.adsbygoogle {
+  border-bottom: 0;
+}
+
+// 목차 아래 광고가 미노출로 확정되면 빈 공간 제거
+.toc-custom ins.adsbygoogle[data-ad-status="unfilled"] {
+  display: none !important;
+}
+
 del a {
   color: inherit;
 }
