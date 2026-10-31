@@ -112,7 +112,11 @@ Discord 채널의 Webhook URL을 Xcode Cloud 환경 변수에 등록하고, `ci_
 
 알림에는 빌드 성공·실패 여부와 앱 버전, 빌드 번호, Workflow, 커밋 정보를 담았다. 성공한 경우에는 빌드가 끝났고 곧 TestFlight에 업로드된다는 메시지를 보냈다.  
 
-덕분에 팀원들은 Discord 채널에서 어떤 버전의 빌드가 끝났는지 확인할 수 있었다. 빌드할 때마다 따로 메시지를 작성하는 대신, 결과를 자동으로 공유하도록 연결한 것이다.  
+덕분에 팀원들은 Discord 채널에서 어떤 버전의 빌드가 끝났는지, 실패한 빌드는 없는지 함께 확인할 수 있었다. 빌드할 때마다 따로 메시지를 작성하는 대신, 결과를 자동으로 공유하도록 연결한 것이다.  
+
+<a href="https://kdjun97.github.io/assets/images/post_img/ios/omokwan-cicd/img_discord.png" target="_blank" rel="noopener noreferrer">
+  <img src="/assets/images/post_img/ios/omokwan-cicd/img_discord.png" alt="Discord 빌드 실패·성공 알림" style="width: 600px; max-width: 100%; height: auto;">
+</a>  
 
 # 🌱 Xcode Cloud를 사용해 보며
 
