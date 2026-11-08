@@ -1,5 +1,5 @@
 ---
-title: "[iOS] 앱 이전하기 — App Store Connect의 App Transfer를 이용하다"
+title: "[iOS] App Store Connect의 App Transfer를 이용하여 iOS 앱 이전하기"
 excerpt: "다른 팀으로 앱을 이전해보자. 앱 이전 절차와 겪었던 시행착오"
 
 categories:
