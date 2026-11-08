@@ -12,8 +12,8 @@ permalink: /docker/docker-jupyter-anaconda3/
 toc: true
 toc_sticky: true
  
-date: 2021-03-10
-last_modified_at: 2021-03-10
+date: "2021-03-10"
+last_modified_at: "2021-03-10"
 published: true
 ---
  

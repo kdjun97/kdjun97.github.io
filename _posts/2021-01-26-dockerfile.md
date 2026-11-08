@@ -12,8 +12,8 @@ permalink: /docker/dockerfile/
 toc: true
 toc_sticky: true
  
-date: 2021-01-26
-last_modified_at: 2021-01-26
+date: "2021-01-26"
+last_modified_at: "2021-01-26"
 published: true
 ---
 

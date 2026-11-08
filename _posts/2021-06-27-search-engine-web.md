@@ -14,8 +14,8 @@ toc_sticky: true
 toc_label: "Contents"
 toc_icon: "lightbulb" # https://fontawesome.com/
  
-date: 2021-06-27 20:00:00
-last_modified_at: 2021-06-27 20:00:00
+date: "2021-06-27 20:00:00"
+last_modified_at: "2021-06-27 20:00:00"
 published: true
 ---
 

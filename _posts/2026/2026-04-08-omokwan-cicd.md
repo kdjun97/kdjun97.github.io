@@ -14,8 +14,8 @@ toc_sticky: true
 toc_label: "Contents"
 toc_icon: "lightbulb"
 
-date: 2026-04-08 10:00:00
-last_modified_at: 2026-04-08 10:00:00
+date: "2026-04-08 10:00:00"
+last_modified_at: "2026-04-08 10:00:00"
 published: true
 ---
 
