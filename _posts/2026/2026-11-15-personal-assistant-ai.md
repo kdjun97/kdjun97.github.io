@@ -15,7 +15,7 @@ toc_label: "Contents"
 toc_icon: "lightbulb"
 
 date: "2026-11-15 14:00:00"
-last_modified_at: "2026-11-15 14:44:27"
+last_modified_at: "2026-11-15 14:52:53"
 published: true
 ---
 
@@ -73,6 +73,12 @@ Slack의 `Socket Mode`로 질문을 받고, AI의 답변을 원래 질문의 **�
 - **뉴스 요약:** 관심 분야의 소식을 조사하고, 이전에 전달한 내용과 비교해 새 소식을 정리한다.  
 - **Slack 대화:** 비서에게 질문하고 같은 스레드에서 답변을 받는다.  
 - **상태·오류 확인:** 서비스 상태를 조회하고, 작업 실패 안내와 진단 기록으로 문제를 확인한다.  
+
+또한, 전용 명령어 기능을 추가했다. Slack에서 `$status` 라는 전용 명령어로 비서의 상태를 조회하고, 재시작이나 연결 오류 알림도 받아볼 수 있다.  
+
+<a href="https://kdjun97.github.io/assets/images/post_img/ai/2026/personal-assistant-ai/slack_status.png" target="_blank" rel="noopener noreferrer">
+  <img src="/assets/images/post_img/ai/2026/personal-assistant-ai/slack_status.png" alt="Slack에서 비서 상태 조회와 오류 알림 확인" style="width: 100%; max-width: 100%; height: auto;">
+</a>  
 
 현재 구현의 중심은 Slack 대화와 정기 뉴스이며, 각 분야의 전용 비서가 자동으로 협업하는 기능은 앞으로 확장할 부분이다.  
 
