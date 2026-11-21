@@ -50,6 +50,7 @@ ice bear -> 해당 블로그로 이전
 ├ `Kotlin`  
 ├ `Linux`  
 ├ `Python`  
+├ `Retrospective`  
 ├ `Software Architecture`  
 ├ `Web`  
 └ `Etc`  

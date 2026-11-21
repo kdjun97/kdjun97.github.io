@@ -45,6 +45,8 @@ categories:
     url: /categories/linux/
   - title: "Python"
     url: /categories/python/
+  - title: "Retrospective"
+    url: /categories/retrospective/
   - title: "Software Architecture"
     url: /categories/software-architecture/
   - title: "Web"
