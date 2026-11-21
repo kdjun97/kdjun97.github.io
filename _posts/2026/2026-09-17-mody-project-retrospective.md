@@ -3,7 +3,7 @@ title: "[회고] CMC 19기 iOS 파트 회고"
 excerpt: "CMC에서 MODY를 개발한 세 달을 돌아보며"
 
 categories:
-  - Etc
+  - Retrospective
 tags:
   - [iOS, MicroFeature Architecture, UIKit, SwiftUI, ReactorKit, TCA, Tuist, CI/CD]
 
